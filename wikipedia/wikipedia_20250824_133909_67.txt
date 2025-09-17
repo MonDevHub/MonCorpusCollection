@@ -1,0 +1,4 @@
+Many IP addresses change periodically,
+and are often shared by several people.
+You may create an account or log in to avoid future confusion with other logged out users.
+Creating an account also hides your IP address.

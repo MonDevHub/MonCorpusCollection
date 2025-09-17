@@ -1,0 +1,1146 @@
+In consideration of a week-long internet block in Iran,
+Wikipedia Asian Month 2019 contest has been extended for a week past November.
+The articles submitted till 7th December 2019,
+59 UTC will be accepted by the fountain tools of the participating wikis.
+Please help us translate and spread this message in your local language.
+Wikipedia Asian Month international team.
+--MediaWiki message delivery (ဓရီု) ၂၀:
+၂၇ နဝ်ဝေမ်ပါ ၂၀၁၉ (+0630) I wonder there is Mon version of Wikipedia here.
+I see many articles wrongly use Burmese nga "င" instead of Mon nga "ၚ".
+So I propose to convert all "င" to "ၚ" on every page (as well as "င်" to "ၚ်").
+This can be done by my bot if you accept.
+--Octahedron80 (ဓရီု) ၀၇:
+၁၈ အဝ်ဂေတ် ၂၀၂၀ (+0630)[ကလေင်လိက်] PS In case of converting nga in page titles,
+they must be renamed manually.
+--Octahedron80 (ဓရီု) ၀၇:
+၁၈ အဝ်ဂေတ် ၂၀၂၀ (+0630)[ကလေင်လိက်] သ္ပဂုန်တုဲမကၠာဲစုတ်ကဵု နကဵုအရေဝ်ဘာသာဇကုညိအဴ.
+Here's what you need to know:
+If you have questions or concerns about this Beta Feature,
+please contact me.
+Whatamidoing (WMF) (ဓရီု) ၁၀:
+၁၀ အံက်တဝ်ပါ ၂၀၂၀ (+0630) The Universal Code of Conduct Phase 2 drafting committee would like comments about the enforcement draft guidelines for the Universal Code of Conduct (UCoC).
+This review period is planned to begin 17 August 2021.
+Community and staff members collaborated to develop these draft guidelines based on consultations,
+discussions,
+and research.
+These guidelines are not final but you can help move the progress forward.
+Provide comments about these guidelines by 17 October 2021.
+The committee will be revising the guidelines based upon community input.
+Everyone may share comments in a number of places.
+Facilitators welcome comments in any language on the draft review talk page or by email.
+Comments can also be shared on talk pages of translations,
+at local discussions,
+or during round-table discussions and conversation hours.
+There are planned live discussions about the UCoC enforcement draft guidelines:
+The facilitation team supporting this review period hopes to reach a large number of communities.
+Having a shared understanding is important.
+If you do not see a conversation happening in your community,
+please organize a discussion.
+Facilitators can assist you in setting up the conversations.
+Discussions will be summarized and presented to the drafting committee every two weeks.
+The summaries will be published here.
+If you have any questions,
+please contact Ramzy Muliawan,
+the facilitator for ESEAP region.
+-- MediaWiki message delivery (ဓရီု) ၂၁:
+၁၇ အဝ်ဂေတ် ၂၀၂၁ (+0630)[ကလေင်လိက်] Voting for the 2021 Board of Trustees election is now open.
+Candidates from the community were asked to submit their candidacy.
+After a three week long Call for Candidates,
+there are 19 candidates for the 2021 election.
+The Wikimedia movement has the opportunity to vote for the selection of community-and-affiliate trustees.
+By voting,
+you will help to identify those people who have the qualities to best serve the needs of the movement for the next several years.
+The Board is expected to select the four most voted candidates to serve as trustees.
+Voting closes 31 August 2021.
+The Wikimedia Foundation Board of Trustees oversees the Wikimedia Foundation's operations.
+The Board wants to improve their competences and diversity as a team.
+They have shared the areas of expertise that they are currently missing and hope to cover with new trustees.
+Learn more about candidates.
+Learn about the Board of Trustees.
+Vote.
+Read the full announcement.
+Best,
+The Elections Committee -- MediaWiki message delivery (ဓရီု) ၀၇:
+၁၈ အဝ်ဂေတ် ၂၀၂၁ (+0630)[ကလေင်လိက်] This is a short message with an update from the Movement Charter process.
+The call for candidates for the Drafting Committee closed September 14,
+and we got a diverse range of candidates.
+The committee will consist of 15 members,
+and those will be (s)elected via three different ways.
+The 15 member committee will be selected with a 3-step process:
+The community elections will take place between October 11 and October 24.
+The other process will take place in parallel,
+so that all processes will be concluded by November 1.
+For the full context of the Movement Charter,
+its role,
+as well the process for its creation,
+please have a look at Meta.
+You can also contact us at any time on Telegram or via email (wikimedia2030@wikimedia.
+org).
+Best regards,
+RamzyM (WMF) ၁၅:
+၂၁ သေပ်တေမ်ပါ ၂၀၂၁ (+0630) Hello,
+this is just a reminder that the Universal Code of Conduct Draft Enforcement Guidelines are open for review and comment.
+The Drafting Committee will start working on revisions and improvement in less than two weeks (October 17),
+so it is important that you give them your ideas and opinions soon!
+There is now a short,
+simple version of the Draft Guidelines here to make your review easier.
+If possible,
+also help translate the short version into more languages!
+We will also hold one last conversation hour on October 15,
+2021 03:
+00 and 14:
+00 UTC.
+On behalf of the Drafting Committee,
+much thanks to everyone who has given ideas so far.
+We hope to hear from more of you - the Guidelines will be much stronger if more opinions are included.
+Best regards,
+RamzyM (WMF) ၁၃:
+၆ အံက်တဝ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] Voting for the election for the members for the Movement Charter drafting committee is now open.
+In total,
+70 Wikimedians from around the world are running for 7 seats in these elections.
+Voting is open from October 12 to October 24,
+2021.
+The committee will consist of 15 members in total:
+The online communities vote for 7 members,
+6 members will be selected by the Wikimedia affiliates through a parallel process,
+and 2 members will be appointed by the Wikimedia Foundation.
+The plan is to assemble the committee by November 1,
+2021.
+Best,
+Kaarel Vaidla Movement Strategy & Governance Team,
+Wikimedia Foundation ၁၇:
+၁၂ အံက်တဝ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] Universal Code of Conduct News Issue 4,
+October 2021 Read the full newsletter Welcome to the fourth issue of Universal Code of Conduct News!
+This newsletter will help Wikimedians stay involved with the development of the new code and will distribute relevant news,
+research,
+and upcoming events related to the UCoC.
+RamzyM (WMF) ၀၀:
+၁၅ အံက်တဝ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] We are excited to announce the reopening of the Movement Strategy Implementation Grants.
+This program fund projects that advance a specific Movement Strategy initiative.
+The projects can be big or small,
+but they must all make a case for advancing one initiative.
+Read all about it,
+what to apply for,
+and how to apply.
+Please do encourage others to apply as well.
+Best regards,
+RamzyM (WMF) ၁၆:
+၂၁ အံက်တဝ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] The Movement Charter Drafting Committee election and selection processes are complete.
+The committee will convene soon to start its work.
+The committee can appoint up to three more members to bridge diversity and expertise gaps.
+If you are interested in engaging with Movement Charter drafting process,
+follow the updates on Meta and join the Telegram group.
+With thanks from the Movement Strategy and Governance team Best,
+RamzyM (WMF) ၂၀:
+၁ နဝ်ဝေမ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] Hello!
+I have made a request for interface admin rights for myself at ဝဳကဳပဳဒဳယာ:
+Requests_for_adminship#Request_for_Interface_Admin_Access.
+Thanks.
+Ninja Strikers « » ၁၃:
+၂၀ နဝ်ဝေမ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] Hello!
+Like English Wikipedia,
+Myanmar Wikipedia and other Wikpedias,
+I would like to activate 'WP' namespace as an alias of NS_PROJECT (ဝဳကဳပဳဒဳယာ).
+Please discuss if you have any comments or concerns.
+I will take this request to Phabricator after 7 days if there is no objection.
+Thank you.
+Ninja Strikers « » ၁၃:
+၂၀ နဝ်ဝေမ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] Join us for the 1st ESEAP Regional Education Meeting on 27th November 2021 at 7:
+00 UTC.
+We are using this as an opportunity to strengthen the EduWiki network,
+explore collaboration opportunities,
+and identify common practices or challenges that are faced by our community members in different regions of the world.
+Learn and share your projects,
+tools,
+or ideas with the education community in the ESEAP region.
+We are excited to hear from these wonderful speakers:
+Read more about this event here:
+ESEAP Regional Meeting You may join as a sharer by adding your own agenda or send an email to dangbrazal@gmail.
+com to be included in the participants list.
+Thank you.
+Best,
+EduWiki Outreach Collaborators Community Specialists Team MediaWiki message delivery (ဓရီု) ၁၄:
+၂၃ နဝ်ဝေမ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] Thank you for your continued comments and ideas on the Universal Code of Conduct enforcement guidelines.
+Your responses have helped to build a stronger Universal Code of Conduct.
+If you have not already provided your comments,
+now is the time as the drafting committee has been meeting to update the enforcement guidelines.
+The drafting committee wants to consider all comments as they make their updates.
+Please submit any comments by the end of November.
+The Committee hopes to finish its revisions before the end of the year,
+and the revised guidelines will be published as soon as they have been completed.
+The next steps for the Universal Code of Conduct include conversations about ratification of the enforcement guidelines.
+There will be a conversation about ratification on November 29.
+The Wikimedia Foundation will make recommendations to the Board of Trustees about the ratification of the guidelines in December.
+The recommendations will inform the next steps in the Universal Code of Conduct process.
+Best,
+RamzyM (WMF) ၁၅:
+၂၆ နဝ်ဝေမ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] The Board of Trustees is preparing a call for feedback about the upcoming Board Elections,
+from January 7 - February 10,
+2022.
+While details will be finalized the week before the call,
+we have confirmed at least two questions that will be asked during this call for feedback:
+While additional questions may be added,
+the Movement Strategy and Governance team wants to provide time for community members and affiliates to consider and prepare ideas on the confirmed questions before the call opens.
+We apologize for not having a complete list of questions at this time.
+The list of questions should only grow by one or two questions.
+The intention is to not overwhelm the community with requests,
+but provide notice and welcome feedback on these important questions.
+Do you want to help organize local conversation during this Call?
+Contact the Movement Strategy and Governance team on Meta,
+on Telegram,
+or via email at msgwikimedia.
+Reach out if you have any questions or concerns.
+The Movement Strategy and Governance team will be minimally staffed until January 3.
+Please excuse any delayed response during this time.
+We also recognize some community members and affiliates are offline during the December holidays.
+We apologize if our message has reached you while you are on holiday.
+Best,
+Movement Strategy and Governance RamzyM (WMF) (talk) ၁၁:
+၂၇ ဒဳဇြေမ်ဗါ ၂၀၂၁ (+0630)[ကလေင်လိက်] The Call for Feedback:
+Board of Trustees elections is now open and will close on 7 February 2022.
+With this Call for Feedback,
+the Movement Strategy and Governance team is taking a different approach.
+This approach incorporates community feedback from 2021.
+Instead of leading with proposals,
+the Call is framed around key questions from the Board of Trustees.
+The key questions came from the feedback about the 2021 Board of Trustees election.
+The intention is to inspire collective conversation and collaborative proposal development about these key questions.
+There are two confirmed questions that will be asked during this Call for Feedback:
+There is one additional question that may be presented during the Call about selection processes.
+This question is still under discussion,
+but the Board wanted to give insight into the confirmed questions as soon as possible.
+Hopefully if an additional question is going to be asked,
+it will be ready during the first week of the Call for Feedback.
+Join the conversation.
+Best,
+Movement Strategy and Governance RamzyM (WMF) ၀၉:
+၁၁ ဇာန်နဝါရဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] Movement Strategy and Governance News Issue 5,
+January 2022 Read the full newsletter Welcome to the fifth issue of Movement Strategy and Governance News (formerly known as Universal Code of Conduct News)!
+This revamped newsletter distributes relevant news and events about the Movement Charter,
+Universal Code of Conduct,
+Movement Strategy Implementation grants,
+Board elections and other relevant MSG topics.
+This Newsletter will be distributed quarterly,
+while more frequent Updates will also be delivered weekly or bi-weekly to subscribers.
+Please remember to subscribe here if you would like to receive these updates.
+RamzyM (WMF) ၁၃:
+၁၄ ဇာန်နဝါရဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] Dear ESEAP project communities,
+I am reaching out to you today about an additional question to the Call for Feedback about Board of Trustees elections that I posted above.
+The Board has approved an additional question which we seek feedback to:
+How should affiliates participate in the elections?
+Affiliates are an important part of the Wikimedia movement.
+Two seats of the Board of Trustees due to be filled this year were filled in 2019 through the Affiliate-selected Board seats process.
+A change in the Bylaws removed the distinction between community and affiliate seats.
+This leaves the important question:
+How should affiliates be involved in the selection of new seats?
+The Board of Trustees is seeking feedback about this last question especially,
+although not solely,
+from the affiliate community.
+Everyone is invited to share proposals and join the conversation in the Call for Feedback channels.
+In addition to collecting online feedback,
+the Movement Strategy and Governance team will organize several video calls with affiliate members to collect feedback.
+These calls will be at different times and include Trustees.
+On behalf of the Movement Strategy and Governance team,
+RamzyM (WMF) ၀၉:
+၂၂ ဇာန်နဝါရဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] The Community Development team at the Wikimedia Foundation is supporting the creation of a global,
+community-driven Leadership Development Task Force.
+The purpose of the task force is to advise leadership development work.
+The team is looking for feedback about the responsibilities of the Leadership Development Task Force.
+This Meta page shares the proposal for a Leadership Development Task Force and how you can help.
+Feedback on the proposal will be collected from 7 to 25 February 2022.
+Best,
+RamzyM (WMF) ၁၈:
+၉ ဖေဖဝ်ဝါရဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello everyone,
+The Wikimedia Foundation Board of Trustees released a statement on the ratification process for the Universal Code of Conduct (UCoC) Enforcement Guidelines.
+The Universal Code of Conduct (UCoC) provides a baseline of acceptable behavior for the entire movement.
+The UCoC and the Enforcement Guidelines were written by volunteer-staff drafting committees following community consultations.
+The revised guidelines were published 24 January 2022 as a proposed way to apply the policy across the movement.
+There is a list of changes made to the guidelines after the enforcement draft guidelines review.
+Comments about the guidelines can be shared on the Enforcement Guidelines talk page on Meta-wiki.
+To help to understand the guidelines and process,
+the Movement Strategy and Governance (MSG) team will be hosting Conversation Hours on 4 February 2022 at 15:
+00 UTC,
+25 February 2022 at 12:
+00 UTC,
+and 4 March 2022 at 15:
+00 UTC.
+Join the conversation hours to speak with the UCoC project team and drafting committee members about the updated guidelines and voting process.
+The timeline is available on Meta-wiki.
+The voting period is March 7 to 21.
+All eligible voters will have an opportunity to support or oppose the adoption of the Enforcement guidelines,
+and share why.
+See the voting information page for more details.
+Many participants from across the movement have provided valuable input in these ongoing conversations.
+The UCoC and MSG teams want to thank the Drafting Committee and the community members for their contributions to this process.
+Sincerely,
+Movement Strategy and Governance Wikimedia Foundation RamzyM (WMF) ၂၃:
+၁၂ ဖေဖဝ်ဝါရဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] The Movement Strategy and Governance (MSG) team is hosting Conversation Hours on Universal Code of Conduct enforcement ratification on 25 February 2022 at 12:
+00 UTC and 4 March 2022 at 15:
+00 UTC.
+Please sign-up for these conversation hours to interact with the project team and the drafting committee about the updated enforcement guidelines and the ratification process.
+See the Conversation Hour summaries for notes from 4 February 2022.
+For more information,
+contact either team by email:
+msgwikimedia.
+org or ucocprojectwikimedia.
+org Best,
+RamzyM (WMF) (ဓရီု) ၀၉:
+၂၂ ဖေဖဝ်ဝါရဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] The Call for Feedback:
+Board of Trustees elections is now closed.
+This Call ran from 10 January and closed on 16 February 2022.
+The Call focused on three key questions and received broad discussion on Meta-wiki,
+during meetings with affiliates,
+and in various community conversations.
+The community and affiliates provided many proposals and discussion points.
+The reports are on Meta-wiki.
+This information will be shared with the Board of Trustees and Elections Committee so they can make informed decisions about the upcoming Board of Trustees election.
+The Board of Trustees will then follow with an announcement after they have discussed the information.
+Thank you to everyone who participated in the Call for Feedback to help improve Board election processes.
+Best,
+Movement Strategy and Governance RamzyM (WMF) ၁၅:
+၃ မာတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello!
+The Movement Strategy and Governance team of the Wikimedia Foundation would like to invite you to the next event about "Regional and Thematic Hubs".
+The Wikimedia Movement is in the process of understanding what Regional and Thematic Hubs should be.
+Our workshop in November was a good start (read the report),
+but we're not finished yet.
+Over the last weeks we conducted about 16 interviews with groups working on establishing a Hub in their context (see Hubs Dialogue).
+These interviews informed a report that will serve as a foundation for discussion on March 12.
+The report is planned to be published on March 9.
+The event will take place on March 12,
+00 to 16:
+00 UTC on Zoom.
+Interpretation will be provided in French,
+Spanish,
+Arabic,
+Russian,
+and Portuguese.
+Registration is open,
+and will close on March 10.
+Anyone interested in the topic is invited to join us.
+More information on the event on Meta-wiki.
+Best regards,
+Kaarel Vaidla Movement Strategy Hello everyone,
+The ratification voting process for the revised enforcement guidelines of the Universal Code of Conduct (UCoC) is now open!
+Voting commenced on SecurePoll on 7 March 2022 and will conclude on 21 March 2022.
+Please read more on the voter information and eligibility details.
+The Universal Code of Conduct (UCoC) provides a baseline of acceptable behavior for the entire movement.
+The revised enforcement guidelines were published 24 January 2022 as a proposed way to apply the policy across the movement.
+You can read more about the UCoC project.
+You can also comment on Meta-wiki talk pages in any language.
+You may also contact the team by email:
+ucocprojectwikimedia.
+org Sincerely,
+Movement Strategy and Governance Wikimedia Foundation RamzyM (WMF) ၀၇:
+၁၁ မာတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello everyone,
+Thank you to everyone who participated in the feedback period for the Leadership Development Working Group initiative.
+A summary of the feedback can be found on Meta-wiki.
+This feedback will be shared with the working group to inform their work.
+The application period to join the Working Group is now open and will close on April 10,
+2022.
+Please review the information about the working group,
+share with community members who might be interested,
+and apply if you are interested.
+Thank you,
+From the Community Development team RamzyM (WMF) ၂၂:
+၁၄ မာတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] The Community Resilience and Sustainability team at the Wikimedia Foundation is hosting a conversation hour led by its Vice President Maggie Dennis.
+Topics within scope for this call include Movement Strategy,
+Board Governance,
+Trust and Safety,
+the Universal Code of Conduct,
+Community Development,
+and Human Rights.
+Come with your questions and feedback,
+and let's talk!
+You can also send us your questions in advance.
+The meeting will be on 24 March 2022 at 15:
+00 UTC (check your local time).
+You can read details on Meta-wiki.
+Looking forward to seeing you on the call,
+RamzyM (WMF) ၁၉:
+၂၁ မာတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Greetings,
+The ratification voting process for the revised enforcement guidelines of the Universal Code of Conduct (UCoC) came to a close on 21 March 2022.
+Over 2300 Wikimedians voted across different regions of our movement.
+Thank you to everyone who participated in this process!
+The scrutinizing group is now reviewing the vote for accuracy,
+so please allow up to two weeks for them to finish their work.
+The final results from the voting process will be announced here,
+along with the relevant statistics and a summary of comments as soon as they are available.
+Please check out the voter information page to learn about the next steps.
+You can comment on the project talk page on Meta-wiki in any language.
+You may also contact the UCoC project team by email:
+ucocprojectwikimedia.
+org Best regards,
+Movement Strategy and Governance RamzyM (WMF) ၀၇:
+၂၅ မာတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello everyone,
+The Community Development team at the Wikimedia Foundation is supporting the creation of a global,
+community-driven Leadership Development Working Group.
+The purpose of the working group is to advise leadership development work.
+Feedback was collected in February 2022 and a summary of the feedback is on Meta-wiki.
+The application period to join the Working Group is now open and is closing soon on April 10,
+2022.
+Please review the information about the working group,
+share with community members who might be interested,
+and apply if you are interested.
+Thank you,
+From the Community Development team RamzyM (WMF) ၂၀:
+၃၁ မာတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello,
+The Movement Communications and Movement Strategy and Governance teams invite you to discuss the 2022-23 Wikimedia Foundation Annual Plan,
+a plan of record for the Wikimedia Foundation's work.
+These conversations continue Maryana Iskander's Wikimedia Foundation Chief Executive Officer listening tour.
+The conversations are about these questions:
+You can find the schedule of calls on Meta-wiki.
+The information will be available in multiple languages.
+Each call will be open to anyone to attend.
+Live interpretation will be available in some calls.
+Best regards,
+RamzyM (WMF) ၂၂:
+၁၄ ဨပြဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] Movement Strategy and Governance News Issue 6,
+April 2022 Read the full newsletter Welcome to the sixth issue of Movement Strategy and Governance News!
+This revamped newsletter distributes relevant news and events about the Movement Charter,
+Universal Code of Conduct,
+Movement Strategy Implementation grants,
+Board of trustees elections and other relevant MSG topics.
+This Newsletter will be distributed quarterly,
+while the more frequent Updates will also be delivered weekly.
+Please remember to subscribe here if you would like to receive future issues of this newsletter.
+RamzyM (WMF) ၁၃:
+၁၆ ဨပြဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] The Community Affairs Committee of the Wikimedia Foundation Board of Trustees would like to thank everyone who participated in the recently concluded community vote on the Enforcement Guidelines for the Universal Code of Conduct (UCoC).
+The volunteer scrutinizing group has completed the review of the accuracy of the vote and has reported the total number of votes received as 2,
+Out of the 2,
+283 votes received,
+a total of 1,
+338 (58.
+6%) community members voted for the enforcement guidelines,
+and a total of 945 (41.
+4%) community members voted against it.
+In addition,
+658 participants left comments with 77% of the comments written in English.
+We recognize and appreciate the passion and commitment that community members have demonstrated in creating a safe and welcoming culture that stops hostile and toxic behavior,
+supports people targeted by such behavior,
+and encourages good faith people to be productive on the Wikimedia projects.
+Foundation staff who have been reviewing comments have advised us of some of the emerging themes,
+and as a result we have decided as Community Affairs Committee to ask the Foundation to reconvene the drafting committee and to undertake another community engagement to refine the enforcement guidelines based on the community feedback received from the recently concluded vote.
+For clarity,
+this feedback has been clustered into 4 sections as follows:
+Other issues may emerge during conversations,
+and particularly as the draft Enforcement Guidelines evolve,
+but we see these as the primary areas of concern for voters and are asking staff to facilitate review of these issues.
+After further engagement,
+the Foundation should re-run the community vote to evaluate the revamped Enforcement Outline to see if the new document is then ready for its official ratification.
+Further,
+we are aware of the concerns with the note 3.
+1 in the Universal Code of Conduct Policy.
+We are directing the Foundation to facilitate a review of this language to ensure that the Policy meets its intended purposes of supporting a safe and inclusive community,
+without waiting for the planned review of the entire Policy at the end of year.
+Again,
+we thank all who participated,
+thinking about these critical and difficult challenges and contributing to better approaches across the movement to working together well.
+Best,
+Rosie Rosie Stephenson-Goodknight (she/her) Acting Chair,
+Community Affairs Committee Wikimedia Foundation Board of Trustees RamzyM (WMF) ၀၉:
+၂၅ ဨပြဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] The Board of Trustees seeks candidates for the 2022 Board of Trustees election.
+Read more on Meta-wiki.
+The 2022 Board of Trustees election is here!
+Please consider submitting your candidacy to serve on the Board of Trustees.
+The Wikimedia Foundation Board of Trustees oversees the Wikimedia Foundation's operations.
+Community-and-affiliate selected trustees and Board-appointed trustees make up the Board of Trustees.
+Each trustee serves a three year term.
+The Wikimedia community has the opportunity to vote for community-and-affiliate selected trustees.
+The Wikimedia community will vote to fill two seats on the Board in 2022.
+This is an opportunity to improve the representation,
+diversity,
+and expertise of the Board as a team.
+Who are potential candidates?
+Are you a potential candidate?
+Find out more on the Apply to be a Candidate page.
+Thank you for your support,
+Movement Strategy and Governance on behalf of the Elections Committee and the Board of Trustees RamzyM (WMF) ၂၂:
+၂၅ ဨပြဳ ၂၀၂၂ (+0630)[ကလေင်လိက်] <languages/> The Movement Strategy and Governance team is looking for community members to serve as election volunteers in the upcoming Board of Trustees election.
+The idea of the Election Volunteer Program came up during the 2021 Wikimedia Board of Trustees Election.
+This program turned out to be successful.
+With the help of Election Volunteers we were able to increase outreach and participation in the election by 1,
+753 voters over 2017.
+Overall turnout was 10.
+1 percentage points more,
+and 214 wikis were represented in the election.
+But a total of 74 wikis that did not participate in 2017 produced voters in the 2021 election.
+Can you help change the participation?
+Election volunteers will help in the following areas:
+Volunteers should:
+Do you want to be an election volunteer and ensure your community is represented in the vote?
+Sign up here to receive updates.
+You can use the talk page for questions about translation.
+Best regards,
+RamzyM (WMF) ၁၆:
+၅ မေ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello all,
+Following up my previous message about the Leadership Development Working Group:
+the Community Development Team has completed the candidate selection process and is happy to announce fifteen volunteers that are beginning work on this project.
+Thank you for your support and participation throughout the process!
+For the Community Development team,
+RamzyM (WMF) ၂၂:
+၁၂ မေ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello all,
+I d like to share an update on the work on the Enforcement Guidelines for the Universal Code of Conduct (UCoC):
+Please let me know if you have any questions about these next steps.
+On behalf of the UCoC Project team,
+RamzyM (WMF) ၁၉:
+၃၀ မေ ၂၀၂၂ (+0630)[ကလေင်လိက်] The 2022 Board of Trustees election Call for Candidates has now closed.
+This Call led 12 candidates from the community to submit their applications.
+Learn more about the 2022 Board of Trustees candidates.
+The Analysis Committee will now consider the candidates applications with the skills and criteria provided by the Board.
+The trustees seek certain skills and competencies to improve the capacity of the Board.
+After the Analysis Committee completes their review,
+the ratings of each candidate will be published.
+These ratings are for informational purposes only.
+For more information about the 2022 Board election,
+you may find the timeline,
+voting information and other ways to get involved on Meta-wiki.
+Thank you for your support,
+Movement Strategy and Governance on behalf of the Elections Committee and the Board of Trustees RamzyM (WMF) ၁၀:
+၁ ဂျောန် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi all,
+This message covers two upcoming activities for the 2022 Board of Trustees election.
+The Board of Trustees election will have an Election Compass to support voters in their decision-making process.
+Eligible voters can propose statements in July and vote on which statements are used in the Election Compass in late July.
+Please visit the Election Compass page for more information.
+Join conversations with the 2022 Board of Trustees candidates July 27 to August 7.
+Each candidate will have a one hour conversation with the community.
+Each conversation will be recorded and made available for future viewing.
+Live interpretation will be available.
+Languages available will be announced when the dates are set.
+These conversations will be scheduled with the candidates once the results of the Affiliate Selection are available.
+That information will be shared on the 2022 Board of Trustees election campaign events page.
+Best,
+Movement Strategy and Governance on behalf of the Board Selection Task Force and the Elections Committee RamzyM (WMF) ၀၇:
+၁၁ ဂျူလာင် ၂၀၂၂ (+0630)[ကလေင်လိက်] Movement Strategy and Governance News Issue 7,
+July-September 2022 Read the full newsletter Welcome to the 7th issue of Movement Strategy and Governance News!
+The newsletter distributes relevant news and events about the implementation of Wikimedia's Movement Strategy recommendations,
+other relevant topics regarding Movement governance,
+as well as different projects and activities supported by the Movement Strategy and Governance (MSG) team of the Wikimedia Foundation.
+The MSG Newsletter is delivered quarterly,
+while the more frequent Movement Strategy Weekly will be delivered weekly.
+Please remember to subscribe here if you would like to receive future issues of this newsletter.
+RamzyM (WMF) ၁၁:
+၁၈ ဂျူလာင် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi everyone,
+The Affiliate voting process has concluded.
+Representatives from each Affiliate organization learned about the candidates by reading candidates statements,
+reviewing candidates answers to questions,
+and considering the candidates ratings provided by the Analysis Committee.
+The selected 2022 Board of Trustees candidates are:
+You may see more information about the Results and Statistics of this Board election.
+Please take a moment to appreciate the Affiliate Representatives and Analysis Committee members for taking part in this process and helping to grow the Board of Trustees in capacity and diversity.
+These hours of volunteer work connect us across understanding and perspective.
+Thank you for your participation.
+Thank you to the community members who put themselves forward as candidates for the Board of Trustees.
+Considering joining the Board of Trustees is no small decision.
+The time and dedication candidates have shown to this point speaks to their commitment to this movement.
+Congratulations to those candidates who have been selected.
+A great amount of appreciation and gratitude for those candidates not selected.
+Please continue to share your leadership with Wikimedia.
+Thank you to those who followed the Affiliate process for this Board election.
+You may review the results of the Affiliate selection process.
+The next part of the Board election process is the community voting period.
+You may view the Board election timeline here.
+To prepare for the community voting period,
+there are several things community members can engage with in the following ways:
+Best,
+Movement Strategy and Governance This message was sent on behalf of the Board Selection Task Force and the Elections Committee RamzyM (WMF) ၀၇:
+၂၀ ဂျူလာင် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi all,
+Volunteers in the 2022 Board of Trustees election are invited to vote for statements to use in the Election Compass.
+You can vote for the statements you would like to see included in the Election Compass on Meta-wiki.
+An Election Compass is a tool to help voters select the candidates that best align with their beliefs and views.
+The community members will propose statements for the candidates to answer using a Lickert scale (agree/neutral/disagree).
+The candidates answers to the statements will be loaded into the Election Compass tool.
+Voters will use the tool by entering in their answer to the statements (agree/disagree/neutral).
+The results will show the candidates that best align with the voter s beliefs and views.
+Here is the timeline for the Election Compass:
+The Elections Committee will select the top 15 statements at the beginning of August Best,
+Movement Strategy and Governance This message was sent on behalf of the Board Selection Task Force and the Elections Committee RamzyM (WMF) ၁၅:
+၂၆ ဂျူလာင် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi all,
+I am reaching out to you today with an update about the timing of the voting for the Board of Trustees election.
+As many of you are already aware,
+this year we are offering an Election Compass to help voters identify the alignment of candidates on some key topics.
+Several candidates requested an extension of the character limitation on their responses expanding on their positions,
+and the Elections Committee felt their reasoning was consistent with the goals of a fair and equitable election process.
+To ensure that the longer statements can be translated in time for the election,
+the Elections Committee and Board Selection Task Force decided to delay the opening of the Board of Trustees election by one week - a time proposed as ideal by staff working to support the election.
+Although it is not expected that everyone will want to use the Election Compass to inform their voting decision,
+the Elections Committee felt it was more appropriate to open the voting period with essential translations for community members across languages to use if they wish to make this important decision.
+The voting will open on August 23 at 00:
+00 UTC and close on September 6 at 23:
+59 UTC.
+Best regards,
+Matanya,
+on behalf of the Elections Committee RamzyM (WMF) ၁၈:
+၁၅ အဝ်ဂေတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi everyone,
+The Community Voting period for the 2022 Board of Trustees election is now open.
+Here are some helpful links to get you the information you need to vote:
+If you are ready to vote,
+you may go to SecurePoll voting page to vote now.
+You may vote from August 23 at 00:
+00 UTC to September 6 at 23:
+59 UTC.
+To see about your voter eligibility,
+please visit the voter eligibility page.
+Best,
+Movement Strategy and Governance This message was sent on behalf of the Board Selection Task Force and the Elections Committee RamzyM (WMF) and VChang (WMF) ၂၃:
+၂၃ အဝ်ဂေတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello everyone,
+The Movement Strategy Forum (MS Forum) is a multilingual collaborative space for all conversations about Movement Strategy implementation.
+We are inviting all Movement participants to collaborate on the MS Forum.
+The goal of the forum is to build community collaboration,
+using an inclusive multilingual platform.
+The Movement Strategy is a collaborative effort to imagine and build the future of the Wikimedia Movement.
+Anyone can contribute to the Movement Strategy,
+from a comment to a full-time project.
+Join this forum with your Wikimedia account,
+engage in conversations,
+and ask questions in your language.
+The Movement Strategy and Governance team (MSG) launched the proposal for the MS Forum in May 2022.
+There was a 2-month community review period,
+which ended on 24 July 2022.
+The community review process included several questions that resulted in interesting conversations.
+You can read the Community Review Report.
+We look forward to seeing you at the MS Forum!
+Best regards,
+Movement Strategy and Governance Team RamzyM (WMF) and VChang (WMF) ၂၂:
+၃၀ အဝ်ဂေတ် ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello,
+The Community Voting period of the 2022 Board of Trustees election started on August 23,
+2022,
+and will close on September 6,
+2022 23:
+59 UTC.
+There s still a chance to participate in this election.
+If you did not vote,
+please visit the SecurePoll voting page to vote now.
+To see about your voter eligibility,
+please visit the voter eligibility page.
+If you need help in making your decision,
+here are some helpful links:
+Best,
+Movement Strategy and Governance VChang (WMF) & RamzyM (WMF) ၁၉:
+၂ သေပ်တေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello everyone,
+The Universal Code of Conduct Enforcement Guidelines Revisions committee is requesting comments regarding the Revised Enforcement Draft Guidelines for the Universal Code of Conduct (UCoC).
+This review period will be open from 8 September 2022 until 8 October 2022.
+The Committee collaborated to revise these draft guidelines based on input gathered from the community discussion period from May through July,
+as well as the community vote that concluded in March 2022.
+The revisions are focused on the following four areas:
+The Committee requests comments and suggestions about these revisions by 8 October 2022.
+From there,
+the Revisions Committee anticipates further revising the guidelines based on community input.
+Find the Revised Guidelines on Meta,
+and a comparison page in some languages.
+Everyone may share comments in a number of places.
+Facilitators welcome comments in any language on the Revised Enforcement Guidelines talk page.
+Comments can also be shared on talk pages of translations,
+at local discussions,
+or during conversation hours.
+There are a series of conversation hours planned about the Revised Enforcement Guidelines;
+please see Meta for the times and details.
+The facilitation team supporting this review period hopes to reach a large number of communities.
+If you do not see a conversation happening in your community,
+please organize a discussion.
+Facilitators can assist you in setting up the conversations.
+Discussions will be summarized and presented to the drafting committee every two weeks.
+The summaries will be published here.
+On behalf of the UCoC Project Team,
+RamzyM (WMF) & VChang (WMF) ၂၂:
+၉ သေပ်တေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi everyone,
+Thank you to everyone who participated in the 2022 Board of Trustees election process.
+Your participation helps seat the trustees the community seeks on the Wikimedia Foundation Board of Trustees.
+These are the preliminary results of the 2022 Board of Trustees election:
+You may see more information about the Results and Statistics of this Board election.
+The Board will complete their review of the most voted candidates,
+including conducting background checks.
+The Board plans to appoint new trustees at their meeting in December.
+Best,
+Movement Strategy and Governance This message was sent on behalf of the Board Selection Task Force and the Elections Committee VChang (WMF) and RamzyM (WMF) ၂၁:
+၂၂ သေပ်တေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi all,
+The Wikimedia sound logo contest has officially launched,
+welcoming scores of submissions from around the world.
+From 13 September to 10 October 2022,
+everyone,
+everywhere is invited to play a part in The Sound of All Human Knowledge.
+If you want to learn more about sound logos,
+need help with your submission,
+or if you have a great idea for one,
+but don't know how to capture it,
+join this conversation with our technical partner MassiveMusic on 29 September 2022,
+00-16:
+00 UTC.
+Sign up directly on Zoom.
+Sound Logo Team,
+Arupako-WMF (ဓရီု) ၁၅:
+၂၆ သေပ်တေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Dear Wikimedians,
+Thank you for participating in the review of the Revised Enforcement Draft Guidelines for the Universal Code of Conduct (UCoC).
+The UCoC project team and the UCoC Enforcement Guidelines Revisions Committee appreciate you all taking the time to discuss the guidelines,
+suggest changes,
+and ask questions.
+This community review period lasted from 8 September 2022 to 8 October 2022.
+Over the past four weeks,
+the UCoC project team has collected valuable community input from various channels,
+including three conversation hours sessions,
+where Wikimedians could get together to discuss the revised UCoC Enforcement Guidelines.
+The Revisions Committee will review community input when they reconvene in the second week of October 2022.
+The UCoC project team will support them in providing updates as they continue their work and will continue to inform the community about all important developments and milestones as the Committee prepares the final version of the UCoC Enforcement Guidelines that is currently scheduled for a community-wide vote in mid-January of 2023.
+On behalf of the UCoC Project Team,
+VChang (WMF) & RamzyM (WMF) ၁၇:
+၂၀ အံက်တဝ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello all,
+During the 2022 Wikimedia Summit,
+the Movement Charter Drafting Committee (MCDC) presented the first outline of the Movement Charter,
+giving a glimpse on the direction of its future work,
+and the Charter itself.
+The MCDC then integrated the initial feedback collected during the Summit.
+Before proceeding with writing the Charter for the whole Movement,
+the MCDC wants to interact with community members and gather feedback on the drafts of the three sections:
+Preamble,
+Values & Principles,
+and Roles & Responsibilities (intentions statement).
+The Movement Charter drafts will be available on the Meta page here on November 14,
+2022.
+Community wide consultation period on MC will take place from November 20 to December 18,
+2022.
+Learn more about it here.
+With the goal of ensuring that people are well informed to fully participate in the conversations and are empowered to contribute their perspective on the Movement Charter,
+three Ask Me Anything about Movement Charter" sessions have been scheduled in different time zones.
+Everyone in the Wikimedia Movement is invited to attend these conversations.
+The aim is to learn about Movement Charter - its goal,
+purpose,
+why it matters,
+and how it impacts your community.
+MCDC members will attend these sessions to answer your questions and hear community feedback.
+The Ask Me Anything sessions accommodate communities from different time zones.
+Only the presentation of the session is recorded and shared afterwards,
+no recording of conversations.
+Below is the list of planned events:
+On the Meta page you will find more details;
+Zoom links will be shared 48 hours ahead of the call.
+Call for Movement Charter Ambassadors Individuals or groups from all communities who wish to help include and start conversations in their communities on the Movement Charter are encouraged to become Movement Charter Ambassadors (MC Ambassadors).
+MC Ambassadors will carry out their own activities and get financial support for enabling conversations in their own languages.
+Regional facilitators from the Movement Strategy and Governance team are available to support applicants with MC Ambassadors grantmaking.
+If you are interested please sign up here.
+Should you have specific questions,
+please reach out to the MSG team via email:
+strategy2030@wikimedia.
+org or on the MS forum.
+We thank you for your time and participation.
+On behalf of the Movement Charter Drafting Committee,
+RamzyM (WMF) & VChang (WMF) ၂၀:
+၂ နဝ်ဝေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] The Wikimedia Movement Strategy implementation is a collaborative effort for all Wikimedians.
+Movement Strategy Implementation Grants support projects that take the current state of a Movement Strategy Initiative and push it one step forward.
+If you are looking for an example or some guide on how to engage your community further on Movement Strategy and the Movement Strategy Implementation Grants specifically,
+you may find this community engagement package helpful.
+The goal of this community engagement package is to support more people to access the funding they might need for the implementation work.
+By becoming a recipient of this grant,
+you will be able to support other community members to develop further grant applications that fit with your local contexts to benefit your own communities.
+With this package,
+the hope is to break down language barriers and to ensure community members have needed information on Movement Strategy to connect with each other.
+Movement Strategy is a two-way exchange,
+we can always learn more from the experiences and knowledge of Wikimedians everywhere.
+We can train and support our peers by using this package,
+so more people can make use of this great funding opportunity.
+If this information interests you or if you have any further thoughts or questions,
+please do not hesitate to reach out to us as your regional facilitators to discuss further.
+We will be more than happy to support you.
+When you are ready,
+follow the steps on this page to apply.
+We look forward to receiving your application.
+Best regards,
+Movement Strategy and Governance Team Wikimedia Foundation VChang (WMF) and RamzyM (WMF) ၂၃:
+၉ နဝ်ဝေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Dear all,
+The Movement Charter Drafting Committee (MCDC) is currently collecting community feedback about three draft sections of the Movement Charter:
+Preamble,
+Values & Principles,
+and Roles & Responsibilities (statement of intent).
+How can you participate and share your feedback?
+The MCDC is looking forward to receiving all types of feedback in different languages from the community members across the Movement and Affiliates.
+You can participate in the following ways:
+The community consultation session for the ESEAP region will take place on Friday,
+9 December 2022 at 09:
+00-10:
+30 UTC.
+The session will be held on Zoom;
+the link will be shared at the page 48 hours before the session.
+Live interpretation in Chinese,
+Japanese,
+and Indonesian will be available.
+The conversations will not be recorded,
+except for the section where participants are invited to share what they discussed in the breakout rooms.
+The facilitation team will take notes and produce a summary report afterwards.
+If you want to learn more about the Movement Charter,
+its goals,
+why it matters and how it impacts your community,
+please watch the recording (in English) of the Ask Me Anything about Movement Charter sessions which took place earlier in November 2022.
+You can also watch the recording in Chinese and in Japanese.
+Thank you for your participation.
+On behalf of the Movement Charter Drafting Committee,
+RamzyM (WMF) and VChang (WMF) ၀၇:
+၂ ဒဳဇြေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi all,
+We are in the middle of the community consultation period on the three draft sections of the Movement Charter:
+Preamble,
+Values & Principles,
+and Roles & Responsibilities (statement of intent).
+You are invited to attend the community consultation session for East Asia,
+South East Asia,
+and the Pacific region (ESEAP) which will take place on Friday,
+9 December 2022 at 09:
+00-10:
+30 UTC.
+The session will be held on Zoom;
+please join the meeting via this link.
+Live interpretation will be available in Indonesian,
+Japanese,
+and Mandarin Chinese.
+This community consultation period will end on 18 December 2022.
+The Movement Charter Drafting Committee (MCDC) encourages everyone who is interested in the governance of the Wikimedia movement to share their thoughts and opinions on the draft content of the Charter.
+Apart from joining the live conversation,
+you can also share your feedback via different channels provided below:
+You can also find the ESEAP facilitators from the Movement Strategy and Governance team at the ESEAP 28th Community Meeting on Sunday,
+11 December 2022 to share your thoughts.
+Let us know if you have any questions.
+Thank you for your participation in this community consultation!
+Best regards,
+Movement Strategy and Governance Team,
+Wikimedia Foundation RamzyM (WMF) & VChang (WMF) ၁၃:
+၉ ဒဳဇြေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hi everyone,
+On behalf of the Movement Charter Drafting Committee (MCDC),
+we would like to thank everyone who has participated in our first community wide consultation period on the Movement Charter.
+People from across the Movement shared their feedback and thoughts on the content of the Movement Charter.
+If you have not had the chance to share your opinion yet,
+you are welcome to do so still by giving the drafts a read and filling out the anonymous survey,
+which is accessible in 12+ languages.
+The survey will close on January 2,
+2023.
+You are invited to continue to share your thoughts with the MCDC via email too:
+movementcharter@wikimedia.
+What s next?
+The Movement Strategy and Governance team will publish the final report with the summary of the feedback received in January 2023.
+It will be shared with the MCDC and the communities via different distribution channels.
+After receiving the final report,
+the MCDC will review the suggestions and communicate the changes by providing an explanation on how and why suggestions were or were not adopted in the next versions of the drafts.
+There will be additional ways to engage with the Movement Charter content in 2023,
+including early feedback on a proposed ratification process and new drafts of different chapters in the second quarter of 2023.
+We invite you to sign-up to the MCDC monthly newsletter,
+it will be delivered to the Talk page of your choice.
+Monthly updates are available on Meta to remain updated on the progress of the MCDC.
+Interested people can still sign-up to become a Movement Charter Ambassador (MC Ambassador) to support their community.
+The MC Ambassadors Program grant program will restart accepting applications from both individuals and groups ahead of the next round of consultations in the second quarter of 2023.
+We thank you for your participation,
+time and effort in helping to build the Charter for our Movement!
+On behalf of the Movement Charter Drafting Committee,
+RamzyM (WMF) & VChang (WMF) ၁၈:
+၁၆ ဒဳဇြေမ်ဗါ ၂၀၂၂ (+0630)[ကလေင်လိက်] Hello all,
+In mid-January 2023,
+the Enforcement Guidelines for the Universal Code of Conduct will undergo a second community-wide ratification vote.
+This follows the March 2022 vote,
+which resulted in a majority of voters supporting the Enforcement Guidelines.
+During the vote,
+participants helped highlight important community concerns.
+The Board s Community Affairs Committee requested that these areas of concern be reviewed.
+The volunteer-led Revisions Committee worked hard reviewing community input and making changes.
+They updated areas of concern,
+such as training and affirmation requirements,
+privacy and transparency in the process,
+and readability and translatability of the document itself.
+The revised Enforcement Guidelines can be viewed here,
+and a comparison of changes can be found here.
+How to vote?
+Beginning January 17,
+2023,
+voting will be open.
+This page on Meta-wiki outlines information on how to vote using SecurePoll.
+Who can vote?
+The eligibility requirements for this vote are the same as for the Wikimedia Board of Trustees elections.
+See the voter information page for more details about voter eligibility.
+If you are an eligible voter,
+you can use your Wikimedia account to access the voting server.
+What happens after the vote?
+Votes will be scrutinized by an independent group of volunteers,
+and the results will be published on Wikimedia-l,
+the Movement Strategy Forum,
+Diff and on Meta-wiki.
+Voters will again be able to vote and share concerns they have about the guidelines.
+The Board of Trustees will look at the levels of support and concerns raised as they look at how the Enforcement Guidelines should be ratified or developed further.
+On behalf of the UCoC Project Team,
+RamzyM (WMF) & VChang (WMF) ၁၈:
+၁၁ ဇာန်နဝါရဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello all,
+The voting period for the revised Universal Code of Conduct Enforcement Guidelines is now open!
+Voting will be open for two weeks and will close at 23:
+59 UTC on January 31,
+2023.
+Please visit the voter information page on Meta-wiki for voter eligibility information and details on how to vote.
+For more details on the Enforcement Guidelines and the voting process,
+see our previous message.
+On behalf of the UCoC Project Team,
+RamzyM (WMF) & VChang (WMF) ၁၉:
+၁၈ ဇာန်နဝါရဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello all,
+The vote on the Universal Code of Conduct Enforcement Guidelines is now closed.
+The results will now be counted and scrutinized to ensure that only eligible votes are included.
+Results will be published on Meta and other movement forums as soon as they become available,
+as well as information on future steps.
+Thank you to all who participated in the voting process,
+and who have contributed to the drafting of Guidelines.
+On behalf of the UCoC Project Team,
+RamzyM (WMF) & VChang (WMF) ၁၈:
+၃ ဖေဖဝ်ဝါရဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] The recent community-wide vote on the Universal Code of Conduct revised Enforcement Guidelines has been tallied and scrutinized.
+Thank you to everyone who participated.
+After 3097 voters from 146 Wikimedia communities voted,
+the results are 76% in support of the Enforcement Guidelines,
+and 24% in opposition.
+Statistics for the vote are available.
+A more detailed summary of comments submitted during the vote will be published soon.
+From here,
+the results and comments collected during this vote will be submitted to the Board of Trustees for their review.
+The current expectation is that the Board of Trustees review process will complete in March 2023.
+We will update you when their review process is completed.
+On behalf of the UCoC Project Team,
+RamzyM (WMF) & VChang (WMF) ၂၂:
+၁၄ ဖေဖဝ်ဝါရဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello everyone,
+Wikimedia Foundation Legal Department is organizing a feedback-cycle with community members to discuss updating the Wikimedia Terms of Use.
+The Terms of Use (ToU) are the legal terms that govern the use of websites hosted by the Wikimedia Foundation.
+We will be gathering your feedback on a draft proposal from February through April.
+The draft will be translated into several languages,
+with written feedback accepted in any language.
+This update comes in response to several things:
+As part of the feedback cycle two office hours will be held,
+the first on March 2,
+the second on April 4.
+For further information,
+please consult:
+On behalf of the Wikimedia Foundation Legal Team,
+RamzyM (WMF) & VChang (WMF) ၀၅:
+၂၂ ဖေဖဝ်ဝါရဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello all,
+an important update on the UCoC Enforcement Guidelines:
+The vote on the Enforcement Guidelines in January 2023 showed a majority approval of the Enforcement Guidelines.
+There were 369 comments received and a detailed summary of the comments will be published shortly.
+Just over three-thousand (3097) voters voted and 76% approved of the Enforcement Guidelines.
+You can view the vote statistics on Meta-wiki.
+As the support increased,
+this signifies to the Board that the current version has addressed some of the issues indicated during the last review in 2022.
+The Board of Trustees voted to ratify the Enforcement Guidelines.
+The resolution can be found on Foundation wiki and you can read more about the process behind the 2023 Enforcement Guidelines review on Diff.
+There are some next steps to take with the important recommendations provided by the Enforcement Guidelines.
+More details will come soon about timelines.
+Thank you for your interest and participation.
+On behalf of the UCoC Project Team,
+RamzyM (WMF) & VChang (WMF) ၂၂:
+၂၃ မာတ် ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello all,
+The Universal Code of Conduct project team has completed the analysis of the comments accompanying the ratification vote on the revised Universal Code of Conduct Enforcement Guidelines.
+All respondents to the vote had the opportunity to provide comments regarding the contents of the revised Enforcement Guidelines draft document.
+A total of 369 participants left comments in 18 languages;
+compared to 657 commenters in 27 languages in 2022.
+The Trust and Safety Policy team completed an analysis of these results,
+categorizing comments to identify major themes and areas of focus within the comments.
+The report is available in translated versions on Meta-wiki here.
+Please help translate into your language.
+Again,
+we are thankful to all who participated in the vote and discussions.
+More information about the Universal Code of Conduct and its Enforcement Guidelines can be found on Meta-wiki.
+On behalf of the Universal Code of Conduct project team,
+RamzyM (WMF) & VChang (WMF) ၂၁:
+၃၁ မာတ် ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello everyone,
+The Movement Charter Drafting Committee (MCDC) will propose a ratification methodology for the future Movement Charter on April 10,
+2023.
+The proposed ratification methodology is a result of learnings from previous ratification processes.
+The MCDC will organize a consultation period with the Wikimedia Movement to hear feedback on the proposed ratification methodology from April 10 to 28,
+2023.
+People will be invited to share their feedback on the questions mainly via the Meta Talk page discussion,
+on the Movement Strategy Forum,
+and during the community conversation hours.
+The MCDC welcomes your input on some open questions.
+Join the community conversation hours The MCDC invites everyone interested in sharing their feedback on the proposed methodology to join the community conversation hours:
+When signing up,
+please leave a comment if you need language support.
+Please note that language interpretation will be provided if at least 3 people expressed interest to participate in the following languages:
+Arabic,
+Mandarin Chinese,
+French,
+German,
+Indonesian,
+Japanese,
+Polish,
+Portuguese (Brazilian),
+Russian and Spanish.
+Thank you,
+On behalf of the Movement Charter Drafting Committee,
+RamzyM (WMF) & VChang (WMF) ၂၂:
+၆ ဨပြဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello everyone,
+The Wikimedia Foundation elections committee (Elections Committee) is,
+from today until April 24,
+seeking an additional 2 4 members to help facilitate the Wikimedia Foundation Board of Trustee (Board) selection process.
+The 2024 Wikimedia Foundation Board of Trustees election is being planned.
+New members are invited to join the Elections Committee.
+The Elections Committee oversees the Board of Trustees community seat selection process.
+Join the committee and contribute your valuable skills and ideas to the Trustee selection process.
+There are eight community- and affiliate-selected seats on the Wikimedia Foundation Board.
+The wider Wikimedia community votes for community members to occupy these seats.
+In 2024,
+the Elections Committee will oversee this selection process for the community- and affiliate-selected seats with expiring terms.
+This process will be supported by the Wikimedia Foundation.
+Elections Committee members sign up for three-year terms and will be asked to sign a confidentiality agreement.
+Members can expect to contribute 2 5 hours per week before the selection process and 5 8 hours per week during the selection process.
+As an Elections Committee member,
+you will be responsible for:
+New members should have the following qualities:
+If you would like to volunteer for this role,
+please submit your candidacy by April 24,
+2023 23:
+59 on this Meta-Wiki page.
+You can read the full announcement here.
+Thank you in advance for your interest!
+If you are not interested but know someone who might be,
+share this message with them.
+Please let me know if you have questions.
+On behalf of the Elections Committee,
+RamzyM (WMF) & VChang (WMF) ၂၂:
+၁၂ ဨပြဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] Hello all,
+The [[<tvar name="mcdc">m:
+Special:
+MyLanguage/Movement Charter/Drafting Committee</tvar>|Movement Charter Drafting Committee]] (MCDC) has started to collect input from the Wikimedia movement on the [[<tvar name="mcm">m:
+Special:
+MyLanguage/Movement Charter/Ratification</tvar>|proposed methodology for the ratification of the Movement Charter]] from April 10 to 28,
+2023.
+Ratification of the [[<tvar name="mc">m:
+Special:
+MyLanguage/Movement Charter</tvar>|Movement Charter]] is planned to take place in early 2024 according to the timeline.
+There are [[<tvar name="mcm2">m:
+Special:
+MyLanguage/Movement Charter/Ratification</tvar>|six questions]] that the MCDC requests your input on.
+Please share your feedback by:
+If you have any questions,
+kindly let us know.
+On behalf of the Movement Charter Drafting Committee,
+RamzyM (WMF) & VChang (WMF) ၂၀:
+၁၄ ဨပြဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] The main purpose of this message is to share with you the draft annual plan of the Wikimedia Foundation for the coming fiscal year from July 2023 to June 2024.
+The summary of the annual plan is available in multiple languages.
+Some Excerpts from the Annual Plan Draft The Wikimedia Foundation has remained in a period of transition.
+It welcomed new leadership last year,
+including a new Chief Executive Officer and Chief Product and Technology Officer.
+Additionally,
+the Foundation has navigated conversations with global communities on a range of important issues,
+from a future charter defining roles and responsibilities,
+to how we raise shared resources through banner fundraising.
+This year's Annual Plan attempts to provide more clarity on multi-year strategic issues that do not have quick fixes,
+and more detailed information on how the Foundation operates.
+For the second consecutive year,
+the Wikimedia Foundation is anchoring its annual plan in the movement's strategy to advance equity.
+The intention is to connect the Foundation's work even more deeply with the Movement Strategy Recommendations to make even deeper progress towards the 2030 Strategic Direction.
+This year,
+the Foundation is recentering its plan around Product and Technology,
+emphasizing our unique role as a platform for people and communities collaborating on a massive scale.
+If you are interested to learn more,
+you can find detailed information on this meta page.
+Requesting Your Feedback Your feedback is highly appreciated,
+whether being on Meta discussion page or sharing at your local discussion space.
+Your comments and reflections will help improve the proposal before the Foundation s Board of Trustees considers the plan and budget in their June meeting.
+Community Conversations Everyone is also invited to participate in the virtual conversation on 30th April 2023 at 6am UTC (check your local time here),
+which is planned for participants from the Asia Pacific timezone.
+Kindly see the Diff calendar here.
+Lisa Seitz Gruwell,
+Chief Advancement Officer and Deputy to the Chief Executive Officer will be joining the call to share more and learn about your thoughts.
+You can find the information relating to virtual conversations on the collaboration page.
+We look forward to seeing you in the upcoming conversation!
+VChang (WMF) ၂၀:
+၂၅ ဨပြဳ ၂၀၂၃ (+0630)[ကလေင်လိက်] <languages/> Dear Communities and individual contributors in the ESEAP Regional Cooperation:
+The ESEAP Interim Hub Committee's mandate shall conclude with Wikimania 2023;
+culminating with their handover to a new ESEAP Preparatory Council.
+This Preparatory Council will continue to define,
+until its completion,
+ESEAP's Roles and Responsibilities document.
+The Council shall also finalize ESEAP's pilot grant plan for the first year;
+concluding with the ESEAP Conference in 2024.
+The Preparatory Council will consist of 9 seats;
+Should your community wish to nominate a candidate,
+please nominate your community with the name of the candidate by August 19th.
+The voting will be happening betwen August 20nd and September 2nd.
+Should you (individual contributor) want to nominate an individual,
+please nominate the person by August 19th.
+The voting will be happening between August 20nd and September 2nd.
+With the time being so short,
+we need your cooperation and participation as soon as possible.
+The election for the seats will be held on the this Meta page.
+Let's move forward together!
+Sincerely,
+ESEAP Interim Hub Committee VChang (WMF) ၁၅:
+၁၇ အဝ်ဂေတ် ၂၀၂၃ (+0630)[ကလေင်လိက်] မ္ၚဵုရအဴ Mon Wikipedians!
+Apologies as this message is not in your language,
+သ္ပဂုန်တုဲမကၠာဲစုတ်ကဵု နကဵုအရေဝ်ဘာသာဇကုညိအဴ.
+The WMF Language team plans to enable the Section and Content translation tools to Mon Wikipedia by default.
+Also,
+the team is considering adding machine translation (MT) support with MinT to the tools.
+MinT may be providing limited support for your language,
+so we want to make sure it is useful for the community.
+For this,
+my team would like members of your community to:
+Below is background information about the tools and how you can test them.
+Background information Section Translation extends the capabilities of Content Translation to support mobile devices.
+On mobile,
+the tool will:
+MinT (Machine in Translation) is a machine translation service hosted in the Wikimedia Infrastructure.
+It is designed to provide translations from many MT models.
+The model available for your Wikipedia is the MADLAD-400 open-source translation model.
+Our request The MADLAD-400 MT is available for your Wiki in our test instance.
+We want you to test it (translate sentences and paragraphs from articles) in our test instance:
+Let us know in this thread if the quality of the automatic translation generated is okay to enable it in Mon Wikipedia along with the Section and Content translation tool.
+Our plans to enable the tools and the machine translation support We plan to deploy the tools with the MT support by the 4th of March.
+If there are no objections from your community,
+we will deploy them.
+We want to provide the tools in the way they best serve the community,
+so we are open to make further adjustments after the deployment based on the experience of the community.
+We look forward to getting your feedback in this thread.
+Thank you!
+On behalf of the WMF Language team.
+UOzurumba (WMF) (ဓရီု) ၀၉:
+၁၅ ဖေဖဝ်ဝါရဳ ၂၀၂၄ (+0630)[ကလေင်လိက်] မ္ၚဵုရအဴ Wikipedians,
+Apologies,
+as this message is not written in your native language.
+သ္ပဂုန်တုဲမကၠာဲစုတ်ကဵု နကဵုအရေဝ်ဘာသာဇကုညိအဴ.
+The Wikimedia Foundation Web team will be enabling dark mode here on your Wikipedia by February 2025 now that pages on your wiki have passed our checks for accessibility and other quality checks.
+Congratulations!
+For context,
+the Web team has concluded work on dark mode.
+on some wikis,
+the option is not yet available for logged-out users,
+this is likely because many pages do not yet display well in dark mode.
+As communities make progress on this work,
+we enable this feature on additional wikis once per month.
+If you notice any issues after enabling dark mode,
+please create a page:
+Reading/Web/Accessibility for reading/Reporting/xx.
+wikipedia.
+org in MediaWiki (like these pages),
+and report the issue in the created page.
+Thank you!
+On behalf of the Wikimedia Foundation Web team.
+UOzurumba (WMF) ၀၄:
+၂၂ ဇာန်နဝါရဳ ၂၀၂၅ (+0630)[ကလေင်လိက်] မ္ၚဵုရအဴ Mon Wikipedians,
+Apologies as this message is not in your language.
+သ္ပဂုန်တုဲမကၠာဲစုတ်ကဵု နကဵုအရေဝ်ဘာသာဇကုညိအဴ.
+The WMF Language and Product Localization team proposes enabling an entry point called "Contribute" to your Wikipedia.
+Therefore,
+enabling this entry point in your Wikipedia will help contributors quickly discover available tools and immediately click to start using them.
+This entry point is designed to be a central point for discovering contribution tools in Mon Wikipedia.
+Who can access it Once it is enabled in your Wikipedia,
+newcomers can access the entry point automatically by just logging into their account,
+click on the User drop-down menu and choose the "Contribute" icon,
+which takes you to another menu where you will find a self-guided description of what you can do to contribute content,
+as shown in the image below.
+An option to "view contributions" is also available to access the list of your contributions.
+For experienced contributors,
+the Contribute icon is not automatically shown in their User drop-down menu.
+They will still see the "Contributions" option unless they change it to the "Contribute" manually.
+We have gotten valuable feedback that helped us improve its discoverability.
+it is ready to be enabled in other Wikis.
+One major improvement was to make the entry point optional for experienced contributors who still want to have the "Contributions" entry point as default.
+We plan to enable it on mobile for Wikis,
+where the Section translation tool is enabled.
+In this way,
+we will provide a main entry point to the mobile translation dashboard,
+and the exposure can still be limited by targeting only the mobile platform for now.
+If there are no objections to having the entry point for mobile users from your community,
+we will enable it by 17th June 2025.
+We welcome your feedback and questions in this thread on our proposal to enable it here.
+Suppose there are no objections,
+we will deploy the "Contribute" entry point in your Wikipedia.
+We look forward to your response soon.
+Thank you!
+On behalf of the WMF Language and Product Localization team.
+UOzurumba (WMF) (ဓရီု) ၁၁:
+၄ ဂျောန် ၂၀၂၅ (+0630)[ကလေင်လိက်]

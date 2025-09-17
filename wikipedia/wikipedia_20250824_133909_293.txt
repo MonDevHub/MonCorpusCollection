@@ -1,0 +1,64 @@
+တာမ်ပလိက် Template ဟီုမ္ဂးဂှ် ဒှ်အရာ မကၠောန်လဝ် ကိုန်ဂစိုတ်တုဲ ကပ်ပဳကေတ်တုဲ သၠာဲစုတ် တင်ဂၞင်ဂမၠိုင်မ္ဂး ဍေဟ်မံက်တိတ်ကၠုင် ဗီုမဖျေဟ်လဝ် ကိုန်ဂစိုတ်ဂှ်ရ၊
+ဒၞာဲဟွံဆက်စပ် ဒၞာဲဇကု ဟွံတီတအ်ဂှ် မုလ္ပစုတ်မ္ဂး (ဝါ) ဟွံဗပေင်စုတ်မ္ဂး ပရူဒၞာဲဂှ် ဍေဟ်ကၠေအ်အာကေတ်တ်ရ၊
+{{Infobox person | name = မာံတောအ် | pronunciation = ပ္တိတ်ရမ္သာင် | image = | image_caption = ပရူဗီုရုပ် | birth_date = ပ္ဍဲသက္ကရာဇ် ၁၂၅၁-သၞာံ၊
+ဂိတုမာ်(၈)မံက် တ္ရဲသိုက် | birth_place = ကွာန်တံၚ်ပိုအ် | birth_name = မာံဟယျာ | death_date = ပ္ဍဲသက္ကရာဇ် ၁၃၁၇-သၞာံ၊
+ဂိတုစှ်ေ (၅)မံက် အခါမဂွံအာယုက် (၆၆)သၞာံဂှ် စုတိအာ | height = သၠုင် | weight = လျိုင် | disappeared_place = ဒၞာဲမကၠေအ်သၞင် | disappeared_status = အကာဲအရာမကၠေအ်သၞင် | death_place = ကွာန်တံပိုအ် | death cause = ယဲ | body discovered = မဂွံဆဵုကေတ်ဇွ | burial_place = ဒၞာဲမပၠောပ်ဂိုဟ် | monuments = တိုင်တၟအ်စၟတ်သမ္တီ | education = ပရေင်ပညာ | alma_mater = ယၟုဘာ/တက္ကသိုလ် | occupation = ချူလိက် | nationality = မန် | occupation = ကမၠောန်ဂယိုင်လမျီု | known_for = ဒယှ်တဴ နကဵု | party = ဗော်ပရေင်ဍုင်ကွာန် | organizations = ဂကောံဂမၠိုင် | movement = ပရေင်ချဳဓရာင် | years active = သၞာံမချဳဓရာင် | awards = လာပ် | honors = မဂွံဒုင်အဲပရဲ | spouse = သမ္ဘာ/တၠသ္ၚိ | children = ကောန်ဇာတ | parents = နာဲသောန်+ မိနာဲၚေဝ် | relations = ကောံဒေံၝဲဒေဴ မာံတောအ်ဂမၠိုၚ် (၁)နာဲဟစေဝ်၊
+(၂)နာဲဝေန်၊
+(၃)နာဲဟယျာ(မာံတောအ်)၊
+(၄)ဣနာဲကဴ၊
+(၅)ဣနာဲၚံက် (၆) ဣနာဲကလာၝောံ၊
+(၇) ဣနာဲကောန်ပိုအ် (၈)ဣနာဲကောန်ဒေအ် ပံၚ်ဒှ်မၞိဟ်(၈)ရ။
+| signature = စၟတ်တဲ | footnotes = စၟတ်သမ္တီ | religion = ဘာသာ }} </code> အာကပ်ပဳကေတ် နူမုက်လိက် ဘာသာအင်္ဂလိက် {{Infobox settlement |name = ဍုင်ကၟာဝက် |official_name = |pushpin_label_position = bottom |settlement_type = ဍုင် |image_skyline = Kyaik-zel.
+jpg |image_map = |map_caption = |pushpin_map = မြန်မာနိုင်ငံ |pushpin_map_caption = ဒၞာဲဍုင်ကၟာဝက် မၞုံ |subdivision_type = ကၟိန်ဍုင် |subdivision_name = {{Flag|Myanmar}} |subdivision_type1 = တွဵုရး |subdivision_name1 = {{Flag|Mon}}[[တွဵုရးဍုင်မန်|တွဵုရးဍုင်မန်]] |subdivision_type2 = ခရိုင် |subdivision_name2 = ခရိုင်မတ်မလီု |subdivision_type3 = ပွိုင်ဍုင် |subdivision_name3 = ပွိုင်ဍုင်မုဟ်ဍုင် |unit_pref = Imperial |area_total_km2 = |population_total = |population_urban = |population_rural = |population_as_of = |population_footnotes = |population_density_km2 = auto |coordinates = {{Coord|16.
+140444|97.
+733731|region:
+MM|display=inline,
+title}} |elevation_ft = |elevation_m = |timezone = အခိင်ကၟိန်ဍုင်ဗၟာ |utc_offset = +6.
+30 |website = }} </code> ကပ်ပဳကေတ် နူကဵု မုက်လိက်ဘာသာအင်္ဂလိက် {{Taxobox | name = ယၟု | image = ဗီုရုပ် | image_width = 256px | image_caption = ပရူဗီုရုပ် | regnum = လောက/တိရစ္ဆာန် | phylum = လပါ်ဂကူ | classis = သဇိုၚ်(ဝါ)ဌာန်ဒ္တန်မဒှ်သ္ဇိုၚ် | ordo = လၟေင်ဂကူ | familia = ဇာတ်ဂကူ | subfamilia = လစှ်ေဇာတ်ဂကူ | genus = ဗဳဇဂကူ | genus_authority = [[Johann Matthäus Bechstein|Bechstein]],
+[[1803|1803]] | subdivision_ranks = [[Species|Species]] | subdivision = 6-7 living,
+see text.
+| synonyms = ''Cygnanser'' <small>Kretzoi,
+[[1957|1957]]</small> }} </code> အာကပ်ပဳကေတ် နူမုက်လိက် ဘာသာအင်္ဂလိက် အာကပ်ပဳကေတ် နူ မုက်လိက်ဘာသာအင်္ဂလိက် {{Infobox artifact | name = ယၟု | native_name = ယၟုဂကူတၞံ | native_name_lang = ယၟုနကဵုလိက် ဂကူတၞံ | image = ဗီုရုပ် | image_size = ဗၞတ်ဗ္ၜတ် ဗီုရုပ် | alt = ပရူ | image2 = ဗီုရုပ်ၜါ | image2_size = ဗၞတ်ဗ္ၜတ် ဗီုရုပ်ၜါ | alt2 = ပရူၜါ | image_caption = | material = ကိရိယာ | size = ဗၞတ်ဗ္ၜတ် | height = သမၠုင်<!
+-- {{convert|}} --> | width = အနာံ <!
+-- {{convert|}} --> | weight = လျိုင် <!
+-- {{convert|}} --> | long = ဇမၠိင် <!
+-- {{convert|}} --> | writing = မချူလဝ် | symbols = သင်္ကေတဂမၠိုင် | created = မခၞံဗဒှ်လဝ် | discovered = သၞာံမဂွံဆဵုကေတ် <!
+-- Deprecated;
+use the following,
+separate,
+parameters --> | discovered_place = ဒၞာဲမဂွံဆဵု | discovered_coords = | discovered_date = စၟတ်တ္ၚဲ မဂွံဆဵု | discovered_by = ညးမဂွံဆဵု | location = ဒၞာဲ | classification = ဒၞာဲမနွံလၟုဟ် | culture = ယေန်သၞာင် | id = အာန်ဒဳ | map = ဗီုပြၚ်တိ (ဝါ) ဗလးဂၠးတိ | website = မုက်လိခ်လပှ်ကျာ }} </code> အာကပ်ပဳကေတ် ပ္ဍဲမုက်လိက်ဘာသာအင်္ဂလိက် {{Infobox royalty | embed = | name = ယၟု | title = မဟိမု | titletext = မဟိမုပေင်င် | more = ဆက်ဂတတေံ | type = | image = ဗီုရုပ် | image_size = | alt = | caption = | succession = သၟိင်ဍုင် (ဥပမာ ဨကရာဇ်ဍုင်ဟံသာဝတဳ) | moretext = | reign = ပကင်ရင်ဍုင် | reign-type = ဗီုမပကင်ရင်ဍုင် | coronation = တ္ၚဲဒုင်အဘိသိက် | cor-type = ဗီုမဒုင်အဘိသိက် | predecessor = မဒုင်ကေတ်အာဲနူ | pre-type = ဗီုမဒုင်ကေတ်အာဲ | successor = ညးမဆက်ဒုင်အာဲ | suc-type = ဗီုမဆက်ဒုင်အာဲ | regent = ပကင်ရင် | reg-type = | succession1 = | moretext1 = | reign1 = | reign-type1 = | coronation1 = | cor-type1 = | predecessor1 = | pre-type1 = | successor1 = | suc-type1 = | regent1 = | reg-type1 = | succession2 = | moretext2 = | reign2 = | reign-type2 = | coronation2 = | cor-type2 = | predecessor2 = | pre-type2 = | successor2 = | suc-type2 = | regent2 = | reg-type2 = | succession3 = | moretext3 = | reign3 = | reign-type3 = | coronation3 = | cor-type3 = | predecessor3 = | pre-type3 = | successor3 = | suc-type3 = | regent3 = | reg-type3 = <!
+-- succession4 to succession9 are also available --> | birth_name = ယၟု ကာလဒှ်မၞိဟ် | birth_date = <!
+-- For Gregorian dates:
+{{birth date and age|YYYY|MM|DD|df=y}} --> | birth_place = ဒၞာဲမကတဵုဒှ်မၞိဟ် | death_date = <!
+-- {{death date and age|YYYY|MM|DD|YYYY|MM|DD|df=y}} --> | death_place = ဒၞာဲမစုတိ | burial_date = တ္ၚဲမဖျေဟ်ကမ္မဌာန် | burial_place = ဒၞာဲမဖျေဟ်ကမ္မဌာန် | spouse = တၠသ္ၚိ | queen = ဂၞကျာ် | spouse-type = | consort = <!
+-- yes or no --> | issue = ကောန်ဇာတ်ဂမၠိုင် | issue-link = | issue-pipe = | issue-type = | full name = ယၟုဍိုက်ဍိုက်ပေၚ်ပေၚ် | era name = | era dates = | regnal name = | posthumous name= | temple name = ယၟု တာမ်ပလိက် | house = နန် | house-type = | father = မအံက် | mother = မိအံက် | religion = ဘာသာ | occupation = ကမၠောန် | signature_type = စၟတ်တဲ | signature = | module = }} </code> အာကပ်ပဳကေတ် နူ မုက်လိက်ဘာသာအင်္ဂလိက် {{Infobox organization | name = ယၟုဂကောံ | native_name = ယၟုဂကောံ နကဵုဘာသာတမ် | image = ဗီုရုပ် | image_size = | alt = လိက်မဗၟံက်ထ္ၜး ပရူဗီုရုပ် | caption = လိက်မဗၟံက်ထ္ၜး ပရူဗီုရုပ် | map = | map_size = | map_alt = | map_caption = | map2 = | map2_size = | map2_alt = | map2_caption = | abbreviation = | motto = | predecessor = | merged = | successor = | formation = {{start date|2001|11|18|df=y}} | founder = | extinction = <!
+-- e.
+use {{end date and age|YYYY|MM|DD}} --> | merger = | type = ဂကူဂကောံ | tax_id = <!
+-- or | vat_id = (for European organizations) --> | registration_id = <!
+-- for non-profit org --> | status = | purpose = တင်ရန်တၟအ် | headquarters = | location = | coords = <!
+-- {{coord|LAT|LON|display=inline,
+title}} --> | region = | services = | products = | methods = | fields = အရာမကၠောန် | membership = | membership_year = | language = | owner = <!
+-- or | owners = --> | sec_gen = | leader_title = | leader_name = | leader_title2 = | leader_name2 = | leader_title3 = | leader_name3 = | leader_title4 = | leader_name4 = | board_of_directors = | key_people = | main_organ = | parent_organization = | subsidiaries = | secessions = | affiliations = | budget = | budget_year = | revenue = | revenue_year = | disbursements = | expenses = | expenses_year = | endowment = | staff = | staff_year = | volunteers = | volunteers_year = | slogan = | mission = | website = <!
+-- {{url|example.
+com}} --> | remarks = | formerly = | footnotes = }} </code> အာကပ်ပဳကေတ် နူ မုက်လိက်ဘာသာအင်္ဂလိက် {{Infobox body of water | name = ဘင်ဇၞော် | image = Kan Gyi Lake-nX-1.
+jpg | caption = | image_bathymetry = Kan Gyi Lake-nX-11.
+jpg | caption_bathymetry = | coords = <!
+-- This is the angle at which the California-Nevada N-S line diverts to the E.
+No more precision is helpful.
+--> | lake_type = သဘာဝ | inflow = | outflow = | basin_countries = တွဵုရးဍုင်မန် | location = ဍုင်မုဟ်ဍုင် | length = 704.
+5m | width = 115.
+28m | area = 214,
+33m² | depth = | max-depth = | volume = | residence_time = | shore = 1.
+5 mi | elevation = | islands = | cities = [[ဍုင်မုဟ်ဍုင်]] | frozen = | pushpin_map = | pushpin_label_position = | pushpin_map_alt = | pushpin_map_caption = }} အာကပ်ပဳကေတ် နူ မုက်လိက်ဘာသာအင်္ဂလိက် {{Infobox river | name = Zami River | native_name ={{native name|my|ဇမိမြစ်}} | name_other = | name_etymology = <!
+---------------------- IMAGE & MAP --> | image = Zami River.
+jpg | image_size = | image_caption = Zami River at Kyainseikgyi Township | map = | map_size = | map_caption = | pushpin_map = | pushpin_map_size = | pushpin_map_caption= <!
+---------------------- LOCATION --> | subdivision_type1 = Country | subdivision_name1 = [[Myanmar]] | subdivision_type2 = | subdivision_name2 = | subdivision_type3 = | subdivision_name3 = | subdivision_type4 = District | subdivision_name4 = [[Kawkareik District]] | subdivision_type5 = City | subdivision_name5 = [[Kyainseikgyi]] <!
+---------------------- PHYSICAL CHARACTERISTICS --> | length = {{convert|300|km|mi|abbr=on}} | width_min = | width_avg = | width_max = | depth_min = | depth_avg = | depth_max = | discharge1_location= | discharge1_min = | discharge1_avg = | discharge1_max = <!
+---------------------- BASIN FEATURES --> | source1 = | source1_location = [[Karen State]],
+[[Myanmar]] | source1_coordinates= {{coord|16|09|N|97|58|E|display=inline}} | source1_elevation = | mouth = [[Ataran River]] | mouth_location = Chaunghanakwa,
+[[Myanmar]] | mouth_coordinates = | mouth_elevation = {{convert|7|m|abbr=on}} | progression = | river_system = | basin_size = | tributaries_left = | tributaries_right = | custom_label = | custom_data = | extra = }} အာကပ်ပဳကေတ် နူ မုက်လိက်ဘာသာအင်္ဂလိက် {{Infobox Buddhist monastery |name = ဘာကျာ်သြဳမန် |image = |image_size = 250px |alt = |caption = |t= |p= |pushpin_map = Myanmar |coordinates = <!
+--{{coord|16|08|24|N|97|43|44|E|type:
+landmark_region:
+CN-54|display=inline,
+title}}--> |map_caption = ဒၞာဲဘာကျာ်သြဳမန် မနွံ |map_size = 250 |location_country = Myanmar |location= ဍုင်လ္ဂုင် အရာပ်ဗဟာရ် |founded_by = |founded = |date_renovated = | religious_affiliation = ထေရဝါဒဗုဒ္ဓဘာသာ |sect = ဂိုဏ်ဓမ္မယုတ္တိနိကာယ (မဟာယျေန်) |lineage= |dedicated_to = ဘာတိုက်လိက် ကေုာံ စမြိုင်သာသနာ |head_lama = |colleges= |no.
+_of_monks = |architecture = }} </code> အာကပ်ပဳကေတ် နူမုက်လိက်ဘာသာအင်္ဂလိက်
