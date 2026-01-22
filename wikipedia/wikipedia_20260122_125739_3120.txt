@@ -1,0 +1,1027 @@
+သၞောဝ်ကေပ်လေရ် မဆေင်ကဵု ဂြိုဟ်တာရာယတ္တ
+
+ပ္ဍဲကဵု နက္ခတ္တဗေဒ သၞောဝ်ကေပ်လေရ် မဆေင်ကဵု ဂြိုဟ်တာရာယတ္တ (
+
+Kepler's laws of planetary motion)
+
+ဝွံ ဒှ်သၞောဝ်သိပ္ပံ မဗၟံက်ထ္ၜးလဝ် ဗီုကသဳဂြိုဟ်တာရာ (ဗီုဂၠးတိ ကေုာံ ဂြိုဟ်နာနာတအ် မချဳဓရာင်) မပူဂေတ်ဒၟံင် တ္ၚဲ၊ မချူပ္တန်လဝ် နကဵု တၠပညာဂကူဂျာမနဳ ယဝ်ဟာန်နာ ကေပ်လေရ် (Johannes Kepler) ပ္ဍဲအကြာသၞာံ ၁၆၀၉ ကဵု ၁၆၁၉။ သၞောဝ်ဏအ်ဂှ် ဒှ်သၞောဝ် မပခိုင်ကဵု တဳအဝ်ရဳ သူရိယမဇ္ဇဟိမ (heliocentric theory) မဒှ်တဳအဝ်ရဳ Nicolaus Copernicus မဗၟံက်ထ္ၜးလဝ် ဂြိုဟ်တအ်ဂှ် ဂေတ်ပူဒၟံင် တ္ၚဲ လတူ ဂၠံင်ညးကဵုညးရ။ ကိုပ်ကၠာ တဳအဝ်ရဳဏအ် ဟွံမံက်ကၠုင်ဏီဂှ် မၞိဟ်တအ် စှ်ေစိုတ် မေဓနဳမဇ္ဇဟိမ တ္ၚဲ၊ ဂိတု၊ ဂြိုဟ်တအ်ဂှ် လန်ဂေတ်ဒၟံင် ဂၠးတိရ။ သၞောဝ်ကေပ်လေရ်ဂှ် ပသောင်ထ္ၜး ဒဒှ်ရ ဂၠံင်ပဝူ ဂြိုဟ်တအ်ဂှ် ဒှ်ဒၟံင် ကဝိုင်ခၜါဲ (elliptical trajectories) ကေုာံ ပသောင်ကလးကဵု ပရဟ် အသိင်ဒမြိပ် ဂြိုဟ်တာရာဂမၠိုင်ရ။
+
+သၞောဝ်တအ်ဂှ် ချူလဝ် အတိုင်ဗွဲသၟဝ်ဝွံရ။ (သၞောဝ်တအ်ဂှ် ၜိုန်ရ ကၠာဲစၠောအ်လဝ် ကဵု နကဵုဘာသာမန်ကီုလေဝ် ဒှ်အရာ မကၠိုဟ်ဝါတ်မွဲတုဲ ပတိုန်ထ္ၜးကဵုလဝ် သီုဘာသာအင်္ဂလိက်ကီုရ။)
+
+ဗီု ၁: ထ္ၜးသရုပ် သၞောဝ်ကေပ်လေရ် ပိ နကဵု ဂၠံင်ပဝူကဝိုင်ခၜါဲ ဂြိုဟ်တာရာ ၜါ။
+
+ထာမ်ပလိက်:Ordered list
+
+(
+
+သၞောဝ် ဂၠံင်ပဝူ
+
+) ဂၠံင်ပဝူ ဂြိုဟ်မွဲဂှ် ဒှ်ဒၟံင် ကဝိုင်ခၜါဲ မဂေတ်ပူဒၟံင်တ္ၚဲ တုဲ အပ္ဍဲပဝူဂှ် ချိင်နွံၜါ ပၞောဝ်ၜါဂှ် တ္ၚဲဂှ် နွံဒၞာဲ ချိင်မွဲ။
+
+The orbit of a planet is an ellipse with the Sun at one of the two foci.
+
+(
+
+သၞောဝ် ဨရိယာ
+
+) ဒကုတ်ပဝူဂၠံင် ဂြိုဟ်မွဲ မဂေတ်ပူဒၟံင် တ္ၚဲဂှ် (နူကဵုတ္ၚဲ) ဂလိုင်ဨရိယာမတုပ်မ္ဂး လလအ် အခိင်လေဝ် တုပ်ကီု။
+
+A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.
+
+(
+
+သၞောဝ် ကာလ
+
+) ဗွိုင် လလအ်ဂၠံင်ပဝူ (လလအ်အခိင် ဂြိုဟ်မွဲ မဂေတ် ဂွံမွဲပဝူ) ဂြိုဟ်မွဲမွဲဂှ် တန်တဴဒၟံင် ဂလိုင်လၟိဟ် ဇမၞော်ကူဗေ ပၞောန်ဇၞော်ကဝက်။
+
+The square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit.
+
+ဂၠံင်ပဝူကဝိုင်ခၜါဲ ဂြိုဟ်တအ်ဂှ် ဂွံတီကေတ် နူကဵု ပွမလ္ၚတ် ဂၠံင်ပဝူ ဂြိုဟ်မာရ် (Mars) (ဂြိုဟ်အၚာ) ရ။
+
+စနူဂှ်တုဲ ကေပ်လေရ် ညးဟီု ဂၠံင်ပဝူဂြိုဟ် မနွံဒၟံင် ပ္ဍဲကဵု စက္ကဝါတ္ၚဲ (Solar System) တအ် သီုဖအိုတ်ဂှ် ဒှ်ဒၟံင် ခဍမ်ခဍမ် ဟွံသေင်၊ ကဝိုင်ခၜါဲဒၟံင်၊ တုဲပၠန် ဂြိုဟ် မနွံသ္ၚောဲ နူကဵုတ္ၚဲတအ်လေဝ် ဂေတ်ပူဒၟံင် တ္ၚဲ နကဵု ဂၠံင်ပဝူကဝိုင်ခၜါဲကီုရ။ သၞောဝ်ဒုတိယဂှ် လဴထ္ၜးကဵု ဂြိုဟ် မကြပ်ကဵု တ္ၚဲ ခဍင် ဒမြေပ်တရဴဍေဟ် မဂေတ် ပြဟ်ခဍင်။ သၞောဝ်တတိယဂှ် ပသောင်ကလးကဵု ဂြိုဟ်မနွံ သ္ၚောဲကဵု တ္ၚဲခဍင် တရဴဂၠံင်ပဝူဍေဟ် ဂၠိင်ခဍင် တုဲပၠန် လလအ်အခိင် မဒးဂေတ်ပူ ဂွံဂွံ မွဲပဝူလေဝ် ဒးကေတ်အခိင်လအ်ခ္ဍင်ရ။
+
+ဝင်
+
+ယဝ်ဟာန်နာ ကေပ်လေရ် ညးမဒှ်တၠပညာ နက္ခတ္တဗေဒ ဂကူဂျာမနဳ စပတိတ် သၞောဝ်ညး ကိုပ်ကၠာၜါ မဆေင်ကဵု ဗီုဂြိုဟ်ဂမၠိုင် မချဳဓရာင် ဂေတ်လန်ဒၟံင်ဂှ် ဒှ် ပ္ဍဲသၞာံ ၁၆၀၉၊ ကြဴနူ ညးကလိဂွံ တင်ဂၞင် စၟတ်သမ္တီ နူကဵု အစာနက္ခတ္တဗေဒ တူချဝ် ဗြေ (Tycho Brahe) ဂကူဒိန်မက် မလ္ၚတ်လဝ်ရ။
+
+သၞောဝ်ကေပ်လေရ် တတိယဂှ် ပ္တိတ် ပ္ဍဲသၞာံ ၁၆၁၉။
+
+ကေပ်လေရ် ဒုင်တဲ စှ်ေစိုတ် လတူလညာတ်ကဝ်ပေရ်နိကုသ် မဒှ်လညာတ် ဂြိုဟ်ဂမၠိုင် မဂေတ်ပူဒၟံင် တ္ၚဲ ပ္ဍဲကဵု စက္ကဝါတ္ၚဲရ။ ဆဂး လညာတ်ဂှ် ညး ပကိတ်ကဵု တင်ဂၞင် တူချဝ် ဗြေ မလ္ၚတ်လဝ် ဗီုဂြိုဟ်ဂမၠိုင် မဂေတ်လန်ဒၟံင်ဂမၠိုင်မ္ဂး ဟွံကိတ်ညဳ ကဵုဂၠံင်ပဝူဂြိုဟ်အၚာရ။ ဂြိုဟ်အၚာဂှ် ပါဲနူ ဂြိုဟ်မေရ်ဂျူရဳမွဲတုဲ တၟေင်တၟဟ် နူကဵုဂြိုဟ်တၞဟ်တအ်ရ။
+
+နူမဆဵုညာတ် ဗီုဏအ်ဂှ် ညးကလိဂွံ လညာတ် သၞောဝ်ပထမဂှ်ရ။
+
+ကေပ်လေရ် ပ္ဍဲသၞာံ ၁၆၂၁ ကေုာံ Godefroy Wendelin ပ္ဍဲသၞာံ ၁၆၄၃ စၟတ်သမ္တီ ဒဒှ်ရ သၞောဝ်ကေပ်လေရ်တတိယဂှ် ကိတ်ညဳဒၟံင် ကုဂိတုဂလဳလေန် (Galilean moons) ပန်မ မဒှ်ဂိတုတၟးအိုတ် ပ္ဍဲကဵု ဂြိုဟ်ဂျူပိတာ (Jupiter)။
+
+သၞောဝ်ဒုတိယ မဒှ်သၞောဝ် မဆေင်ကဵု ဨရိယာဂှ် ဒးဒုင်တးပါဲ နကဵု Nicolaus Mercator ပ္ဍဲကဵု လိက်မွဲ နူကဵု သၞာံ ၁၆၆၄ ကီုလေဝ် ဆဂး စိုပ်သၞာံ ၁၆၇၀ ဂှ် လညာတ်ဒဿနညး မကော်ဂး
+
+Philosophical Transactions (ဒဿန မဆက်စၠောအ် ပရေင်ပြံင်လှာဲ)
+
+ဂှ် ဒှ်လညာတ် မၞိဟ်မဒုင်တဲ စှ်ေစိုတ်ဂၠိုင်ရ။ ဂတဂှ် မွဲဗွဝ်ကၠံပၠန်ဂှ် လညာတ်ညးဂှ် တၠပညာတအ် ဒုင်ကၠုင်တဲ ဗွဲမလှဲလးရ။
+
+တၠပညာသင်္ချာ ကေုာံ နက္ခတ္တဗေဒ ဂကူအင်္ဂလိက် အိသက် နေဝ်တောန် (Isaac Newton) ကဵုလညာတ် ပစၟတ်သမ္တီ ဗီုညးမကၠိုဟ်ကေတ် စပ်ကဵု သၞောဝ်ဒုတိယဂှ်မ္ဂး သၞောဝ်ဒုတိယဂှ် တုပ်သၟဟ်ဒၟံင် ကုသၞောဝ်စတုရံ ဒြဟတ်ဓရေတ် ဂၠံင်ဂတး (the inverse square law of gravitation)တုဲ မဒှ်အရာ မဆက်စပ် ကုသၞောဝ်ပွူဗဂေတ်သဘာဝတုဲ သၞောဝ်တၞဟ်တအ်ဂှ် ဗဒဗဒါဲဒၟံင် ကုအရာမတံင်ဂြဲ ဗီုပြင်စတုရံဂၠံင်ဂတးရ။
+
+ကိုန်ဂစိုတ် Formulary
+
+တလုင်လအာ ဂြိုဟ်ဂမၠိုင်တအ်ဂှ် နကဵု ဗီုပြင်ဂၞန်သင်္ချာဂှ် တော်ကေတ်မာန်ဒၟံင်ရ။
+
+သၞောဝ်ကေပ်လေရ် ပထမ
+
+ဂၠံင်ပဝူ ဇၟာပ်ဂြိုဟ်တအ်ဂှ် ဒှ်ဒၟံင် ဗီုပြင်ကဝိုင်ခၜါဲမွဲ၊ တ္ၚဲဂှ် နွံဒၞာဲချိင်မွဲ ပၞောဝ်ကဵု ချိင်ၜါ။
+
+ဗီု ၂: သၞောဝ်ကေပ်လေရပ် ပထမ၊ မစွံလဝ် တ္ၚဲ ပ္ဍဲကဵု ချိင်မွဲ အပ္ဍဲ ဂၠံင်ပဝူကဝိုင်ခၜါဲ။
+
+ဗီု ၄: သၞောတ် မပံင်ဗစိုပ် မေဓနဳမဇ္ဇဟိမ (သၞောတ်တ္ၚဲမဒှ်ဗဟဵု) (
+
+r
+
+,
+
+θ
+
+) သွက် ကဝိုင်ခၜါဲ။ သီုကဵု ထ္ၜးလဝ်: ပၞောန်ဇၞော်-ကဝက် (semi-major axis)
+
+a
+
+၊ ပၞောန်ဍောတ်-ကဝက် (semi-minor axis)
+
+b
+
+ကေုာံ semi-latus rectum
+
+p
+
+; ဗဟဵု ကဝိုင်ခၜါဲ ကေုာံ ချိင်ဍေဟ်ၜါ မဍံက်လဝ် ဇၞော်ဇၞော်။ သွက်
+
+θ = 0°
+
+,
+
+r
+
+=
+
+r
+
+min
+
+ကေုာံ သွက်
+
+θ = 180°
+
+,
+
+r
+
+=
+
+r
+
+max
+
+.
+
+နကဵုသင်္ချာမ္ဂး ကဝိုင်ခၜါဲမွဲဂှ် ပစၞး နကဵုကိုန်ဂစိုတ်ဂၞန် ဗီုဏအ်ဂွံ:
+
+r
+
+=
+
+p
+
+1
+
++
+
+ε
+
+cos
+
+⁡
+
+θ
+
+,
+
+{\displaystyle r={\frac {p}{1+\varepsilon \,\cos \theta }},}
+
+ဒၞာဲ
+
+p
+
+{\displaystyle p}
+
+ဒှ်
+
+semi-latus rectum
+
+၊
+
+ε
+
+ဒှ် အရာတၟေင် ကဝိုင်ထၜါဲ၊
+
+r
+
+ဒှ် ဇမ္ၚောဲ နူကဵု တ္ၚဲ ကဵု ဂြိုဟ်ဂှ်၊ တုဲပၠန်
+
+θ
+
+ဒှ် နင် (angle) ဂြိုဟ်မတန်တဴဒၟံင် ပစ္စုပ္ပန် နူကဵု ဒၞာဲဍေဟ်မကြပ်ညောန်အိုတ်၊ မရံင် နူကဵု တ္ၚဲ။ တုဲပၠန် (
+
+r
+
+,
+
+θ
+
+) ဒှ် ဒတန်ပၞေဟ်ရိ (polar coordinates)။
+
+သွက် ကဝိုင်ထၜါဲမွဲ မနွံ 0 <
+
+ε
+
+< 1 ; in the limiting case
+
+ε
+
+= 0, the orbit is a circle with the Sun at the centre (i.e. where there is zero eccentricity).
+
+At
+
+θ
+
+= 0°,
+
+perihelion
+
+, the distance is minimum
+
+r
+
+min
+
+=
+
+p
+
+1
+
++
+
+ε
+
+{\displaystyle r_{\min }={\frac {p}{1+\varepsilon }}}
+
+At
+
+θ
+
+= 90° and at
+
+θ
+
+= 270° the distance is equal to
+
+p
+
+{\displaystyle p}
+
+.
+
+At
+
+θ
+
+= 180°,
+
+aphelion
+
+, the distance is maximum (by definition, aphelion is invariably perihelion plus 180°)
+
+r
+
+max
+
+=
+
+p
+
+1
+
+ε
+
+{\displaystyle r_{\max }={\frac {p}{1-\varepsilon }}}
+
+The
+
+semi-major axis
+
+a
+
+is the
+
+arithmetic mean
+
+between
+
+r
+
+min
+
+and
+
+r
+
+max
+
+:
+
+r
+
+max
+
+a
+
+=
+
+a
+
+r
+
+min
+
+a
+
+=
+
+p
+
+1
+
+ε
+
+2
+
+{\displaystyle {\begin{aligned}r_{\max }-a&=a-r_{\min }\\[3pt]a&={\frac {p}{1-\varepsilon ^{2}}}\end{aligned}}}
+
+The
+
+semi-minor axis
+
+b
+
+is the
+
+geometric mean
+
+between
+
+r
+
+min
+
+and
+
+r
+
+max
+
+:
+
+r
+
+max
+
+b
+
+=
+
+b
+
+r
+
+min
+
+b
+
+=
+
+p
+
+1
+
+ε
+
+2
+
+{\displaystyle {\begin{aligned}{\frac {r_{\max }}{b}}&={\frac {b}{r_{\min }}}\\[3pt]b&={\frac {p}{\sqrt {1-\varepsilon ^{2}}}}\end{aligned}}}
+
+The
+
+semi-latus rectum
+
+p
+
+is the
+
+harmonic mean
+
+between
+
+r
+
+min
+
+and
+
+r
+
+max
+
+:
+
+1
+
+r
+
+min
+
+1
+
+p
+
+=
+
+1
+
+p
+
+1
+
+r
+
+max
+
+p
+
+a
+
+=
+
+r
+
+max
+
+r
+
+min
+
+=
+
+b
+
+2
+
+{\displaystyle {\begin{aligned}{\frac {1}{r_{\min }}}-{\frac {1}{p}}&={\frac {1}{p}}-{\frac {1}{r_{\max }}}\\[3pt]pa&=r_{\max }r_{\min }=b^{2}\,\end{aligned}}}
+
+The
+
+eccentricity
+
+ε
+
+is the
+
+coefficient of variation
+
+between
+
+r
+
+min
+
+and
+
+r
+
+max
+
+:
+
+ε
+
+=
+
+r
+
+max
+
+r
+
+min
+
+r
+
+max
+
++
+
+r
+
+min
+
+.
+
+{\displaystyle \varepsilon ={\frac {r_{\max }-r_{\min }}{r_{\max }+r_{\min }}}.}
+
+The
+
+area
+
+of the ellipse is
+
+A
+
+=
+
+π
+
+a
+
+b
+
+.
+
+{\displaystyle A=\pi ab\,.}
+
+The special case of a circle is
+
+ε
+
+= 0, resulting in
+
+r
+
+=
+
+p
+
+=
+
+r
+
+min
+
+=
+
+r
+
+max
+
+=
+
+a
+
+=
+
+b
+
+and
+
+A
+
+=
+
+πr
+
+2
+
+.
+
+သၞောဝ်ကေပ်လေရ် ဒုတိယ
+
+ဒကုတ်ပဝူဂၠံင် ဂြိုဟ်မွဲ မဂေတ်ပူဒၟံင် တ္ၚဲဂှ် (နူကဵု တ္ၚဲ) ဂလိုင်ဨရိယာမတုပ်မ္ဂး လလအ်အခိင်လေဝ် တုပ်ကီု။
+
+ဨရိယာ (သၚေက်)တအ်ဂှ် လလအ်အခိင် ဂြိုဟ်မဒးဒြေပ်တုပ် ရေင်သကအ်ရ။ The same (blue) area is swept out in a fixed time period. The green arrow is velocity. The purple arrow directed towards the Sun is the acceleration. The other two purple arrows are acceleration components parallel and perpendicular to the velocity.
+
+The orbital radius and angular velocity of the planet in the elliptical orbit will vary. This is shown in the animation: the planet travels faster when closer to the Sun, then slower when farther from the Sun. Kepler's second law states that the blue sector has constant area.
+
+In a small time
+
+d
+
+t
+
+{\displaystyle dt\,}
+
+the planet sweeps out a small triangle having base line
+
+r
+
+{\displaystyle r}
+
+and height
+
+r
+
+d
+
+θ
+
+{\displaystyle r\,d\theta }
+
+and area
+
+d
+
+A
+
+=
+
+1
+
+2
+
+r
+
+r
+
+d
+
+θ
+
+{\displaystyle dA={\frac {1}{2}}\cdot r\cdot r\,d\theta }
+
+, so the constant
+
+areal velocity
+
+is
+
+d
+
+A
+
+d
+
+t
+
+=
+
+r
+
+2
+
+2
+
+d
+
+θ
+
+d
+
+t
+
+.
+
+{\displaystyle {\frac {dA}{dt}}={\frac {r^{2}}{2}}{\frac {d\theta }{dt}}.}
+
+The area enclosed by the elliptical orbit is
+
+π
+
+a
+
+b
+
+.
+
+{\displaystyle \pi ab.\,}
+
+So the period
+
+P
+
+{\displaystyle P}
+
+satisfies
+
+P
+
+r
+
+2
+
+2
+
+d
+
+θ
+
+d
+
+t
+
+=
+
+π
+
+a
+
+b
+
+{\displaystyle P\cdot {\frac {r^{2}}{2}}{\frac {d\theta }{dt}}=\pi ab}
+
+and the
+
+mean motion
+
+of the planet around the Sun
+
+n
+
+=
+
+2
+
+π
+
+P
+
+{\displaystyle n={\frac {2\pi }{P}}}
+
+satisfies
+
+r
+
+2
+
+d
+
+θ
+
+=
+
+a
+
+b
+
+n
+
+d
+
+t
+
+.
+
+{\displaystyle r^{2}\,d\theta =abn\,dt.}
+
+သၞောဝ်ကေပ်လေရ် တတိယ
+
+The
+
+square
+
+of the
+
+orbital period
+
+of a planet is directly
+
+proportional
+
+to the
+
+cube
+
+of the
+
+semi-major axis
+
+of its orbit.
+
+This captures the relationship between the distance of planets from the Sun, and their orbital periods.
+
+Kepler enunciated in 1619
+
+this third law in a laborious attempt to determine what he viewed as the "
+
+music of the spheres
+
+" according to precise laws, and express it in terms of musical notation.
+
+So it was known as the
+
+harmonic law
+
+.
+
+Using Newton's Law of gravitation (published 1687), this relation can be found in the case of a circular orbit by setting the
+
+centripetal force
+
+equal to the gravitational force:
+
+m
+
+r
+
+ω
+
+2
+
+=
+
+G
+
+m
+
+M
+
+r
+
+2
+
+{\displaystyle mr\omega ^{2}=G{\frac {mM}{r^{2}}}}
+
+Then, expressing the angular velocity in terms of the orbital period and then rearranging, we find Kepler's Third Law:
+
+m
+
+r
+
+(
+
+2
+
+π
+
+T
+
+)
+
+2
+
+=
+
+G
+
+m
+
+M
+
+r
+
+2
+
+T
+
+2
+
+=
+
+(
+
+4
+
+π
+
+2
+
+G
+
+M
+
+)
+
+r
+
+3
+
+T
+
+2
+
+r
+
+3
+
+{\displaystyle mr\left({\frac {2\pi }{T}}\right)^{2}=G{\frac {mM}{r^{2}}}\rightarrow T^{2}=\left({\frac {4\pi ^{2}}{GM}}\right)r^{3}\rightarrow T^{2}\propto r^{3}}
+
+A more detailed derivation can be done with general elliptical orbits, instead of circles, as well as orbiting the center of mass, instead of just the large mass. This results in replacing a circular radius,
+
+r
+
+{\displaystyle r}
+
+, with the semi-major axis,
+
+a
+
+{\displaystyle a}
+
+, of the elliptical relative motion of one mass relative to the other, as well as replacing the large mass
+
+M
+
+{\displaystyle M}
+
+with
+
+M
+
++
+
+m
+
+{\displaystyle M+m}
+
+. However, with planet masses being so much smaller than the Sun, this correction is often ignored. The full corresponding formula is:
+
+a
+
+3
+
+T
+
+2
+
+=
+
+G
+
+(
+
+M
+
++
+
+m
+
+)
+
+4
+
+π
+
+2
+
+G
+
+M
+
+4
+
+π
+
+2
+
+7.496
+
+10
+
+6
+
+(
+
+AU
+
+3
+
+days
+
+2
+
+)
+
+is constant
+
+{\displaystyle {\frac {a^{3}}{T^{2}}}={\frac {G(M+m)}{4\pi ^{2}}}\approx {\frac {GM}{4\pi ^{2}}}\approx 7.496\cdot 10^{-6}\left({\frac {{\text{AU}}^{3}}{{\text{days}}^{2}}}\right){\text{ is constant}}}
+
+where
+
+M
+
+{\displaystyle M}
+
+is the
+
+mass of the Sun
+
+,
+
+m
+
+{\displaystyle m}
+
+is the mass of the planet, and
+
+G
+
+{\displaystyle G}
+
+is the
+
+gravitational constant
+
+,
+
+T
+
+{\displaystyle T}
+
+is the orbital period and
+
+a
+
+{\displaystyle a}
+
+is the elliptical semi-major axis.
+
+The following table shows the data used by Kepler to empirically derive his law:
+
+Upon finding this pattern Kepler wrote:
+
+"I first believed I was dreaming But it is absolutely certain and exact that the ratio which exists between the period times of any two planets is precisely the ratio of the 3/2th power of the mean distance."
+
+translated from
+
+Harmonies of the World
+
+by Kepler (1619)
+
+Log-log plot of the semi-major axis (in Astronomical Units) versus the orbital period (in terrestrial years) for the eight planets of the Solar System.
+
+For comparison, here are modern estimates:
+
+Notes
+
+Godefroy Wendelin wrote a letter to Giovanni Battista Riccioli about the relationship between the distances of the Jovian moons from Jupiter and the periods of their orbits, showing that the periods and distances conformed to Kepler's third law. See: Joanne Baptista Riccioli,
+
+Almagestum novum
+
+ (Bologna (Bononia), (Italy): Victor Benati, 1651), volume 1,
+
+page 492 Scholia III.
+
+In the margin beside the relevant paragraph is printed:
+
+Vendelini ingeniosa speculatio circa motus & intervalla satellitum Jovis
+
+. (Wendelin's clever speculation about the movement and distances of Jupiter's satellites.)
+
+In 1621, Johannes Kepler had noted that Jupiter's moons obey (approximately) his third law in his
+
+Epitome Astronomiae Copernicanae
+
+[Epitome of Copernican Astronomy] (Linz ("Lentiis ad Danubium"), (Austria): Johann Planck, 1622), book 4, part 2,
+
+page 554
+
+.
+
+နိဿဲ
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"

@@ -1,0 +1,314 @@
+ဂေသြမေတြဳ
+
+An illustration of Desargues' theorem, a result in Euclidean and projective geometry
+
+ဂေသြမေတြဳ
+
+(
+
+အၚ်္ဂလိက်
+
+:
+
+Geometry
+
+) (နူ ဂရိတ်တြေံ: γεωμετρία;
+
+geo-
+
+"တိ",
+
+-metron
+
+"ဗ္ၜတ်") ဂှ် ဒှ်လစှ်ေ ကွတ်သင်္ချာ တြေံအိုတ်မွဲရ။ ဂေသြမေတြဳဂှ် ဒှ်ကွတ်တၟော် သွက်ဂွံတီ ဇမၞော်၊ သမၠဲ၊ ဇမ္ၚောဲ၊ သဏ္ဌာန်၊ ကေုာံ ဒတန်ဒမံင် ဗီုရုပ်တအ်ရ။
+
+အစာဂၞန် မကၠောန်ကမၠောန် ပ္ဍဲကဵု ဘာသာဏအ်ဂှ် ညးကော်စ ဂေသြမေတာ (geometer) (ဝါ) သၟာဂေသြမေတြဳ။
+
+စဵုကဵု ၁၉ ဗွဝ်ကၠံ၊ အရာမတော် မပ္တံကဵု ကၞောတ် (point)၊ (line) (plane) (distance) (angle) (surface) ကေုာံ (curve) တအ်ဂှ် ဟွံပၠုပ်အဝေါင် အပ္ဍဲကဵု ဂေသြမေတြဳဏီရ။ အရာတအ်ဂှ် နကဵု တၠပညာယူကလိဒ် ပၠုပ်စုတ်တုဲ ကလိဂွံအာ ယၟု ယူကလိဒ်ဂေသြမေတြဳ (Euclidean geometry) ရ။
+
+ပ္ဍဲအခိင်ကာလ ၁၉ ဗွဝ်ကၠံဂှ် သဏ္ဌာန်ဂၞန် ဗွဲမဂၠိုင် တၠပညာတအ် ကၠာဲဆဵုကေတ်တုဲ စုတ်ပၠုပ် အပ္ဍဲကဵု ဂေသြမေတြဳ တုဲ ပညာဂေသြမေတြဳလေဝ် လှဲလးအာဗွဲမလောန်ကီုရ။ ပၞောဝ်ကဵု တေသြရဳ တၠပညာတအ် မဂွံဆဵုကေတ်ဂမၠိုင်ဂှ် တၠပညာဂကူဂျာမာန် ကာရ်ဖြိဒြိချ် ဂုသ် (
+
+Carl Friedrich Gauss)
+
+မဂွံဆဵုကေတ်လဝ် မကော်ဂး Gauss' Theorema Egregium မဒှ်တေသြရဳ မတော်ဇမၞော်ဗလးဂမၠိုင်ဂှ် ဒှ်တေသြရဳ တၟေင်မွဲရ။
+
+လညာတ်အဓိက ပ္ဍဲ ဂေသြမေတြဳ
+
+သၟဝ်ဏအ်ဂှ် ဗၟံက်ထ္ၜးကဵု လညာတ်အဓိက လ္ၚဵု ပ္ဍဲ ကဵုဂေသြမေတြဳ။
+
+အက်ဇြိသောမ် (Axiom)
+
+ဗမံက်ထ္ၜး ပေါသတုလိတ် ကဝါန် ယူကလိဒ် (An illustration of Euclid's parallel postulate)
+
+အက်ဇြိသောမ် (axiom)၊ ပေါသတုလိက် (postulate)၊ ဟွံသေင်မ္ဂး အဿုမ်ရှေန် (assumption) တအ်ဂှ် ဒှ်ဝေါဟာရသင်္ချာ ဒဒှ်ရ မဗၟံက်ထ္ၜး ဒှ်အရာမဍာံစၟတ်ရ။
+
+အက်ဇြိသောမ်ဂှ် ကၠုင်နူ အရေဝ်ဂရိတ် ξίωμα (axíōma) မဂွံအဓိပ္ပါယ် သက်သဳ သာဓက၊ ဇၟာပ်အရာပိုယ်မဟီုဂှ် ဒှ်ဂလာန်မဍာံစၟတ်ဂှ် ထ္ၜးသက်သဳ သာဓက ရ။
+
+နဲကဲ ယူကလိဒ် (Euclid) မစကာ ဂေသြမေတြဳဂှ် ဒှ်နဲကဲ မချပ်ဗစာ မနွံကဵုသက်သဳသာဓကတုဲ
+
+လိက်ညးဂှ် ဒှ်လိက်ကိစ္စဇၞော်တုဲ စကာဂၠိုင်အိုတ် ၜိုတ်လိက်မကေင်ချူလဝ်တအ်ဂှ်ရ။
+
+ယူကလိဒ် ညးဗၟံက်ထ္ၜးကဵု အက်ဇြိယောမ်ဂမၠိုင်၊ ပေါသတုလိဂမၠိုင် (postulates)၊ လဟီုအဓိက (expressing primary)၊ သက်သဳ-အလဵုဇကု မဆေင်ကဵု ဒြပ် ဒဒက်တဴ ကုဍံက်ဂမၠိုင် (point)၊ ပၞောန် (line)၊ ကေုာံ ဗလးဂမၠိုင် (plane)ရ။
+
+နဲကဲညးဂှ် ပသောင်ကလးကဵု သွဟ်ဂၞန်တၞဟ်တၟာဂလိုင်ရ။ နဲကဲတော် ဂေသြမေတြဳ ယူကလိဒ်ဂှ် ဇြိုဟ်နက်၊ ဝါတ်ဂါတ်တုဲ ညးကော်စ အက်ဇြိသောမ်တိစ် ဟွံသေင်မ္ဂး သုန်ထေတိစ် ဂေသြမေတြဳ (
+
+axiomatic
+
+or
+
+synthetic
+
+geometry)။
+
+ဍံက်ဂမၠိုင် (Points)
+
+ဍံက် ဟီုမ္ဂးဂှ် လတူဗလးမွဲဂှ် ဒၞာဲမဍံက်စၟတ်သမ္တီလဝ်ဂှ် ညးကော်စ ဍံက်ရ။ ပ္ဍဲကဵု ယူကလိဒ်ဂေသြမေတြဳမ္ဂး ဍံက်ဂှ် ဒှ်အရာတမ်မူလရ။ ပွံက်အဓိပ္ပါယ် ဍံက်ဂှ် ပံက်လဝ် နွံနာနာသာ် အလဵုဇကု ယူကလိဒ်ဂှ် ပံက်လဝ် 'မဒှ်အရာ မဟွံမဲ ကုလစှ်ေ (that which has no part)'
+
+တုဲ အလုံမွဲမစကာ အလ်ဂေဗြာ (algebra)။
+
+ပ္ဍဲကဵု ဨရိယာ ဂေသြမေတြဳ မပ္တံကဵု (analytic geometry)၊ (differential geometry)၊ ကေုာံ topology၊ အရာအိုတ်သီုဂှ် စၟတ်သမ္တီလဝ် ဒဒှ်ရ မဒက်ပ္တန်လဝ် နူကဵု ဍံက်ဂမၠိုင်ရ။ ဆဂး ဂေသြမေတြဳလ္ၚဵုဂှ် ဟွံစ နကဵု ဍံက်လေဝ် နွံကီုရ။
+
+ပၞောန်ဂမၠိုင် (Lines)
+
+ယူကလိဒ် ဗၟံက်ထ္ၜးလဝ် ပၞောန်မွဲဂှ် ဒှ် "ဇမၠိင် မသက်ကုကၞောတ်" မဒှ် အရာ "မနွံဒၟံင် ဗွဲမတုပ်သၟဟ် အပိုင်အခြာ အပ္ဍဲ ဍံက်ဂမၠိုင်ရ။"
+
+ပ္ဍဲကဵု သင်္ချာခေတ်တၟိဂမၠိုင်မ္ဂး လညာတ်သမ္တီ ပၞောန်မွဲဂှ် မတုပ်ကဵု အပိုင်အခြာ မဗၟံက်ထ္ၜးလဝ် ဂေသြမေတြဳရ။ ဥပမာ ပ္ဍဲကဵု In modern mathematics, given the multitude of geometries, the concept of a line is closely tied to the way the geometry is described. For instance, in analytic geometry, a line in the plane is often defined as the set of points whose coordinates satisfy a given linear equation,
+
+but in a more abstract setting, such as incidence geometry, a line may be an independent object, distinct from the set of points which lie on it. In differential geometry, a geodesic is a generalization of the notion of a line to curved spaces.
+
+ဗလးဂမၠိုင် (Planes)
+
+ဗလး ဟီုဂှ် ဒှ်ဒၞာဲ၊ ဗၞတ်ဗ္ၜတ်ပမာဏ (ဨရိယာ)။
+
+ဗလးဂှ် စကာ ပ္ဍဲကဵုကာလမတော် ဨရိယာ ဂေသြမေတြဳ။ ဥပမာ ဗလးဂှ် တော်လ္ၚတ် ဇမၞော်ဗလးမုက်မွဲမွဲတအ်ဒှ်တမ်ရ။
+
+ဒကဴဂမၠိုင် (Angles)
+
+Euclid defines a plane angle as the inclination to each other, in a plane, of two lines which meet each other, and do not lie straight with respect to each other.
+
+In modern terms, an angle is the figure formed by two rays, called the
+
+sides
+
+of the angle, sharing a common endpoint, called the
+
+vertex
+
+of the angle.
+
+Acute (a), obtuse (b), and straight (c) angles. The acute and obtuse angles are also known as oblique angles.
+
+သဏ္ဌာန် ဂေသြမေတြဳဂမၠိုင်
+
+ဝိုင်စက် (Circle) - မဒှ် သဏ္ဌာန် မဂေတ် နကဵု နူကဵု ဍံက်လဒေါဝ် မနွံကဵု raius တုပ်ပ်။ ဥပမာ - သၠာကွဳ။
+
+စတုဂံ (ပန်ကၠင်) (Square) - မဒှ် သဏ္ဌာန် မနွံကဵု ပန်ကရေက် ဇမၠိင်တုပ်တုဲ နွံကဵု ဒကဴမတုပ်။ e.g., a garage, square rubber stamps, tiles on the floor
+
+တြိဂံ (ပိကၠင်) (Triangle) - မဒှ် သဏ္ဌာန် မနွံကဵု ပိကရေက်တပ်ပ်။ e.g., a slice of pizza, a slice of cheese cut in that shape, a sandwich cut diagonally
+
+Rectangle: Four straight sides with four right angles, different length and width
+e.g., apartment buildings, hopscotch board, a book cover, most cell phones
+
+Pentagon: Five straight sides, typically of equal length
+e.g., The Pentagon, the designs found on soccer balls
+
+Hexagon: Six straight sides, typically of equal length
+e.g., ice crystals, some snowflakes, beehive cells
+
+Heptagon: Seven straight sides, typically of equal length
+e.g., covers for a cookie bin, some types of pill boxes
+
+Octagon: Eight straight sides, typically of equal length
+e.g., stop sign, some umbrellas, UFC ring
+
+Nonagon: Nine straight sides, typically of equal length
+e.g., lids for some types of cookie bins/containers
+
+Decagon: 10 straight sides, typically of equal length
+e.g., certain collectors coins
+
+Trapezoid: Four-sided figure with just one pair of parallel sides
+e.g., the trusses on some bridges, a pyramid with the top cut off, a popcorn box
+
+Parallelogram: Four-sided figure with two pairs of parallel sides
+e.g., a classic eraser, some purses, the structure of some bridges
+
+Rhombus: A parallelogram with equal length sides
+e.g., baseball diamonds, some kites, certain crystals
+
+Star: A multi-sided polygon with points and obtuse angles
+e.g., Star of David, star stickers, star necklace, star cookie cutters
+
+Crescent: A curved sickle shape, curved and tapers to a point
+e.g., crescent rolls, the moon during certain phases, the curved shape on the flags of Pakistan and Turkey
+
+Oval: A stretched out circle where the radius is shorter on one axis than the other
+e.g., eggs, buns for a hot dog, a running track
+
+Semicircle: A circle cut exactly in half along its diameter
+e.g., half a cookie, half a pizza pie, other incomplete circles
+
+Cylinder: A three-dimensional figure with parallel sides and a circular cross-section
+e.g., cardboard inside a paper towel, a straight pipe, a drinking glass
+
+Prism: A three-dimensional figure where one pair of opposite sides are the same shape, connected by straight, parallel sides
+e.g., cardboard box, cameras, cereal box, Toblerone box
+
+Pyramid: A three-dimensional figure with one flat side and edges emerging to come together at a point
+e.g., the Great Pyramid of Giza, roof of a house
+
+နိဿဲ
+
+PaulAppall
+
+Vincenzo De Risi (31 January 2015).
+
+Mathematizing Space: The Objects of Geometry from Antiquity to the Early Modern Age
+
+. Birkhäuser, 1 .
+
+ISBN 978-3-319-12102-4
+
+။
+
+၂.၀
+
+၂.၁
+
+Tabak, John (2014).
+
+Geometry: the language of space and form
+
+. Infobase Publishing, xiv.
+
+ISBN 978-0816049530
+
+။
+
+Morris Kline (March 1990).
+
+Mathematical Thought From Ancient to Modern Times: Volume 3
+
+. Oxford University Press, USA.
+
+ISBN 978-0-19-506137-6
+
+။
+
+Cf. axiom, n., etymology.
+
+Oxford English Dictionary
+
+, accessed 2012-04-28.
+
+Oxford American College Dictionary: "n. a statement or proposition that is regarded as being established, accepted, or self-evidently true. ORIGIN: late 15th cent.: ultimately from Greek axiōma 'what is thought fitting,' from axios 'worthy.'
+
+HighBeam
+
+[
+
+dead link
+
+]
+
+ထာမ်ပလိက်:Cbignore
+
+ထာမ်ပလိက်:Subscription
+
+Axiom Powszechna Encyklopedia Filozofii
+
+.
+
+Victor J. Katz (21 September 2000).
+
+Using History to Teach Mathematics: An International Perspective
+
+. Cambridge University Press.
+
+ISBN 978-0-88385-163-0
+
+။
+
+David Berlinski (8 April 2014).
+
+The King of Infinite Space: Euclid and His Elements
+
+. Basic Books.
+
+ISBN 978-0-465-03863-3
+
+။
+
+Robin Hartshorne (11 November 2013).
+
+Geometry: Euclid and Beyond
+
+. Springer Science & Business Media.
+
+ISBN 978-0-387-22676-7
+
+။
+
+Pat Herbst (16 March 2017).
+
+The Learning and Teaching of Geometry in Secondary Schools: A Modeling Perspective
+
+. Taylor & Francis.
+
+ISBN 978-1-351-97353-3
+
+။
+
+၁၁.၀
+
+၁၁.၁
+
+၁၁.၂
+
+၁၁.၃
+
+Euclid's Elements All thirteen books in one volume
+
+, Based on Heath's translation, Green Lion Press
+
+ISBN
+
+1-888009-18-7
+
+.
+
+Clark. "Individuals and Points": 61 75.
+
+Gerla, G. (1995). "Pointless Geometries", in Buekenhout, F.:
+
+Handbook of incidence geometry: buildings and foundations
+
+. North-Holland, 1015 1031။
+
+Analytic Geometry of the Point, Line, Circle, and Conic Sections
+
+။
+
+geodesic definition of geodesic in English from the Oxford dictionary
+
+.
+
+OxfordDictionaries.com
+
+. Archived from
+
+the original
+
+on
+
+2016-07-15
+
+။ Retrieved on
+
+2020-11-17
+
+။
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"

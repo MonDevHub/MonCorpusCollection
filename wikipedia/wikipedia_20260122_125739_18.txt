@@ -1,0 +1,1484 @@
+PH
+
+Test tubes containing solutions of pH 1 10 colored with an indicator.
+
+ပ္ဍဲဓါတု
+
+pH
+
+(
+
+/
+
+p
+
+iː
+
+ˈ
+
+eɪ
+
+tʃ
+
+/
+
+, မဖဍန်လဝ် 'potential of hydrogen' ဟွံသေင်မ္ဂး 'power of hydrogen'
+
+အစောမ်သတ္တိ ဟဳဒြောဂေန်(ဍာ်)) ဂှ် ဒှ်စၟတ်သမ္တီ သွက်ဂွံၜတ်ကၞာတ် ဗစး (acidity) ဟွံသေင်မ္ဂး ဖမျိုတ် (basicity) ပ္ဍဲကဵုဍာ်ရ။ ဗစး (ပ္ဍဲအရာဍာ်ဍာ်မွဲ နွံကဵု H<sup id="mwHQ">+</sup> ဂၠိုင်)ဂှ် လၟိဟ်င္ၚုဟ်မး pH အောန်နူကဵု အရာဍာ်ဍာ် မနွံကဵု ဓါတ်ဖျိုတ် (ဝါ) င္ၚုဟ်မး pH အောန်ခ္ဍင် ဖျးဂၠိုင်ခဍင်တုဲ င္ၚုဟ်မး pH ဂၠိုင်ခဍင် ရှ်ဖျိုတ်ဂၠိုင်ခဍင်ရ။
+
+ဗၜတ် pH ဂှ် ဒှ်နဲကဲသင်္ချာလောဂ် (logarithmic) မတော်ဂၠာဲ ဂလိုင် ဓါတ်ဟဳဒြောဂေန် (hydrogen) (ဝါ) ဓါတ်ဍာ် မကောံနွံ ပ္ဍဲအရာမွဲမွဲရ။ ဖဝ်မူလာ (formula) သင်္ချာဏအ်ဂှ် ဟိုတ်မစကာ အနုက် ၁၀ လောဂ် ပ္ဍဲကဵုဓါတ်ဍာ်ရ။ ဟီုမွဲနဲပၠန် pH ဂှ် ဒှ်အနုက် ၁၀ လောဂ် ဒဒက်တဴ ကုဒချဳဒရာင် H<sup id="mwKQ">+</sup> ion ရ။
+
+ပ္ဍဲကဵု ကမ္တဴ 25 °C အရာဍာ်ဍာ်ဂှ် ယဝ်ရ pH အောန်နူ ၇ မ္ဂး ဖျးအာ၊ တုဲပၠန် အရာဍာ်ဍာ်ဂှ် ယဝ်ရ pH ဂၠိုင်နူ ၇ မ္ဂး ဖျိုတ်အာ။ အရာဍာ်ဍာ်ဂှ် ပ္ဍဲကဵု ကမ္တဴဂှ် ယဝ်ရ pH နွံ ၇ မ္ဂး တန်ကြန် (ဥပမာ ဍာ်ပလး နွံ pH ၇ ဟိုတ်ဂှ်ရ ဟွံဖျး ဟွံဖျိုတ်)။ င္ၚုဟ်မး pH ဂှ် နွံအောန်နူ ၀ ဒှ်မာန်၊ ယဝ်ရ အရာဂှ် ဖျးကွေဟ်ဟ် (အေက်သိဒ် ကြံင်င်)၊ ညံင်ရဴဂှ်ကီု ယဝ်ရ ဖျိုတ်လောန်ကာဲမ္ဂး င္ၚုဟ်မး သၠုင်နူ ၁၄ လေဝ် ဒှ်မာန်ကီုရ။
+
+ဝင်
+
+လညာတ် pH ဂှ် ညးမဗၟံက်ထ္ၜးကိုပ်ကၠာအိုတ်ဂှ် ဒှ်အစာဓာတု ဂကူဒိန်နေတ် သောန်ပဳတာလူရိတ်သောန်သာန် (Søren Peder Lauritz Sørensen) ပ္ဍဲကဵု ဒၞာဲစွမ်ဓါတ် ကာလ်ဗာ (Carlsberg Laboratory) ပ္ဍဲသၞာံ ၁၉၀၉
+
+တုဲ ဗွဲကြဴ ကလေင်ပညဳပလေဝ် ပ္ဍဲသၞာံ ၁၉၂၄ မပကိတ်ပညဳ ကုလၟိဟ်ဂၞန် ဓါတုအဳလေက်တြော ရ။ ပ္ဍဲကဵု လိက်စံင်ညးကိုပ်ကၠာအိုတ်ဂှ် ညးချူလဝ် နကဵုသင်္ကေတ H
+
+ကု
+
+p
+
+, နကဵုဗီုဏအ် p
+
+H
+
+ ရ။
+
+ညးမခၞံဗဒှ် ကိရိယာစက် သွက်ဂွံစမ် pH ကိုပ်ကၠာအိုတ်ဂှ် ဒှ် အာနောလ်ဒ် သြရ်ဝိလ္လေ ဗေက်မေန် (Arnold Orville Beckman) ညးမဒှ် ပါမောက္ခ ပ္ဍဲကဵု အေန်သတဳကျုတ် ကွတ်စက် ကာလဳဖေါရ်နဳယာ (California Institute of Technology) ပ္ဍဲ သၞာံ ၁၉၃၄။
+
+တင်ရန်တၟအ် မဂွံခၞံဗဒှ်ဂှ် တၞဟ်နမိက်ဂွံစမ် pH ပ္ဍဲပၞဴ ပရိုက်ဂမၠိုင်တုဲ ဂွံတီ တိဗီုလဵု ဍေဟ်ဒးစိုတ်ဂၠိုင်ရ။
+
+ပွံက် ကေုာံ ဗၜတ်
+
+pH
+
+pH ဂှ် ပံက်လဝ် အဓိပ္ပါယ် နကဵုနဲဂၞန်လောဂ် ပ္ဍဲကဵု ဓါတ်ဟဳဒြောဂေန် မချဳဓရာင်
+
+a
+
+H
+
++, ပ္ဍဲကဵု အရာဍာ်ဍာ်။
+
+pH
+
+=
+
+log
+
+10
+
+⁡
+
+(
+
+a
+
+H
+
++
+
+)
+
+=
+
+log
+
+10
+
+⁡
+
+(
+
+1
+
+a
+
+H
+
++
+
+)
+
+{\displaystyle {\ce {pH}}=-\log _{10}(a_{{\ce {H+}}})=\log _{10}\left({\frac {1}{a_{{\ce {H+}}}}}\right)}
+
+ဥပမာ၊
+
+For example, for a solution with a hydrogen ion activity of 5×10 6 (at that level, this is essentially the number of moles of hydrogen ions per litre of solution) there is 1/(5×10 6) = 2×105, thus such a solution has a pH of log10(2×105) = 5.3. Consider the following example: a quantity of 10
+
+7
+
+moles of pure (pH 7) water, or 180 metric tonnes (18×10
+
+7
+
+g), contains close to 18 g of dissociated hydrogen ions.
+
+Note that pH depends on temperature. For instance at 0 °C the pH of pure water is about 7.47. At 25 °C it is 7.00, and at 100 °C it is 6.14.
+
+This definition was adopted because ion-selective electrodes, which are used to measure pH, respond to activity. Ideally, electrode potential,
+
+E
+
+, follows the Nernst equation, which, for the hydrogen ion can be written as
+
+E
+
+=
+
+E
+
+0
+
++
+
+R
+
+T
+
+F
+
+ln
+
+⁡
+
+(
+
+a
+
+H
+
++
+
+)
+
+=
+
+E
+
+0
+
+2.303
+
+R
+
+T
+
+F
+
+pH
+
+{\displaystyle E=E^{0}+{\frac {RT}{F}}\ln(a_{{\ce {H+}}})=E^{0}-{\frac {2.303RT}{F}}{\ce {pH}}}
+
+where
+
+E
+
+is a measured potential,
+
+E
+
+0
+
+is the standard electrode potential,
+
+R
+
+is the gas constant,
+
+T
+
+is the temperature in kelvins,
+
+F
+
+is the Faraday constant. For H
+
++
+
+number of electrons transferred is one. It follows that electrode potential is proportional to pH when pH is defined in terms of activity. Precise measurement of pH is presented in International Standard ISO 31-8 as follows: A galvanic cell is set up to measure the electromotive force (e.m.f.) between a reference electrode and an electrode sensitive to the hydrogen ion activity when they are both immersed in the same aqueous solution. The reference electrode may be a silver chloride electrode or a calomel electrode. The hydrogen-ion selective electrode is a standard hydrogen electrode.
+
+Reference electrode | concentrated solution of KCl || test solution | H
+
+2
+
+| Pt
+
+[
+
+clarification needed
+
+]
+
+Firstly, the cell is filled with a solution of known hydrogen ion activity and the emf,
+
+E
+
+S
+
+, is measured. Then the emf,
+
+E
+
+X
+
+, of the same cell containing the solution of unknown pH is measured.
+
+pH
+
+(
+
+X
+
+)
+
+=
+
+pH
+
+(
+
+S
+
+)
+
++
+
+E
+
+S
+
+E
+
+X
+
+z
+
+{\displaystyle {\ce {pH(X)}}={\ce {pH(S)}}+{\frac {E_{{\ce {S}}}-E_{{\ce {X}}}}{z}}}
+
+The difference between the two measured emf values is proportional to pH. This method of calibration avoids the need to know the standard electrode potential. The proportionality constant, 1/
+
+z
+
+is ideally equal to
+
+1
+
+2.303
+
+R
+
+T
+
+/
+
+F
+
+{\displaystyle {\frac {1}{2.303RT/F}}\ }
+
+the "Nernstian slope".
+
+To apply this process in practice, a glass electrode is used rather than the cumbersome hydrogen electrode. A combined glass electrode has an in-built reference electrode. It is calibrated against buffer solutions of known hydrogen ion activity. IUPAC has proposed the use of a set of buffer solutions of known H
+
++
+
+activity.
+
+Two or more buffer solutions are used in order to accommodate the fact that the "slope" may differ slightly from ideal. To implement this approach to calibration, the electrode is first immersed in a standard solution and the reading on a pH meter is adjusted to be equal to the standard buffer's value. The reading from a second standard buffer solution is then adjusted, using the "slope" control, to be equal to the pH for that solution. Further details, are given in the IUPAC recommendations. When more than two buffer solutions are used the electrode is calibrated by fitting observed pH values to a straight line with respect to standard buffer values. Commercial standard buffer solutions usually come with information on the value at 25 °C and a correction factor to be applied for other temperatures.
+
+The pH scale is logarithmic and therefore pH is a dimensionless quantity.
+
+p[H]
+
+This was the original definition of Sørensen in 1909,
+
+which was superseded in favor of pH in 1924. [H] is the concentration of hydrogen ions, denoted [H
+
++
+
+] in modern chemistry, which appears to have units of concentration. More correctly, the thermodynamic activity of H
+
++
+
+in dilute solution should be replaced by [H
+
++
+
+]/c
+
+0
+
+, where the standard state concentration c
+
+0
+
+= 1 mol/L. This ratio is a pure number whose logarithm can be defined.
+
+However, it is possible to measure the concentration of hydrogen ions directly, if the electrode is calibrated in terms of hydrogen ion concentrations. One way to do this, which has been used extensively, is to titrate a solution of known concentration of a strong acid with a solution of known concentration of strong alkaline in the presence of a relatively high concentration of background electrolyte. Since the concentrations of acid and alkaline are known, it is easy to calculate the concentration of hydrogen ions so that the measured potential can be correlated with concentrations. The calibration is usually carried out using a Gran plot.
+
+Thus, the effect of using this procedure is to make activity equal to the numerical value of concentration.
+
+The glass electrode (and other ion selective electrodes) should be calibrated in a medium similar to the one being investigated. For instance, if one wishes to measure the pH of a seawater sample, the electrode should be calibrated in a solution resembling seawater in its chemical composition, as detailed below.
+
+The difference between p[H] and pH is quite small. It has been stated that pH = p[H] + 0.04. It is common practice to use the term "pH" for both types of measurement.
+
+pH indicators
+
+Indicators may be used to measure pH, by making use of the fact that their color changes with pH. Visual comparison of the color of a test solution with a standard color chart provides a means to measure pH accurate to the nearest whole number. More precise measurements are possible if the color is measured spectrophotometrically, using a colorimeter or spectrophotometer.
+Universal indicator consists of a mixture of indicators such that there is a continuous color change from about pH 2 to pH 10. Universal indicator paper is made from absorbent paper that has been impregnated with universal indicator. Another method of measuring pH is using an electronic pH meter.
+
+pOH
+
+Relation between p[OH] and p[H] (red = acidic region, blue = basic region)
+
+pOH is sometimes used as a measure of the concentration of hydroxide ions, OH
+
+. pOH values are derived from pH measurements. The concentration of hydroxide ions in water is related to the concentration of hydrogen ions by
+
+[
+
+OH
+
+]
+
+=
+
+K
+
+W
+
+[
+
+H
+
++
+
+]
+
+{\displaystyle [{\ce {OH^-}}]={\frac {K_{{\ce {W}}}}{[{\ce {H^+}}]}}}
+
+where
+
+K
+
+W
+
+is the self-ionization constant of water. Taking logarithms
+
+pOH
+
+=
+
+p
+
+K
+
+W
+
+pH
+
+{\displaystyle {\ce {pOH}}={\ce {p}}K_{{\ce {W}}}-{\ce {pH}}}
+
+So, at room temperature, pOH 14 pH. However this relationship is not strictly valid in other circumstances, such as in measurements of soil alkalinity.
+
+Extremes of pH
+
+Measurement of pH below about 2.5 (ca. 0.003 mol dm
+
+ 3
+
+acid) and above about 10.5 (ca. 0.0003 mol dm
+
+ 3
+
+alkaline) requires special procedures because, when using the glass electrode, the Nernst law breaks down under those conditions. Various factors contribute to this. It cannot be assumed that liquid junction potentials are independent of pH.
+
+Also, extreme pH implies that the solution is concentrated, so electrode potentials are affected by ionic strength variation. At high pH the glass electrode may be affected by "alkaline error", because the electrode becomes sensitive to the concentration of cations such as Na
+
++
+
+and K
+
++
+
+in the solution. Specially constructed electrodes are available which partly overcome these problems.
+
+Runoff from mines or mine tailings can produce some very low pH values.
+
+Non-aqueous solutions
+
+Hydrogen ion concentrations (activities) can be measured in non-aqueous solvents. pH values based on these measurements belong to a different scale from aqueous pH values, because activities relate to different standard states. Hydrogen ion activity,
+
+a
+
+H
+
++
+
+, can be defined as:
+
+a
+
+H
+
++
+
+=
+
+exp
+
+⁡
+
+(
+
+μ
+
+H
+
++
+
+μ
+
+H
+
++
+
+R
+
+T
+
+)
+
+{\displaystyle a_{{\ce {H+}}}=\exp \left({\frac {\mu _{{\ce {H+}}}-\mu _{{\ce {H+}}}^{\ominus }}{RT}}\right)}
+
+where
+
+μ
+
+H
+
++
+
+is the chemical potential of the hydrogen ion,
+
+μ
+
+H
+
++
+
+{\displaystyle \mu _{{\ce {H+}}}^{\ominus }}
+
+is its chemical potential in the chosen standard state,
+
+R
+
+is the gas constant and
+
+T
+
+is the thermodynamic temperature. Therefore, pH values on the different scales cannot be compared directly due to different solvated proton ions such as lyonium ions, requiring an intersolvent scale which involves the transfer activity coefficient of hydronium/lyonium ion.
+
+pH is an example of an acidity function. Other acidity functions can be defined. For example, the Hammett acidity function,
+
+H
+
+0
+
+, has been developed in connection with superacids.
+
+Unified absolute pH scale
+
+The concept of "unified pH scale" has been developed on the basis of the absolute chemical potential of the proton. This model uses the Lewis acid base definition. This scale applies to liquids, gases and even solids.
+
+In 2010, a new "unified absolute pH scale" has been proposed that would allow various pH ranges across different solutions to use a common proton reference standard.
+
+ဗီုမစကာ
+
+Pure water is neutral. When an acid is dissolved in water, the pH will be less than 7 (25 °C). When a base, or alkali, is dissolved in water, the pH will be greater than 7. A solution of a strong acid, such as hydrochloric acid, at concentration 1 mol dm
+
+ 3
+
+has a pH of 0. A solution of a strong alkali, such as sodium hydroxide, at concentration 1 mol dm
+
+ 3
+
+, has a pH of 14. Thus, measured pH values will lie mostly in the range 0 to 14, though negative pH values and values above 14 are entirely possible. Since pH is a logarithmic scale, a difference of one pH unit is equivalent to a tenfold difference in hydrogen ion concentration.
+
+The pH of neutrality is not exactly 7 (25 °C), although this is a good approximation in most cases. Neutrality is defined as the condition where [H
+
++
+
+] = [OH
+
+] (or the activities are equal). Since self-ionization of water holds the product of these concentration [H
+
++
+
+]×[OH
+
+] = K
+
+w
+
+, it can be seen that at neutrality [H
+
++
+
+] = [OH
+
+] = Kw, or pH = pK
+
+w
+
+/2. pK
+
+w
+
+is approximately 14 but depends on ionic strength and temperature, and so the pH of neutrality does also. Pure water and a solution of NaCl in pure water are both neutral, since dissociation of water produces equal numbers of both ions. However the pH of the neutral NaCl solution will be slightly different from that of neutral pure water because the hydrogen and hydroxide ions' activity is dependent on ionic strength, so K
+
+w
+
+varies with ionic strength.
+
+If pure water is exposed to air it becomes mildly acidic. This is because water absorbs carbon dioxide from the air, which is then slowly converted into bicarbonate and hydrogen ions (essentially creating carbonic acid).
+
+CO
+
+2
+
++
+
+H
+
+2
+
+O
+
+HCO
+
+3
+
++
+
+H
+
++
+
+{\displaystyle {\ce {CO2 + H2O <=> HCO3^- + H+}}}
+
+pH ပ္ဍဲ တိ
+
+Classification of soil pH ranges
+
+==== The United States Department of Agriculture Natural Resources Conservation Service, formerly Soil Conservation Service classifies soil pH ranges as follows:
+
+====
+
+Nutritional elements availability within soil varies with pH. Light blue color represents the ideal range for most plants.
+
+မၜတ် pH တိ
+
+pH ပ္ဍဲ သဘာဝ
+
+နဲတော် pH
+
+The calculation of the pH of a solution containing acids and/or bases is an example of a chemical speciation calculation, that is, a mathematical procedure for calculating the concentrations of all chemical species that are present in the solution. The complexity of the procedure depends on the nature of the solution. For strong acids and bases no calculations are necessary except in extreme situations. The pH of a solution containing a weak acid requires the solution of a quadratic equation. The pH of a solution containing a weak base may require the solution of a cubic equation. The general case requires the solution of a set of non-linear simultaneous equations.
+
+A complicating factor is that water itself is a weak acid and a weak base (see amphoterism). It dissociates according to the equilibrium
+
+2
+
+H
+
+2
+
+O
+
+H
+
+3
+
+O
+
++
+
+(
+
+aq
+
+)
+
++
+
+OH
+
+(
+
+aq
+
+)
+
+{\displaystyle {\ce {2H2O <=> H3O+ (aq) + OH^-(aq)}}}
+
+with a dissociation constant, Kw defined as
+
+K
+
+w
+
+=
+
+[
+
+H
+
++
+
+]
+
+[
+
+OH
+
+]
+
+{\displaystyle K_{w}={\ce {[H+][OH^-]}}}
+
+where [H
+
++
+
+] stands for the concentration of the aqueous hydronium ion and [OH
+
+] represents the concentration of the hydroxide ion. This equilibrium needs to be taken into account at high pH and when the solute concentration is extremely low.
+
+ဖျး ကေုာံ ဖျိုတ် ဂၠိုင်င်
+
+Strong acids and bases are compounds that, for practical purposes, are completely dissociated in water. Under normal circumstances this means that the concentration of hydrogen ions in acidic solution can be taken to be equal to the concentration of the acid. The pH is then equal to minus the logarithm of the concentration value. Hydrochloric acid (HCl) is an example of a strong acid. The pH of a 0.01M solution of HCl is equal to log
+
+10
+
+(0.01), that is, pH = 2. Sodium hydroxide, NaOH, is an example of a strong base. The p[OH] value of a 0.01M solution of NaOH is equal to log
+
+10
+
+(0.01), that is, p[OH] = 2. From the definition of p[OH] above, this means that the pH is equal to about 12. For solutions of sodium hydroxide at higher concentrations the self-ionization equilibrium must be taken into account.
+
+Self-ionization must also be considered when concentrations are extremely low. Consider, for example, a solution of hydrochloric acid at a concentration of 5×10
+
+ 8
+
+M. The simple procedure given above would suggest that it has a pH of 7.3. This is clearly wrong as an acid solution should have a pH of less than 7. Treating the system as a mixture of hydrochloric acid and the amphoteric substance water, a pH of 6.89 results.
+
+ဖျး ကေုာံ ဖျိုတ် အောန်အောန်
+
+A weak acid or the conjugate acid of a weak base can be treated using the same formalism.
+
+{
+
+Acid
+
+:
+
+HA
+
+H
+
++
+
++
+
+A
+
+Base
+
+:
+
+HA
+
++
+
+H
+
++
+
++
+
+A
+
+{\displaystyle {\begin{cases}{\ce {Acid:}}&{\ce {HA <=> H+ + A^-}}\\{\ce {Base:}}&{\ce {HA+ <=> H+ + A}}\end{cases}}}
+
+First, an acid dissociation constant is defined as follows. Electrical charges are omitted from subsequent equations for the sake of generality
+
+K
+
+a
+
+=
+
+[
+
+H
+
+]
+
+[
+
+A
+
+]
+
+[
+
+HA
+
+]
+
+{\displaystyle K_{a}={\frac {{\ce {[H] [A]}}}{{\ce {[HA]}}}}}
+
+and its value is assumed to have been determined by experiment. This being so, there are three unknown concentrations, [HA], [H
+
++
+
+] and [A
+
+] to determine by calculation. Two additional equations are needed. One way to provide them is to apply the law of mass conservation in terms of the two "reagents" H and A.
+
+C
+
+A
+
+=
+
+[
+
+A
+
+]
+
++
+
+[
+
+HA
+
+]
+
+{\displaystyle C_{{\ce {A}}}={\ce {[A]}}+{\ce {[HA]}}}
+
+C
+
+H
+
+=
+
+[
+
+H
+
+]
+
++
+
+[
+
+HA
+
+]
+
+{\displaystyle C_{{\ce {H}}}={\ce {[H]}}+{\ce {[HA]}}}
+
+C stands for analytical concentration. In some texts, one mass balance equation is replaced by an equation of charge balance. This is satisfactory for simple cases like this one, but is more difficult to apply to more complicated cases as those below. Together with the equation defining K
+
+a
+
+, there are now three equations in three unknowns. When an acid is dissolved in water C
+
+A
+
+= C
+
+H
+
+= C
+
+a
+
+, the concentration of the acid, so [A] = [H]. After some further algebraic manipulation an equation in the hydrogen ion concentration may be obtained.
+
+[
+
+H
+
+]
+
+2
+
++
+
+K
+
+a
+
+[
+
+H
+
+]
+
+K
+
+a
+
+C
+
+a
+
+=
+
+0
+
+{\displaystyle [{\ce {H}}]^{2}+K_{a}[{\ce {H}}]-K_{a}C_{a}=0}
+
+Solution of this quadratic equation gives the hydrogen ion concentration and hence p[H] or, more loosely, pH. This procedure is illustrated in an ICE table which can also be used to calculate the pH when some additional (strong) acid or alkaline has been added to the system, that is, when C
+
+A
+
+ C
+
+H
+
+.
+
+For example, what is the pH of a 0.01M solution of benzoic acid, pK
+
+a
+
+= 4.19?
+
+Step 1:
+
+K
+
+a
+
+=
+
+10
+
+4.19
+
+=
+
+6.46
+
+×
+
+10
+
+5
+
+{\displaystyle K_{a}=10^{-4.19}=6.46\times 10^{-5}}
+
+Step 2: Set up the quadratic equation.
+
+[
+
+H
+
+]
+
+2
+
++
+
+6.46
+
+×
+
+10
+
+5
+
+[
+
+H
+
+]
+
+6.46
+
+×
+
+10
+
+7
+
+=
+
+0
+
+{\displaystyle [{\ce {H}}]^{2}+6.46\times 10^{-5}[{\ce {H}}]-6.46\times 10^{-7}=0}
+
+Step 3: Solve the quadratic equation.
+
+[
+
+H
+
++
+
+]
+
+=
+
+7.74
+
+×
+
+10
+
+4
+
+;
+
+p
+
+H
+
+=
+
+3.11
+
+{\displaystyle [{\ce {H+}}]=7.74\times 10^{-4};\quad \mathrm {pH} =3.11}
+
+For alkaline solutions an additional term is added to the mass-balance equation for hydrogen. Since addition of hydroxide reduces the hydrogen ion concentration, and the hydroxide ion concentration is constrained by the self-ionization equilibrium to be equal to
+
+K
+
+w
+
+[
+
+H
+
++
+
+]
+
+{\displaystyle {\frac {K_{w}}{{\ce {[H+]}}}}}
+
+C
+
+H
+
+=
+
+[
+
+H
+
+]
+
++
+
+[
+
+HA
+
+]
+
+K
+
+w
+
+[
+
+H
+
+]
+
+{\displaystyle C_{\ce {H}}={\frac {[{\ce {H}}]+[{\ce {HA}}]-K_{w}}{\ce {[H]}}}}
+
+In this case the resulting equation in [H] is a cubic equation.
+
+နဲကဲ နာနာ
+
+Some systems, such as with polyprotic acids, are amenable to spreadsheet calculations.
+
+With three or more reagents or when many complexes are formed with general formulae such as A
+
+p
+
+B
+
+q
+
+H
+
+r
+
+,the following general method can be used to calculate the pH of a solution. For example, with three reagents, each equilibrium is characterized by an equilibrium constant, β.
+
+[
+
+A
+
+p
+
+B
+
+q
+
+H
+
+r
+
+]
+
+=
+
+β
+
+p
+
+q
+
+r
+
+[
+
+A
+
+]
+
+p
+
+[
+
+B
+
+]
+
+q
+
+[
+
+H
+
+]
+
+r
+
+{\displaystyle [{\ce {A}}_{p}{\ce {B}}_{q}{\ce {H}}_{r}]=\beta _{pqr}[{\ce {A}}]^{p}[{\ce {B}}]^{q}[{\ce {H}}]^{r}}
+
+Next, write down the mass-balance equations for each reagent:
+
+C
+
+A
+
+=
+
+[
+
+A
+
+]
+
++
+
+Σ
+
+p
+
+β
+
+p
+
+q
+
+r
+
+[
+
+A
+
+]
+
+p
+
+[
+
+B
+
+]
+
+q
+
+[
+
+H
+
+]
+
+r
+
+C
+
+B
+
+=
+
+[
+
+B
+
+]
+
++
+
+Σ
+
+q
+
+β
+
+p
+
+q
+
+r
+
+[
+
+A
+
+]
+
+p
+
+[
+
+B
+
+]
+
+q
+
+[
+
+H
+
+]
+
+r
+
+C
+
+H
+
+=
+
+[
+
+H
+
+]
+
++
+
+Σ
+
+r
+
+β
+
+p
+
+q
+
+r
+
+[
+
+A
+
+]
+
+p
+
+[
+
+B
+
+]
+
+q
+
+[
+
+H
+
+]
+
+r
+
+K
+
+w
+
+[
+
+H
+
+]
+
+1
+
+{\displaystyle {\begin{aligned}C_{\ce {A}}&=[{\ce {A}}]+\Sigma p\beta _{pqr}[{\ce {A}}]^{p}[{\ce {B}}]^{q}[{\ce {H}}]^{r}\\C_{\ce {B}}&=[{\ce {B}}]+\Sigma q\beta _{pqr}[{\ce {A}}]^{p}[{\ce {B}}]^{q}[{\ce {H}}]^{r}\\C_{\ce {H}}&=[{\ce {H}}]+\Sigma r\beta _{pqr}[{\ce {A}}]^{p}[{\ce {B}}]^{q}[{\ce {H}}]^{r}-K_{w}[{\ce {H}}]^{-1}\end{aligned}}}
+
+Note that there are no approximations involved in these equations, except that each stability constant is defined as a quotient of concentrations, not activities. Much more complicated expressions are required if activities are to be used.
+
+There are 3 non-linear simultaneous equations in the three unknowns, [A], [B] and [H]. Because the equations are non-linear, and because concentrations may range over many powers of 10, the solution of these equations is not straightforward. However, many computer programs are available which can be used to perform these calculations. There may be more than three reagents. The calculation of hydrogen ion concentrations, using this formalism, is a key element in the determination of equilibrium constants by potentiometric titration.
+
+ဆက်ဗှ်
+
+Alkaline diet
+
+Arterial blood gas
+
+Chemical equilibrium
+
+pCO2
+
+တင်စၟတ်
+
+နိဿဲ
+
+လေန်မ္ၚး
+
+Chem1 Virtual Textbook, Acid base Equilibria and Calculations
+
+Red Cabbage pH Indicator
+
+Archived
+
+၂၀၀၉-၀၁-၂၄ at the
+
+Wayback Machine
+
+Food and Foodstuff pH Values
+
+Online pH Calculator for about 100 inorganic Acids, Bases, and Salts
+
+Calculation of mean pH
+
+"
+
+The Symbol for pH
+
+" (2004).
+
+Journal of Chemical Education
+
+81
+
+(1): 21.
+
+doi
+
+:
+
+10.1021/ed081p21
+
+.
+
+Bibcode
+
+:
+
+2004JChEd..81...21J
+
+.
+
+"Negative pH Does Exist" (2006).
+
+Journal of Chemical Education
+
+83
+
+(10): 1465.
+
+doi
+
+:
+
+10.1021/ed083p1465
+
+.
+
+Bibcode
+
+:
+
+2006JChEd..83.1465L
+
+.
+
+"
+
+Über die Messung und die Bedeutung der Wasserstoffionenkonzentration bei enzymatischen Prozessen
+
+" (1909).
+
+Biochem. Z.
+
+21
+
+: 131 304. Original German: Für die Zahl p schlage ich den Namen Wasserstoffionenexponent und die Schreibweise p
+
+H
+
+ vor. Unter dem Wasserstoffionexponenten (p
+
+H
+
+ ) einer Lösungwird dann der Briggsche Logarithmus des reziproken Wertes des auf Wasserstoffionenbezagenen Normalitäts faktors de Lösungverstanden. 
+
+Two other publications appeared in 1909, one in French and one in Danish.
+
+ORIGINS: BIRTH OF THE PH METER
+
+.
+
+The Beckmans
+
+.
+
+၆.၀
+
+၆.၁
+
+"
+
+Definitions of pH scales, standard reference values, measurement of pH, and related terminology
+
+" (1985).
+
+Pure Appl. Chem.
+
+57
+
+(3): 531 542.
+
+doi
+
+:
+
+10.1351/pac198557030531
+
+.
+
+Carlsberg Group Company History Page
+
+. Carlsberggroup.com.
+
+"Potentiometric titrations solution containing the background electrolyte." .
+
+Feldman, Isaac (1956). "Use and Abuse of pH measurements".
+
+Analytical Chemistry
+
+28
+
+(12): 1859 1866.
+
+doi
+
+:
+
+10.1021/ac60120a014
+
+.
+
+Nordstrom. "Negative pH, efflorescent mineralogy, and consequences for environmental restoration at the Iron Mountain Superfund site, California".
+
+Proceedings of the National Academy of Sciences of the United States of America
+
+96
+
+(7): 3455 62.
+
+doi
+
+:
+
+10.1073/pnas.96.7.3455
+
+.
+
+Himmel (2010). "A Unified pH Scale for all Phases".
+
+Angew. Chem. Int. Ed.
+
+49
+
+(38): 6885 6888.
+
+doi
+
+:
+
+10.1002/anie.201000252
+
+.
+
+Himmel. "A Unified pH Scale for All Phases".
+
+Angewandte Chemie International Edition
+
+49
+
+(38): 6885 6888.
+
+doi
+
+:
+
+10.1002/anie.201000252
+
+.
+
+Soil Survey Division Staff.
+
+Soil survey manual.1993. Chapter 3, selected chemical properties.
+
+.
+
+You must specify
+
+title =
+
+and
+
+url =
+
+when using {{
+
+cite web
+
+}}.Maloney, Chris. .
+
+Billo (2011).
+
+EXCEL for Chemists
+
+။
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"

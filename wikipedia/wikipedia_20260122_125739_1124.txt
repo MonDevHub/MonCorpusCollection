@@ -1,0 +1,305 @@
+တိုက် (ပထဝဳ)
+
+Animated, colour-coded map showing the various continents and regions.
+
+Depending on the convention and model
+
+, some continents may be consolidated or subdivided: for example,
+
+Eurasia
+
+is most often subdivided into
+
+Asia
+
+and
+
+Europe
+
+(red shades), while
+
+North
+
+and
+
+South America
+
+are sometimes recognised as
+
+one American continent
+
+(green shades).
+
+တိုက်
+
+(
+
+အၚ်္ဂလိက်
+
+:
+
+Continent
+
+) မ္ဂးဂှ် ဒကုတ်တိဗလးကုန် မဇၞော်လောန်ဂှ် တိုက်မဂးယၟုရ။
+
+မပါ်ကရေက် ဒကုတ်တိုက် ဗီုဏအ်ဂှ် ဂွံဆဵုကေတ် ဆပ္ဍဲ ဂၠးတိဟေင်
+
+တုဲ လတူဂၠးဂိတု ဂၠးတ္ၚဲတအ်ဂှ် ဟွံပါ်လဝ်အိုတ်ရ။ ပ္ဍဲအရာမပါ် တိုက် ဂှ် ဒုင်သဇိုင် ကုပထဝဳ ဒၞာဲတိဍာ် မခြာရေင်သကအ် ဟိုတ်နူ မှသၟိဒ် (ဟွံ) ၜဳ မဒၞာလဝ်တုဲ မပါ်နွံကီု ဟိုတ်နူအခိုက်အလိုက်တၞောဝ်ဗဳဇမၞိဟ် တၞဟ်ခြာတုဲ မပါ်လေဝ် နွံကီုရ။
+
+ပ္ဍဲဂၠးတိ ညးပါ်လဝ် တိုက်ဇၞော် သီုဖအိုတ် နွံ (၇) တိုက်၊ ဒုင်သဇိုင် ကုဇမၞော်သမၠဲတုဲ ပြေင်လဝ်ယၟု - တိုက်အာရှ၊ တိုက်အဖရိက၊ တိုက်အမေရိကသၟဝ်ကျာ၊ တိုက်အမေရိကသၠုင်ကျာ၊ တိုက်အန္တာတိက်ကာ၊ တိုက်ဥရဝ်ပ ကေုာံ တိုက်အဝ်သတြေလျ တအ်ရ။
+
+တိုက်အဝ်သတြေလျဂှ် ဟိုတ်နူနွံ ပ္ဍဲမှာသၟိဒ်ပသိဖိတ်တုဲ လဆောဝ်ကော်စ တိုက်အဝ်သဳနိယာ (Oceania)။ အာရှ ကဵု ဥရဝ်ပ ဂှ် ဟိုတ်တိဍာ်မဆက်တုဲ လဆောဝ်ပံင်တုဲ ကော်စ ယူရေရှာ ရ။
+
+မဝေါဟာရမန် မကော် "တိုက်" ဂှ် တုပ်ဒၟံင် ကုဗီုဗၟာရ။ တမ်မူလအရေဝ် "တိုက်" ဝွံ ကၠုင်နူအရေဝ်မန် မဂွံအဓိပ္ပါယ် "တိ" ရ။ ဗွဲမဂၠိုင် စကာ ဝေါဟာရ မဆေင်ကုတိ ပ္ဍဲအရာမရပ်စပ် ဥပမာ ပ္ၚာန်မကၠောန်လဝ်ကဵုတိဂှ် "ပ္ၚာန်တိုက်" သ္ၚိ မသြိုင်လဝ် နကဵုတိ (တိမစံင်ကၠောန်လဝ်တုဲ မဒှ်ဍိုက်) ဂှ် "သ္ၚိတိုက်"၊ ဒပ်ပၞာန်တိ ဂှ် ပၞာန်တိုက် မြဴသာ်ဝွံ ဒှ်တမ်ရ။ ဟိုတ်ဂှ်ရ တိမပါ်လဝ် ဒကုတ်ဒေသဇၞော်ဇၞော်ဂှ် မကော်စ "တိုက်" ဂှ် ဂပ်ဝ်ဒၟံင်ရ။
+
+ပွံက် ကေုာံ လၟိဟ်
+
+တိုက်တအ်ဂှ် ဗွဲသာမည ဒုင်သဇိုင် ကုဒကုတ်ဗလးကုန် မဇၞော် ကေုာံ ၜဳတၞဟ်ခြာတုဲ ပါ်လဝ်ရ။ ဆဂး တိုက်မပါ် သီုဖအိုတ် ထပှ်တိုက်ဂှ် ဒၞာဲလ္ၚဵုဂှ် ဟွံဇၞော်တုဲ ဒၞာဲလ္ၚဵုဂှ် ၜဳဟွံပါ်ခြာရ။
+
+ဟိုတ်ဂှ်ရ ပွမပါ် ကရေက်ဂၠးတိ နကဵုတိုက်ဂှ် နွံနာနာသာ်ရတုဲ ဂွံဆဵုကေတ် အတိုင် ဗွဲသၟဝ်ဝွံရ။
+
+နဲတိုက် ထပှ်ဂှ် ဗွဲမဂၠိုင် ဒှ်လညာတ် ဍုင်မဟီုအရေဝ်အင်္ဂလိက် မပ္တံကဵု ဍုင်ယူကေ၊ ဍုင်အဝ်သတြေလျာ ကေုာံ ဍုင်ကြုက်၊ အိန္ဒိယ၊ ပါကာတ်သတာန်၊ ဖလိပိန်၊ ကေုာံ ဍုင်ယူရောပ်ပလိုတ်တအ်ရ။
+
+နဲတိုက် တြဴဂှ် မပံင်ပကောံ ဥရဝ်ပ ကဵု အာရှ ပံင်ပကောံ မကော် ယူရေသိယာဂှ် ဍုင်ရုရှာ၊ ဍုင်ဥရဝ်ပဗမံက်ဂမၠိုင် ကေုာံ ဍုင်ဂျပေန်။
+
+နဲတိုက် တြဲ မပံင်ပကောံ အမေရိကသၠုင် ကဵု သၟဝ်ကျာဂှ် ဍုင်သပိန်၊ ဍုင်လေတ်တေန်အမေရိကဂမၠိုင်၊ ဍုင်ဂရိတ်၊ ဍုင်ပဝ်တူၐြဳ၊ ဍုင်ပြာသေတ် ကေုာံ ဍုင်မကေင်မံင်လဝ် ကဝ်လဝ်နဳပြာသေတ်ဂမၠိုင်၊ ဍုင်အဳတလဳ ကေုာံ ဍုင် ရဝ်မေန်နိယျာ။
+
+နဲတိုက် မသုန်ဂှ် စကာ ဗီုကဵု ကုလသမဂ္ဂ ကေုာံ ဂကောံအဝ်လာမ်ပိစ် (Olympic) တအ်ရ။ အလာံအဝ်လာမ်ပိစ် ရုပ်လကံက်မသုန် မဆက်လဝ်ဂှ် ဒှ်သင်္ကေတ မဆက်လဝ် တိုက်မသုန်ဏအ်ရ။
+
+ဨရိယာ ကေုာံ လၟိဟ်မၞိဟ်
+
+သ္ၚိအင် ဗွဲသၟဝ်ဝွံ ဒှ်သမၠဲဇမၞော် တိုက်ဂမၠိုင် ကေုာံ လၟိဟ်မၞိဟ် အတိုင်ကုလသမဂ္ဂ။ အပိုင်အခြာ တိုက်တၞဟ်ခြာဂှ် ထ္ၜးလဝ် စၟတ်သမ္တီ ဗွဲသၟဝ်ဂှ်ရ။
+
+တင်စၟတ်ဂမၠိုင်
+
+ၜတ်ကၞာတ် သမၠဲတိ နကဵု မဳလဳယာန်ကဳလဝ်မဳတာ ပန်ကၠင် ကေုာံ လၟိဟ်မၞိဟ် လ္ၚီအသင်္ဃဲ (ဗဳလဳယာန်)
+
+ဂရာဖ် မထ္ၜး အပြံင်အလှာဲ လၟိဟ်မၞိဟ် နကဵု တိုက်(1750 2005)
+
+ဇမၞော်တိ ပ္ဍဲတိုက်သီုဖအိုတ်ဂှ် ပံင်ပကောံမ္ဂး နွံ 148647000 ကဳလဝ်မဳတာပန်ကၠင် (57,393,000 sq mi) ဟွံသေင်မ္ဂး ဗလးမုက်တိ သီုဖအိုတ် 29.1% (510,065,600 km
+
+2
+
+or 196,937,400 sq m.)
+
+နိဿဲ
+
+ဂကောံဒွက်ပညာ တွဵုရးရာမည (သၞာံ ၁၃၁၃) ပြကိုဟ်မူလပထဝဳ
+
+Science, Charles Q. Choi 2015-07-16T12:45:43Z; Astronomy. "Did Ancient Mars Have Continents?".
+
+Space.com
+
+. Retrieved 13 July 2019.
+
+"Most people recognize seven continents Asia, Africa, North America, South America, Antarctica, Europe, and Australia, from largest to smallest although sometimes Asia and Europe are considered a single continent, Eurasia."
+
+R.W. McColl, ed. (2005). "continents".
+
+Encyclopedia of World Geography
+
+.
+
+1
+
+. Facts on File, Inc. p. 215.
+
+ISBN
+
+978-0-8160-7229-3
+
+. Retrieved 26 June 2012.
+
+And since Africa and Asia are connected at the Suez Peninsula, Europe, Africa, and Asia are sometimes combined as Afro-Eurasia or Eurafrasia.
+
+Older/previous official Greek Paedagogical Institute
+
+6th grade Geography textbook
+
+(at the
+
+Wayback Machine
+
+), 5+1 continents combined-America model;
+
+Pankosmios Enyklopaidikos Atlas
+
+, CIL Hellas Publications,
+
+ISBN
+
+84-407-0470-4
+
+, p. 30, 5+1 combined-America continents model;
+
+Neos Eikonographemenos Geographikos Atlas
+
+, Siola-Alexiou, 6 continents combined-America model;
+
+Lexico tes Hellenikes Glossas
+
+, Papyros Publications,
+
+ISBN
+
+978-960-6715-47-1
+
+, lemma
+
+continent
+
+(
+
+epeiros
+
+), 5 continents model;
+
+Lexico Triantaphyllide
+
+online dictionary, Greek Language Center (
+
+Kentro Hellenikes Glossas
+
+), lemma
+
+continent
+
+(
+
+epeiros
+
+), 6 continents combined-America model;
+
+Lexico tes Neas Hellenikes Glossas
+
+,
+
+G.Babiniotes
+
+, Kentro Lexikologias (Legicology Center) LTD Publications,
+
+ISBN
+
+960-86190-1-7
+
+, lemma
+
+continent
+
+(
+
+epeiros
+
+), 6 continents combined-America model
+
+"
+
+Continent
+
+Archived
+
+၂ ဖေဖဝ်ဝါရဳ ၂၀၀၇ at the
+
+Wayback Machine
+
+".
+
+The Columbia Encyclopedia
+
+Archived
+
+၅ ဖေဖဝ်ဝါရဳ ၂၀၀၂ at the
+
+Wayback Machine
+
+. 2001. New York: Columbia University Press - Bartleby.
+
+၇.၀
+
+၇.၁
+
+"
+
+Continent
+
+".
+
+Encyclopædia Britannica
+
+. 2006. Chicago: Encyclopædia Britannica, Inc.
+
+World
+
+,
+
+National Geographic
+
+-
+
+Xpeditions Atlas
+
+.
+
+2006. Washington, DC: National Geographic Society.
+
+The World - Continents
+
+Archived
+
+၂၁ ဖေဖဝ်ဝါရဳ ၂၀၀၆ at the
+
+Wayback Machine
+
+,
+
+Atlas of Canada
+
+The New Oxford Dictionary of English
+
+.
+
+2001. New York: Oxford University Press.
+
+"
+
+Continent
+
+Archived
+
+၂၀၀၉-၁၀-၂၈ at the
+
+Wayback Machine
+
+".
+
+MSN Encarta Online Encyclopedia 2006
+
+.
+
+. 2009-10-31.
+
+"Continent". McArthur, Tom, ed. 1992.
+
+The Oxford Companion to the English Language
+
+. New York: Oxford University Press; p. 260.
+
+See also [[|Demographics of Antarctica]].
+
+Antarctica
+
+Archived
+
+၂၀၂၀-၀၄-၁၂ at the
+
+Wayback Machine
+
+. CIA World Factbook. March 2011 data. Retrieved December 24, 2011.
+
+Forbes проигнорировал Москву
+
+. 
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"

@@ -1,0 +1,220 @@
+မုဟ်လအိတ် (ဒဵု)
+
+{{Infobox
+| bodyclass = vcard
+| child = 
+| subbox = 
+| above = ဒဵုမုဟ်လအိတ်
+| aboveclass = fn org
+| autoheaders = y
+| abovestyle = background-color: #E7DCC3;
+| headerstyle = background-color: #E7DCC3;
+| imagestyle = padding: 0.3em 0.2em 0.2em 0.2em;
+| captionstyle = padding: 0.2em 0em;
+| bodystyle = width:24.5em; line-height:1.5em;
+
+| subheaderclass= nickname
+| subheader =
+
+| image = 
+| caption =
+
+| data1 =
+
+ဒဵုမုဟ်လအိတ်
+
+ဒၞာဲ ဒဵုမုဟ်လအိတ် မနွံ
+
+| header2 = သၠုင်အိုတ် မရနုက်ကဵု
+
+| label3 = ကၞောတ်ဒဵု
+| data3 =
+
+| label4 = သမၠုင်
+| data4 =
+
+[
+
+convert: invalid number
+
+]
+
+| label5 =
+
+မမံက်ညာတ်
+
+| data5 =
+
+| label6 =
+
+ကၞောတ်ၝောအ်ဒဵု
+
+| data6 =
+
+| label7 =
+
+Isolation
+
+| data7 =
+
+| class8 = category
+| label8 = မပၠုပ်စရင်
+| data8 =
+
+| label9 = ဒတန်ဒၞး
+| data9 =
+
+16°13 N
+
+98°31 E
+
+ / 
+
+16.217°N 98.517°E
+
+ /
+
+16.217; 98.517
+
+ဒတန်:
+
+16°13 N
+
+98°31 E
+
+ / 
+
+16.217°N 98.517°E
+
+ /
+
+16.217; 98.517
+
+| header10 = ဗၜတ်ဂမၠိုင်
+
+| label11 = ဇမၠိင်
+| data11 =
+
+| label12 = သမၠဲ
+| data12 =
+
+| label13 = ဨရိယျာ
+| data13 =
+
+| label14 = သတီု
+| data14 =
+
+| header15 = မကဵုယၟု
+
+| label16 = ဝေါဟာရဗေဒ
+| data16 =
+
+| class17 = ယၟုအရာပ်
+| label17 = ယၟုတၟိ
+| data17 =
+
+| class18 = ယၟုအရာပ်
+| label18 = ယၟုညးဒေသ
+| data18 =
+
+| label19 = ကမၠာဲဘာသာ
+| data19 =
+
+| label20 = အရေဝ်ဘာသာ
+| data20 =
+
+| label21 = ဗွဟ်ရမ္သာင်
+| data21 =
+
+| label22 = Defining authority
+| data22 =
+
+| header25 = ပထဝဳဝင်
+
+| class27 = label
+| label27 = ဒတန်ဒမံင်
+| data27 =
+
+တွဵုရးဍုင်ကရေင်
+
+၊
+
+သဟရးဗၟာ
+
+| class28 = label
+| label28 = ရးနိဂီု
+| data28 =
+
+| class29 = label
+| label29 = တွဵုရး
+| data29 =
+
+| class30 = label
+| label30 = ဒေသ
+| data30 =
+
+| class31 = label
+| label31 = ခရိုင်
+| data31 =
+
+| label32 = ဒေသလပါ်}
+
+ဒဵုမုဟ်လအိတ်
+
+ဗၟာ
+
+:
+
+မုလအိတောင်
+
+ဂှ် နွံ ပ္ဍဲ ပွိုင်ဍုင်လှာဒကှ်၊ တွဵုရးဍုင်ကရေင်။ ဒဵုဝွံ နွံလပါ်ဗလးမုက်ၜဳ
+
+[
+
+convert: invalid number
+
+]
+
+တုဲ ပ္ဍဲကၞောတ်ဒဵုဂှ် ကျာ်မုဟ်လအိတ် နွံရ။
+
+ပ္ဍဲဒဵုဝွံ ဂကူဂစေမ် လၟိဟ်မအောန် ဗီုကဵု ဂစေံ
+
+Tenasserim white-bellied rat
+
+(
+
+Niviventer tenaster
+
+),
+
+ဂစေံ
+
+silver-eared laughingthrush
+
+(
+
+Trochalopteron melanostigma
+
+)
+
+ကေုာံ ဂစေံ
+
+grey-sided thrush
+
+(
+
+Turdus feae
+
+), a
+
+vulnerable species
+
+,
+
+တအ် ဂွံဆဵုကေတ် မာန်ရ။
+
+နိဿဲ
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"

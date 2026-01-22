@@ -1,0 +1,53 @@
+သဇိုၚ်ကတ်လ္ၚတ် Microsoft Excel
+
+Excel ဟီုဂှ် မူရော။
+
+-
+
+Excel
+
+ဂှ် ဒှ်
+
+Application Software
+
+သွက်ဂွံရပ်စပ်စကာအာ ပ္ဍဲကမ်ဖျူတာ မွဲဂကူရ။ ကမ္ပဏီ
+
+Microsoft
+
+ကၠောန်ပ္တိတ်လဝ်ရ။ သွက်ဂွံ ကၠောန်စရၚ်အၚ်၊ ခံက်အၚ် တအ် ခိုဟ်ကွေံကွေံရောၚ်။ ရဲကၠောန်ကမၠောန်ရုၚ်တအ်လေဝ် ဒးရပ်စကာဒၟံၚ် Excel အိုတ်ရ။ ရဲ Engineer တအ်လေဝ် ဒးရပ်စကာဒၟံၚ် Excel ကီုရ။ Excel ဏံဂှ် လုပ်အသုၚ်စောဲ နွံတဴဗွဲမဂၠိုၚ်ရ။
+
+ဒၞဲါလဵုဂှ် ဒးရပ်စကာ Excel ရော။
+
+- ဗွဲတၟေၚ်မ္ဂး သွာၚ်ကမၠောန်စရၚ်သြန်တအ် စကာရပ်စပ်ဂၠိုၚ်ရဴကွေံရ။ ဒၞဲါတၞဟ် မပ္တံကဵု ပကောံတၚ်ဂၞေၚ်၊ ကၠောန်သ္ပရေဲလာ်ပါ်စြေက်တၚ်ဂၞေၚ် (Data Analysis)၊ ပၠုပ်တၚ်ဂၞေၚ် (Data Entry) စပ်ကဵု ကမၠောန်သုတေသန တအ်လေဝ် ရပ်စပ်စကာ နွံတဴအိုတ်ရ။
+
+ညးလဵုမွဲ ဖန်ဗဒှ်လဝ် Excel ဏံရော။
+
+- တံဍေံဂှ် စကၠုၚ်နူကဵု သၞာံ ၁၉၇၉ တေံရ။ မၞိဟ်ကၠောန်ဗဒှ်လဝ် Excel ကၠာအိုတ်ဂှ် ယၟုညး Dan Bricklin ရ။ ဆဂး အခိၚ်တေံ Excel ဟွံမံက်ဏီရ။ ကၠောန်ဗဒှ်လဝ် Software မွဲ ကော်စ VisiCalc ရ။ VisiCalc ဟီုဂှ် ဒှ်အရာတော်ဂၞန်သချၚ်္ာ (Calculator) မွဲဂကူရ။ စိုပ်သၞာံ ၁၉၈၂ နူ Microsoft စကၠောန်ပ္တိတ်လဝ် Program မွဲဂှ် Multiplan တုပ်ကဵု Excel ဏံကီုရ။ Excel version ကၠာအိုတ်ဂှ် ကၠောန်လဝ် နကဵု သၞောတ် Dos သွက်ဂွံရပ်စကာပ္ဍဲ Apple Macintosh ရ။ နူဂှ် Dos ဂှ် ကၠောန်ဗဒှ်ပတိုန် Graphical Interfaces တောတက်ကၠုၚ်သိုက်က်တုဲ စိုပ်သၞာံ ၁၉၈၅ ဂှ် Microsoft Excel စမံက်ကၠုၚ် သွက်ဂွံရပ်စကာပ္ဍဲ Window O.S ရ။
+
+Keyboard and Mouse
+
+မဍဵု မၞုံလ္တူမုက်ဗလး ကဳဗတ် (Keyboard) ဂှ် ကော်ခဴစ ကောန်ဍေၚ် (Key) ရ။ မိက်ဂွံရပ်စပ်စကာ Excel မ္ဂး ကောန်ဍေၚ် (Key) မၞုံလ္တူမုက်ဗလး ကဳဗတ် (Keyboard) ဂှ် ဒးသမ္တီလဝ်ကီုရောၚ်။ မကောန်ဍေၚ် ဗီုလဵုဍေံ ကော်စဂှ်လေဝ် ဒးသမ္တီလဝ်ရောၚ်။ ဥပမာ - Esc, Tab, Function Keys, Enter Key, Delete, Backspace, Spacebar, Ctr, သာ်ဝွံဒှ်တံရ။
+
+Mouse - တုဲပၠန် ဆေၚ်စပ်ကဵု Mouse ဂှ်လေဝ် ဒးတီလဝ်ထေက်ကီုရောၚ်။ ပ္ဍဲ Mouse ဂှ် ဍဵုလ္ပာ်ပဲါ (left click) ကဵု ဍဵုလ္ပါ်ပုၚ် (Right Click) နွံရ။ ပ္ဍဲကဵု Left click ဂှ် ဍဵု (click) (ဟွံသေၚ်မ္ဂး) ဍဵုၜါလ္တုန်ဆက်က် (Double Click) ဂွံရ။ (ဥပမာ - ယဝ်ပိုဲဟီု - click ထောံမ္ဂး ဍဵု left click မွဲလ္တုန်ညိ။ တုဲပၠန် ဍဵု Double မ္ဂး ဒးဍဵု left click ၜါလ္တုန်ဆက်က် ရောၚ်။) မွဲသာ်ပၠန် ဓဇက် (Drag) ဏာ Mouse ဂှ်ဟီုမ္ဂး ဒးဍဵုလဝ် left click တုဲ ဒးဓဇက်ဏာ Mouse ဂှ်ရ။ Right click ဂှ်တှေ် သောၚ်ၚ်ရ။ ယဝ်ဍဵု right click မ္ဂး သွက်ဂွံရုဲစှ် တၚ်စၞောန် မဆေၚ်စပ် အရာပိုဲ ဍဵု (click) လဝ်ဂှ် ဍေံမံက်ကၠုၚ်ရောၚ်။ 
+အပ္ဍဲ Mouse ဂှ် Scroll Wheel နွံမွဲရ။ Scroll Wheel ဂှ် သွက်ဂွံ ဒရိတ်ဓဇက်ဖျုဲ မုက်ဗး Screen တိုန်လ္တူ စှ်ေသၟဝ်ရ။
+
+Chapter 2 Understanding userinterface
+
+2.1 ပံက်၊ ကၟာတ် Excel Program
+
+ယဝ်ရ မိက်ဂွံ ပံက် (open) excel program မ္ဂး ပ္ဍဲ Window 7 ကဵုဒှ် Window 8 ကဵုဒှ် အတိုၚ်ဟီုလဝ် ထ္ၜးလဝ် ဗွဲသၟဝ်တေံဂှ် ပံက်ကေတ် Excel program မာန်ရ။ ပ္ဍဲလ္တူ ကဳဗတ် (Keyboard) ဂှ် ဍဵု Window Key ညိ။ တုဲမ္ဂး တက်စုတ်မလိက် Excel ညိ။ တုဲမ္ဂး ဍဵုထောံ Enter ပၠန်ညိ။ Excel program ပံက်တိုန်ကၠုၚ်ရောၚ်ဂှ် ဂွံဆဵုကေတ်ရောၚ်။ 
+မိက်ဂွံကၟာတ် Excel program မ္ဂး နူကဵု ကဳဗတ် (Keyboard) ဂှ် ဍဵု Alt + F4 ညိ။ ဍေံကၟာတ်အာရောၚ်။ မွဲပၠန်ဂှ် နကဵု Mouse ဂှ် အာဍဵု (click) ဒၞဲါ ထ္ၜးလဝ် X ဂှ် ဍဵုတုဲလေဝ် ကၟာတ်ထောံဂွံရောၚ်။ နဲနွံပၟိက်ဂှ် ကၟာတ်ကေတ်မာန်ရ။
+
+2.2 Excel Workbook ကေုာံ Excel Worksheet
+
+ပရူလ္ၚတ်လၟုဟ်စပ်ကဵု Excel program ဂှ် စွံလဝ်စိုတ် ဗီုကဵု လိက်အုပ် ညိ။ သောၚ်ၚ်ရ။ လိက်အုပ်မ္ဂး ယၟုလိက်အုပ်ဒးနွံရောၚ်။ ယၟုလိက်အုပ်ဂှ် ကော်စ Wookbook ရ။ တုဲပၠန် မဂၞန်မုက်လိက်လေဝ် ပါကီုရောၚ်။ မဂၞန်မုက်ဂှ် ကော်ထောံ Worksheet ရ။ အရာ မဒမံက်ထ္ၜးလဝ် ပ္ဍဲ Excel program ဂှ် ပိုဲဆက်လ္ၚတ်အာပၠန်ရောၚ်။
+
+နိဿဲ
+
+ရတ်အံၚ်မန်, နာဲ (February 28, 2019, ဍုၚ်မတ်မလီု) "သဇိုၚ်ကတ်လ္ၚတ် Microsoft Excel" ။
+
+Weber, T. E. (2010, December 27). Microsoft Excel: The Program's Designer Reveals The Secrets Behind The Software That Changed the World 25 Years Ago. Retrieved February 28, 2019, from Thedailybeast.com: Microsoft Excel: The Program's Designer Reveals The Secrets Behind The Software That Changed the World 25 Years Ago
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"

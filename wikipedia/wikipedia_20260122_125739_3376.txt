@@ -1,0 +1,69 @@
+အောက်သဳဂေန် ခၞတ်
+
+အောက်သဳဂေန်ခၞတ် မစုတ်လဝ် ပ္ဍဲ ခေါက်။
+
+When liquid oxygen is poured from a beaker into a strong magnet, the oxygen is temporarily suspended between the magnet poles, owing to its paramagnetism.
+
+အောက်သဳဂေန် ခၞတ် (liquid oxygen)
+
+ ပ္ဍဲကဵု က္ၜင်ကျာ၊ က္ၜင်ဗလိုပ်ဍာ် ကေုာံ ရုင်စက်ဂေသ် တအ်မ္ဂး ချူ နကဵုဇမၠေအ်
+
+LOx
+
+,
+
+LOX
+
+ဟွံသေင်မ္ဂး
+
+Lox
+
+ ဝွံ ဒှ် မောလေကူလ် အောက်သဳဂေန် (molecular oxygen) နကဵုသန္ထာန်ခၞတ် (သန္ထာန်ခတ်တ်) ရ။
+
+ဓါတုရူပ မပါလုပ်ဂမၠိုင်
+
+အောက်သဳဂေန်ခၞတ် ဂှ် ဒှ်ဒၟံင် အသာ်သင္ၚေက်ၜတ်တ် တုဲပၠန် နွံကဵု ကၞောတ်ဓါတ်ဇမြောတ် (paramagnetic) ဍေဟ်မလေပ်ဒေါအ်ဒၟံင် အကြာ တၞုင်ကၟက် ဓါတ်ဇမြောတ်ခၞေပ်ချေဟ် (horseshoe magnet) ရ။
+
+အောက်သဳဂေန်ခၞတ်ဂှ် နွံကဵု ကမၠေတ် ၁,၁၄၁ ဂြာမ် ဇၟာပ်လဳတာ 1,141 grams per litre (1.141 g/ml), ကၠေတ်အောန် နူ ဍာ်ခၞတ်၊ တုဲပၠန် ဓါတ်လမုဟ် ( cryogenic) ကဆံင်ကမြံင် (freezing point) နွံ 54.36 K ( 218.79 °C; 361.82 °F) တုဲပၠန် ကဆံင်ကမၞမ် (boiling point) နွံ 182.96 °C ( 297.33 °F; 90.19 K) ပ္ဍဲ မွဲ ဗါရ် 1 bar (15 psi)။ အောက်သဳဂေန်ခၞတ် နွံ ဗၞတ်သမၠဲ (expansion ratio) 1:861သၟဝ် ၁ ဗၞတ်ဗ္ၜတ် အကာသ (100kPa) တုဲပၠန် 20 °C (68 °F)၊ ဟိုတ်နူဂှ်ရ က္ၜင်ကျာပၞာန် ကေုာံ က္ၜင်ကျာလ္ၚဵုတအ် စကာအောက်သဳဂေန်ခၞတ် နဒဒှ် ကျာယဝီုအောက်သဳဂေန်ရ။
+
+ဟိုတ်နူ ဓါတ်လမုဟ်ဍေဟ်တုဲ အောက်သဳဂေန်ခၞတ်ဂှ် Because of its cryogenic nature, liquid oxygen can cause the materials it touches to become extremely brittle. Liquid oxygen is also a very powerful oxidizing agent: organic materials will burn rapidly and energetically in liquid oxygen. Further, if soaked in liquid oxygen, some materials such as coal briquettes, carbon black, etc., can detonate unpredictably from sources of ignition such as flames, sparks or impact from light blows. Petrochemicals, including asphalt, often exhibit this behavior.
+
+The tetraoxygen molecule (O
+
+4
+
+) was first predicted in 1924 by Gilbert N. Lewis, who proposed it to explain why liquid oxygen defied Curie's law.
+
+Modern computer simulations indicate that, although there are no stable O
+
+4
+
+molecules in liquid oxygen, O
+
+2
+
+molecules do tend to associate in pairs with antiparallel spins, forming transient O
+
+4
+
+units.
+
+Liquid nitrogen has a lower boiling point at 196 °C (77 K) than oxygen's 183 °C (90 K), and vessels containing liquid nitrogen can condense oxygen from air: when most of the nitrogen has evaporated from such a vessel, there is a risk that liquid oxygen remaining can react violently with organic material. Conversely, liquid nitrogen or liquid air can be oxygen-enriched by letting it stand in open air; atmospheric oxygen dissolves in it, while nitrogen evaporates preferentially.
+
+The surface tension of liquid oxygen at its normal pressure boiling point is 13.2 dyn/cm.
+
+Uses
+
+History
+
+By 1845, Michael Faraday had managed to liquefy most gases then known to exist. Six gases, however, resisted every attempt at liquefaction and were known at the time as "permanent gases". They were oxygen, hydrogen, nitrogen, carbon monoxide, methane, and nitric oxide.
+
+In 1877, Louis Paul Cailletet in France and Raoul Pictet in Switzerland succeeded in producing the first droplets of liquid air.
+
+In 1883, Polish professors Zygmunt Wróblewski and Karol Olszewski produced the first measurable quantity of liquid oxygen.
+
+နိဿဲ
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"
