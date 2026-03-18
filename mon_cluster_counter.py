@@ -7,6 +7,7 @@ Recursively scans corpus files and counts Mon/Myanmar script clusters.
 This script:
 - reads files recursively
 - optionally normalizes င -> ၚ
+- optionally removes Mon/Myanmar half stop and full stop (၊ and ။)
 - segments text into orthographic clusters
 - counts clusters, cluster bigrams, and cluster trigrams
 - writes CSV and JSON summaries
@@ -17,6 +18,14 @@ because Mon text often does not mark word boundaries with spaces.
 Example usage:
     python3 mon_cluster_counter.py . --output-dir cluster_results
     python3 mon_cluster_counter.py . --output-dir cluster_results_norm --normalize-mon-nga
+    python3 mon_cluster_counter.py . --output-dir cluster_results_no_stops --remove-mon-stops
+    python3 mon_cluster_counter.py . --output-dir cluster_results_clean --normalize-mon-nga --remove-mon-stops
+
+Preset usage:
+    python3 mon_cluster_counter.py . --preset raw
+    python3 mon_cluster_counter.py . --preset norm
+    python3 mon_cluster_counter.py . --preset no-stops
+    python3 mon_cluster_counter.py . --preset clean
 """
 
 from __future__ import annotations
@@ -51,14 +60,31 @@ def normalize_text(text: str, form: str = "NFC") -> str:
 def apply_mon_normalization(
     text: str,
     normalize_mon_nga: bool = False,
+    remove_mon_stops: bool = False,
 ) -> tuple[str, dict[str, int]]:
-    stats = {"nga_to_mon_nga": 0}
+    stats = {
+        "nga_to_mon_nga": 0,
+        "mon_half_stop_removed": 0,
+        "mon_full_stop_removed": 0,
+    }
 
     if normalize_mon_nga:
         count = text.count("င")
         if count:
             text = text.replace("င", "ၚ")
             stats["nga_to_mon_nga"] = count
+
+    if remove_mon_stops:
+        half_stop_count = text.count("၊")
+        full_stop_count = text.count("။")
+
+        if half_stop_count:
+            text = text.replace("၊", "")
+            stats["mon_half_stop_removed"] = half_stop_count
+
+        if full_stop_count:
+            text = text.replace("။", "")
+            stats["mon_full_stop_removed"] = full_stop_count
 
     return text, stats
 
@@ -269,6 +295,8 @@ def write_file_stats_csv(output_path: Path, file_rows: list[dict[str, object]]) 
         "cluster_count",
         "raw_text_length",
         "nga_to_mon_nga_replacements",
+        "mon_half_stop_removed",
+        "mon_full_stop_removed",
         "status",
     ]
 
@@ -289,6 +317,7 @@ def analyze_corpus(
     skip_dirs: set[str],
     normalization_form: str,
     normalize_mon_nga: bool,
+    remove_mon_stops: bool,
 ) -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -305,6 +334,8 @@ def analyze_corpus(
         "total_clusters": 0,
         "total_raw_text_length": 0,
         "total_nga_to_mon_nga_replacements": 0,
+        "total_mon_half_stop_removed": 0,
+        "total_mon_full_stop_removed": 0,
     }
 
     for path in iter_input_files(input_root, extensions, skip_dirs):
@@ -318,6 +349,8 @@ def analyze_corpus(
                 "cluster_count": 0,
                 "raw_text_length": 0,
                 "nga_to_mon_nga_replacements": 0,
+                "mon_half_stop_removed": 0,
+                "mon_full_stop_removed": 0,
                 "status": "read_failed",
             })
             continue
@@ -327,6 +360,7 @@ def analyze_corpus(
         text, replacement_stats = apply_mon_normalization(
             text,
             normalize_mon_nga=normalize_mon_nga,
+            remove_mon_stops=remove_mon_stops,
         )
 
         clusters = extract_clusters(text)
@@ -337,23 +371,37 @@ def analyze_corpus(
 
         cluster_count = len(clusters)
         nga_replacements = replacement_stats["nga_to_mon_nga"]
+        half_stop_removed = replacement_stats["mon_half_stop_removed"]
+        full_stop_removed = replacement_stats["mon_full_stop_removed"]
 
         totals["files_read_successfully"] += 1
         totals["total_clusters"] += cluster_count
         totals["total_raw_text_length"] += raw_length
         totals["total_nga_to_mon_nga_replacements"] += nga_replacements
+        totals["total_mon_half_stop_removed"] += half_stop_removed
+        totals["total_mon_full_stop_removed"] += full_stop_removed
 
         file_rows.append({
             "file": str(path),
             "cluster_count": cluster_count,
             "raw_text_length": raw_length,
             "nga_to_mon_nga_replacements": nga_replacements,
+            "mon_half_stop_removed": half_stop_removed,
+            "mon_full_stop_removed": full_stop_removed,
             "status": "ok",
         })
 
     write_counter_csv(output_dir / "cluster_frequency.csv", cluster_counter, "cluster")
-    write_counter_csv(output_dir / "cluster_bigram_frequency.csv", cluster_bigram_counter, "cluster_bigram")
-    write_counter_csv(output_dir / "cluster_trigram_frequency.csv", cluster_trigram_counter, "cluster_trigram")
+    write_counter_csv(
+        output_dir / "cluster_bigram_frequency.csv",
+        cluster_bigram_counter,
+        "cluster_bigram",
+    )
+    write_counter_csv(
+        output_dir / "cluster_trigram_frequency.csv",
+        cluster_trigram_counter,
+        "cluster_trigram",
+    )
     write_file_stats_csv(output_dir / "file_stats.csv", file_rows)
 
     summary = {
@@ -363,6 +411,7 @@ def analyze_corpus(
         "skip_dirs": sorted(skip_dirs),
         "normalization_form": normalization_form,
         "normalize_mon_nga": normalize_mon_nga,
+        "remove_mon_stops": remove_mon_stops,
         "totals": totals,
         "top_50_clusters": cluster_counter.most_common(50),
         "top_50_cluster_bigrams": cluster_bigram_counter.most_common(50),
@@ -379,6 +428,8 @@ def analyze_corpus(
     print(f"Total clusters:                    {totals['total_clusters']}")
     print(f"Raw text length:                   {totals['total_raw_text_length']}")
     print(f"င -> ၚ replacements applied:       {totals['total_nga_to_mon_nga_replacements']}")
+    print(f"Mon half stops removed (၊):        {totals['total_mon_half_stop_removed']}")
+    print(f"Mon full stops removed (။):        {totals['total_mon_full_stop_removed']}")
     print(f"Results written to:                {output_dir}")
 
     return 0
@@ -433,6 +484,18 @@ def parse_args() -> argparse.Namespace:
         help="Replace င with ၚ before counting.",
     )
 
+    parser.add_argument(
+        "--remove-mon-stops",
+        action="store_true",
+        help="Remove Mon/Myanmar half stop (၊) and full stop (။) before counting.",
+    )
+
+    parser.add_argument(
+        "--preset",
+        choices=["raw", "norm", "no-stops", "clean"],
+        help="Use a predefined configuration: raw, norm, no-stops, or clean.",
+    )
+
     return parser.parse_args()
 
 
@@ -451,13 +514,36 @@ def main() -> int:
 
     skip_dirs = set(args.skip_dirs)
 
+    normalize_mon_nga = args.normalize_mon_nga
+    remove_mon_stops = args.remove_mon_stops
+    output_dir = args.output_dir
+
+    if args.preset:
+        if args.preset == "raw":
+            if output_dir == Path("cluster_results"):
+                output_dir = Path("cluster_results_raw")
+        elif args.preset == "norm":
+            normalize_mon_nga = True
+            if output_dir == Path("cluster_results"):
+                output_dir = Path("cluster_results_norm")
+        elif args.preset == "no-stops":
+            remove_mon_stops = True
+            if output_dir == Path("cluster_results"):
+                output_dir = Path("cluster_results_no_stops")
+        elif args.preset == "clean":
+            normalize_mon_nga = True
+            remove_mon_stops = True
+            if output_dir == Path("cluster_results"):
+                output_dir = Path("cluster_results_clean")
+
     return analyze_corpus(
         input_root=input_root,
-        output_dir=args.output_dir,
+        output_dir=output_dir,
         extensions=extensions,
         skip_dirs=skip_dirs,
         normalization_form=args.normalization,
-        normalize_mon_nga=args.normalize_mon_nga,
+        normalize_mon_nga=normalize_mon_nga,
+        remove_mon_stops=remove_mon_stops,
     )
 
 
