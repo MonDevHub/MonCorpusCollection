@@ -1,100 +1,88 @@
-# 🌿 Mon Corpus Collection
+# Mon Corpus Collection
 
-> **A growing, open, and community-driven corpus for the Mon language.**  
-> Built with care for language preservation, research, and future technologies.
+A repository of Mon language (mnw) text data for NLP research, linguistic analysis, and model training.
 
----
+## Corpus Statistics
 
-## ✨ About This Repository
+The collection contains data from news, encyclopedia entries, and social media.
 
-**Mon Corpus Collection** is a curated collection of **Mon-language text data** in **Unicode format**, created to support:
+### Overview (2026-04-27)
 
-- 📚 Linguistic research  
-- 🤖 Natural Language Processing (NLP)  
-- 🧠 Machine learning & AI experiments  
-- 🏛️ Digital humanities & cultural preservation  
-- 🌏 Open-access language resources
+| Metric | Value |
+| :--- | :--- |
+| Total Files | 8,783 |
+| Mon-related Characters | 29,407,428 |
+| Raw Text Length | 36,586,341 |
+| Language | Mon (mnw) |
+| Script | Mon/Burmese Unicode |
 
-This repository exists to make **Mon language data freely available** for anyone who wants to **learn, analyze, build, or experiment** — no barriers, no gatekeeping.
+### Public Dataset (Open Source)
 
----
+| Source | Files | Mon Chars | Content Type |
+| :--- | :---: | :---: | :--- |
+| Wikipedia | 4,208 | 18,966,185 | Encyclopedia articles |
+| Mon News Agency | 3,682 | 10,229,891 | News and interviews |
+| Telegram | 889 | 53,131 | Public social media |
+| **Total Public** | **8,779** | **29,249,207** | **Open Data Collection** |
 
-## 🧩 What’s Inside
+### Additional Sources
 
-- ✅ Clean Mon text in **Unicode**
-- ✅ Ready-to-use for NLP pipelines
-- ✅ Suitable for tokenization, training, and analysis
-- ✅ Expandable and community-friendly structure
+| Source | Files | Mon Chars | Content Type |
+| :--- | :---: | :---: | :--- |
+| Custom Collections | 4 | 158,221 | Curated/Miscellaneous |
 
-Whether you’re:
-- building a tokenizer 🧱  
-- training a language model 🤓  
-- doing academic research 📖  
-- or preserving Mon language digitally 🌾  
+## Technical Specifications
 
-—you’re welcome here.
+### Encoding and Normalization
+- **Encoding**: UTF-8.
+- **Unicode Blocks**: Myanmar block (U+1000–U+109F) and extended blocks.
+- **Normalization**: NFC normalization is required for all data.
+- **Linguistic Variants**: Distinguishes between standard Myanmar characters and Mon-specific variants (e.g., ၚ U+1021 vs င U+1004).
 
----
+### Data Quality
+- Metadata and UI boilerplate are removed during extraction.
+- Files under 50 characters are excluded from the core collection.
 
-## 🌱 Philosophy
+## Project Structure
 
-Language is living.
+```text
+.
+├── monnews/               # Mon News Agency (IMNA) data
+├── wikipedia/             # Mon Wikipedia data
+├── telegram_mot_tip/      # Telegram channel messages
+├── custom/                # Curated and legacy data
+├── results/               # Analysis outputs (CSV/JSON)
+├── AGENTS.md              # Engineering standards and role context
+└── corpus_counter.py      # Corpus analysis utility
+```
 
-This project treats the Mon language not as static data, but as a **living archive** — something to be **used, remixed, studied, and carried forward** by future generations.
+## Usage
 
-Open data.  
-Open culture.  
-Open futures.
+### Analyzing the Corpus
+Use the analysis script to generate character and n-gram statistics.
 
----
+```bash
+# Basic analysis
+python3 corpus_counter_normalized.py . --output-dir results
 
-## 🔓 License & Usage
+# Analysis with Mon-specific Nga normalization (င -> ၚ)
+python3 corpus_counter_normalized.py . --output-dir results --normalize-mon-nga
+```
 
-🆓 **Free to use**  
-🆓 **Free to modify**  
-🆓 **Free to redistribute**
+### Core Scripts
+- `corpus_counter_normalized.py`: Calculates character, bigram, and trigram frequencies.
+- `mon_cluster_counter.py`: Analyzes grapheme clusters.
 
-You may use this corpus for **any purpose** — academic, commercial, experimental, or personal.
+## License and Attribution
 
-(Attribution is appreciated, but not required 💛)
+This corpus is released under the MIT License.
 
----
+If you use this data, attribute the Mon Corpus Collection and the original sources (IMNA, Wikipedia).
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are **very welcome**!
+1. Ensure all text is NFC normalized.
+2. Follow the character standards defined in AGENTS.md.
+3. Provide source attribution for new data.
 
-You can help by:
-- Adding new Mon text sources
-- Cleaning or normalizing data
-- Improving documentation
-- Sharing this resource with others
-
-If you care about Mon language, you belong here.
-
----
-
-## 👥 Contributors
-
-**Janakh Pon**  
-**Htaw Mon**
-
----
-
-## 🌏 Why This Matters
-
-Low-resource languages deserve **high-quality digital infrastructure**.
-
-By collecting and sharing Mon language data openly, this project helps ensure Mon is:
-- represented in modern technology  
-- accessible to researchers worldwide  
-- preserved beyond physical archives  
-
----
-
-## 💬 Final Note
-
-If you use this corpus in your work, research, or project —  
-we’d love to hear about it.
-
-Let’s build the future of Mon language together 🌾✨
+Contributors: Janakh Pon, Htaw Mon

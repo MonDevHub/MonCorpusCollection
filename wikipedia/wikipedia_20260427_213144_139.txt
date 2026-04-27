@@ -1,0 +1,143 @@
+စရင်ကိရိယာ ဉာဏ်ပ္တေအ်ဂမၠိုင်
+
+စရင်ကိရိယာ ဉာဏ်ပ္တေအ် (AI Tools) အလိုက်ကဏ္ဍနာနာ သွက်ပရေင်ကမၠောန် ကေုာံ ပုဂ္ဂလိက
+
+ထာမ်ပလိက်:SHORTDESC:စရင်ကိရိယာ ဉာဏ်ပ္တေအ် (AI Tools) အလိုက်ကဏ္ဍနာနာ သွက်ပရေင်ကမၠောန် ကေုာံ ပုဂ္ဂလိက
+
+စရင်ကိရိယာ ဉာဏ်ပ္တေအ်ဂမၠိုင်
+
+(အင်္ဂလိက်:
+
+List of AI Tools
+
+) ဝွံ ဗၟံက်ထ္ၜးကဵု ကိရိယာဆော့ဝဲ (Software Tools) မနှေအ်နှဴဒၟံင် ကု
+
+ဉာဏ်ပ္တေအ်ဗေဒ
+
+သွက်ဂွံရီုဗင်ကမၠောန်မၞိဟ် ညံင်ဂွံပြဟ်သ္ကေံ ကေုာံ နွံကဵုအစောံစရာဲရ။ ကိရိယာတအ်ဏအ်ဝွံ ပါ်ခြာလဝ် အလိုက်ကဏ္ဍကမၠောန်နာနာရ
+
+။
+
+ကဏ္ဍဖန်ဗဒှ် (Creative & Content Tools)
+
+၁. ပွမချူလိက် ကေုာံ ကူချာဲ (Writing & Copy)
+
+ကိရိယာတအ်ဏအ် သုင်စောဲ သွက်ဂွံချူလိက် Marketing၊ လိက်ပရေင် ကေုာံ စၟဳစၟတ်ဝါကျရ
+
+။
+
+Jasper
+
+:
+
+AI သွက်ဂွံချူလိက် Content ပရေင်ဗၞိက်။
+
+Copy.ai
+
+:
+
+သုင်စောဲ သွက်ဂွံဖန်ဗဒှ် Copywriting ဗွဲမပြဟ်။
+
+Grammarly
+
+:
+
+ကိရိယာစၟဳစၟတ် အက္ခရ် ကေုာံ ဝါကျဘာသာအင်္ဂလိက်။
+
+WriteSonic
+
+:
+
+AI ရီုဗင်ပွမချူ Blog ကေုာံ လိက်ပရိုင်။
+
+၂. ရုပ်ဂုဏ် ကေုာံ ဒီဇာင် (Images & Design)
+
+ကိရိယာတအ်ဏအ် သုင်စောဲ သွက်ဂွံဖန်ဗဒှ်ရုပ် နကဵုအမိင်လိက် (Text-to-image)
+
+။
+
+Midjourney
+
+:
+
+AI မဖန်ဗဒှ်ရုပ်ကနုက်ကမ် အဆင့်မြင့်။
+
+Canva AI
+
+:
+
+Platform ဒီဇာင် မစကာ AI သွက်ဂွံပလေဝ်ရုပ် ကေုာံ Layout။
+
+DALL-E
+
+:
+
+AI နူ OpenAI သွက်ဂွံဖန်ဗဒှ်ရုပ် နူလိက်မကဵုလဝ်။
+
+ကဏ္ဍပညာ ကေုာံ သုတေသန (Education & Research)
+
+Perplexity AI
+
+:
+
+Search engine မနွံကဵုနိဿဲခိုင်ကၠိုက် သွက်ဂွံဂၠာဲတင်ဂၞင်။
+
+Consensus
+
+:
+
+AI သုင်စောဲ သွက်ဂွံဂၠာဲသွဟ် နူလိက်သုတေသနသိပ္ပံ။
+
+Gemini (Google)
+
+:
+
+ဉာဏ်ပ္တေအ်နူ Google သုင်စောဲ သွက်ဂွံသ္ၚဳဂၠေပ် ကေုာံ ဂၠာဲတင်ဂၞင်ဂၠးကဝ်
+
+။
+
+ကဏ္ဍပရေင်ကမၠောန် (Productivity & Automation)
+
+ChatGPT (OpenAI)
+
+:
+
+AI မဟီုဂးသၟာန်သွဟ် ကေုာံ ရီုဗင်စီုဇန်ကမၠောန်နာနာ။
+
+Notion AI
+
+:
+
+AI မပါဗဒေဲါ ပ္ဍဲ Notion သွက်ဂွံစီုဇန်တင်စၟတ် ကေုာံ ချူလိက်။
+
+Zapier / Make
+
+:
+
+ကိရိယာ သုင်စောဲ သွက်ဂွံဆက်စပ် App နာနာ ညံင်ဂွံကၠောန်ကမၠောန် အဝ်တဝ်မေရှေန် (Automation)
+
+။
+
+ဆက်ဗှ်ညိ
+
+ဉာဏ်ပ္တေအ်ဗေဒ
+
+နဲပညာဆက်ဆောံ
+
+သိပ္ပံဗေဒ
+
+နိဿဲ
+
+Tech Trends Report. (2026). The Evolution of Generative AI Tools.
+
+Global Productivity Institute. (2025). AI in Modern Workplace.
+
+Adobe Insights. (2025). Generative AI in Creative Design.
+
+Google AI Research. (2026). Large Language Models and Information Retrieval.
+
+Workflow Automation Studies. (2025). Connecting Digital Ecosystems.
+
+ကလေင်ကေတ်လဝ် နူ "
+
+"
