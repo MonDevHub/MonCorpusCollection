@@ -1,0 +1,11 @@
+file,characters_counted,all_text_length,nga_to_mon_nga_replacements,status
+shards/custom_shard_001.txt,6831401,7824194,0,ok
+shards/monnews_shard_002.txt,3680297,3978926,0,ok
+shards/ocr_extracted_shard_001.txt,37624,40330,0,ok
+shards/monnews_shard_001.txt,7630465,8187197,0,ok
+shards/telegram_mot_tip_ebook_shard_001.txt,58104,66237,0,ok
+shards/wikipedia_shard_001.txt,7327594,8236811,0,ok
+shards/wikipedia_shard_003.txt,7918253,8674095,0,ok
+shards/wikipedia_shard_002.txt,7280604,8113108,0,ok
+shards/wikipedia_shard_004.txt,2149856,2402083,0,ok
+shards/facebook_shard_001.txt,36994,40489,0,ok

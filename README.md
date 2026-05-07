@@ -1,88 +1,96 @@
-# Mon Corpus Collection
+# Mon Language (mnw) Corpus Collection
 
-A repository of Mon language (mnw) text data for NLP research, linguistic analysis, and model training.
+A high-fidelity, production-grade corpus of the Mon language, curated for NLP research, LLM pre-training, and OCR model development. This repository provides consolidated training shards derived from a diverse range of digital Mon script sources.
 
-## Corpus Statistics
+## Dataset Overview
 
-The collection contains data from news, encyclopedia entries, and social media.
+The corpus is distributed in **training-ready shards** to facilitate high-throughput machine learning workflows.
 
-### Overview (2026-04-27)
+| Source Category         | Shards | Lines         | Characters     | Mon/Myanmar            | Other (Eng/Digits)    |
+| ----------------------- | ------ | ------------- | -------------- | ---------------------- | --------------------- |
+| **Mon Wikipedia**       | 4      | 891,665       | 24,676,307     | 21,037,957             | 3,638,350             |
+| **Mon News Agency**     | 2      | 107,882       | 11,310,762     | 10,260,088             | 1,050,674             |
+| **Custom Collections**  | 1      | 119,739       | 6,831,401      | 3,681,874              | 3,149,527             |
+| **Telegram / Facebook** | 2      | 4,479         | 95,098         | 81,479                 | 13,619                |
+| **OCR Extracted**       | 1      | 733           | 37,624         | 36,824                 | 800                   |
+| **Total**               | **10** | **1,124,998** | **42,951,192** | **35,098,222 (81.7%)** | **7,852,970 (18.3%)** |
 
-| Metric | Value |
-| :--- | :--- |
-| Total Files | 8,783 |
-| Mon-related Characters | 29,407,428 |
-| Raw Text Length | 36,586,341 |
-| Language | Mon (mnw) |
-| Script | Mon/Burmese Unicode |
+### Statistical Summary
 
-### Public Dataset (Open Source)
-
-| Source | Files | Mon Chars | Content Type |
-| :--- | :---: | :---: | :--- |
-| Wikipedia | 4,208 | 18,966,185 | Encyclopedia articles |
-| Mon News Agency | 3,682 | 10,229,891 | News and interviews |
-| Telegram | 889 | 53,131 | Public social media |
-| **Total Public** | **8,779** | **29,249,207** | **Open Data Collection** |
-
-### Additional Sources
-
-| Source | Files | Mon Chars | Content Type |
-| :--- | :---: | :---: | :--- |
-| Custom Collections | 4 | 158,221 | Curated/Miscellaneous |
-
-## Technical Specifications
-
-### Encoding and Normalization
-- **Encoding**: UTF-8.
-- **Unicode Blocks**: Myanmar block (U+1000–U+109F) and extended blocks.
-- **Normalization**: NFC normalization is required for all data.
-- **Linguistic Variants**: Distinguishes between standard Myanmar characters and Mon-specific variants (e.g., ၚ U+1021 vs င U+1004).
-
-### Data Quality
-- Metadata and UI boilerplate are removed during extraction.
-- Files under 50 characters are excluded from the core collection.
+- **Total Lines**: 1,124,998
+- **Total Characters (Unicode)**: 42,951,192
+- **Mon/Myanmar Characters**: 35,098,222
+- **Raw File Size**: ~113 MB (Uncompressed UTF-8)
 
 ## Project Structure
 
 ```text
-.
-├── monnews/               # Mon News Agency (IMNA) data
-├── wikipedia/             # Mon Wikipedia data
-├── telegram_mot_tip/      # Telegram channel messages
-├── custom/                # Curated and legacy data
-├── results/               # Analysis outputs (CSV/JSON)
-├── AGENTS.md              # Engineering standards and role context
-└── corpus_counter.py      # Corpus analysis utility
+MonCorpusCollection/
+├── shards/                 # Consolidated training shards (20MB each)
+│   ├── monnews_shard_*.txt # Mon News Agency articles
+│   ├── wikipedia_shard_*.txt # Mon Wikipedia articles
+│   ├── telegram_shard_*.txt # Curated Telegram messages
+│   └── custom_shard_*.txt  # Specialized and legacy collections
+├── results/                # Analysis reports and statistics
+│   └── latest/             # Latest character frequency and bigram/trigram stats
+├── scripts/                # Utility scripts for corpus analysis
+├── README.md               # Project overview (Last Update: 2026-05-07)
+└── AGENTS.md               # Engineering standards and context
 ```
 
-## Usage
+## Dataset Characteristics
 
-### Analyzing the Corpus
-Use the analysis script to generate character and n-gram statistics.
+### 1. High Fidelity
+
+We prioritize the preservation of the Mon language's digital footprint. Unlike generic cleaners that strip "unknown" characters, our pipeline:
+
+- Preserves all Myanmar script blocks (U+1000–U+109F, Extended-A/B).
+- Maintains intentional spacing essential for Mon script readability.
+- Strips only non-linguistic digital noise (BOM, ZWJ, ZWNJ, and control codes).
+
+### 2. Unicode Normalization (NFC)
+
+All text in this repository is strictly normalized to **Unicode NFC (Normal Form C)**. This ensures that grapheme clusters are represented consistently, regardless of the original input method or source platform.
+
+### 3. Global Deduplication
+
+The content within the `shards/` directory has been globally deduplicated. A document appearing in one shard will not appear in another, preventing data leakage during model training and evaluation.
+
+## Getting Started
+
+### Data Ingestion
+
+For model training, simply iterate through the `shards/` directory. Each file is a standard UTF-8 text file.
+
+### Analysis
+
+Run the provided scripts to generate character frequency reports or script cluster analysis:
 
 ```bash
-# Basic analysis
-python3 corpus_counter_normalized.py . --output-dir results
-
-# Analysis with Mon-specific Nga normalization (င -> ၚ)
-python3 corpus_counter_normalized.py . --output-dir results --normalize-mon-nga
+python scripts/mon_cluster_counter.py
 ```
-
-### Core Scripts
-- `corpus_counter_normalized.py`: Calculates character, bigram, and trigram frequencies.
-- `mon_cluster_counter.py`: Analyzes grapheme clusters.
 
 ## License and Attribution
 
-This corpus is released under the MIT License.
+This corpus is released under the **MIT License**.
 
-If you use this data, attribute the Mon Corpus Collection and the original sources (IMNA, Wikipedia).
+If you use this data in your research or applications, please attribute the **Mon Corpus Collection** and the original sources:
+
+- **Mon News Agency (IMNA)**
+- **Mon Wikipedia**
 
 ## Contributing
 
-1. Ensure all text is NFC normalized.
-2. Follow the character standards defined in AGENTS.md.
-3. Provide source attribution for new data.
+We welcome contributions to expand the Mon language digital corpus. Please follow these guidelines:
 
-Contributors: Janakh Pon, Htaw Mon
+1. **Normalization**: Ensure all text is **NFC normalized** before submission.
+2. **Attribution**: Provide clear source attribution for all new data collections.
+
+### Contributors
+
+- **Janakh Pon** ([GitHub](https://github.com/janakhpon))
+- **Htaw Mon** ([GitHub](https://github.com/iammon))
+
+---
+
+Maintained as part of the Mon AI Research project. Built for the community.
