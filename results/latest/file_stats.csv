@@ -5,6 +5,7 @@ shards/monnews_shard_001.txt,7630465,8187197,0,ok
 shards/wikipedia_shard_005.txt,913807,1040058,0,ok
 shards/wikipedia_shard_004.txt,2149856,2402083,0,ok
 shards/monnews_shard_002.txt,3680297,3978926,0,ok
+shards/mondictdb_shard_001.txt,2484241,2709025,0,ok
 shards/monnews_shard_003.txt,755603,815953,0,ok
 shards/wikipedia_shard_003.txt,7918253,8674095,0,ok
 shards/ocr_extracted_shard_001.txt,37624,40330,0,ok
