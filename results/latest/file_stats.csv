@@ -1,4 +1,5 @@
 file,characters_counted,all_text_length,nga_to_mon_nga_replacements,status
+shards/gemini_generated_shard_001.txt,23142,27958,0,ok
 shards/custom_shard_001.txt,6831401,7824194,0,ok
 shards/facebook_shard_001.txt,36994,40489,0,ok
 shards/monnews_shard_001.txt,7630465,8187197,0,ok

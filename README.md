@@ -16,7 +16,8 @@ This is a Mon-language text corpus for NLP research, language-model pretraining,
 | **MonDictDB** | 1 | 94,658 | 2,484,241 | 2,357,122 | 127,119 |
 | **Telegram / Facebook** | 2 | 4,479 | 95,098 | 81,479 | 13,619 |
 | **OCR Extracted** | 1 | 733 | 37,624 | 36,824 | 800 |
-| **Total** | **13** | **1,250,709** | **47,104,843** | **38,875,665 (82.5%)** | **8,229,178 (17.5%)** |
+| **Machine-generated** | 1 | 962 | 23,142 | 21,567 | 1,575 |
+| **Total** | **14** | **1,251,671** | **47,127,985** | **38,897,232 (82.5%)** | **8,230,753 (17.5%)** |
 
 Raw file size: ~124 MB (uncompressed UTF-8)
 
@@ -48,6 +49,7 @@ MonCorpusCollection/
 │   ├── telegram_*_shard_*.txt     # Telegram channel messages
 │   ├── facebook_shard_*.txt       # Facebook page posts
 │   ├── mondictdb_shard_*.txt      # MonDictDB dictionary entries and examples
+│   ├── gemini_generated_shard_*.txt  # LLM-authored, unverified — see below
 │   ├── ocr_extracted_shard_*.txt  # OCR-extracted text
 │   └── custom_shard_*.txt         # Specialized and legacy collections
 ├── results/latest/                # Character/bigram/trigram frequency over the shards
@@ -87,6 +89,7 @@ underlying sources below — every shard traces to one of them.
 | Custom Collections | `custom_shard_*` | Specialized and legacy collections |
 | Telegram / Facebook | `telegram_*`, `facebook_shard_*` | Public channel and page posts |
 | OCR Extracted | `ocr_extracted_shard_*` | Text recovered from scanned material |
+| Machine-generated | `gemini_generated_shard_*` | Authored by Google Gemini, not transcribed from any source |
 
 > **On the OCR-extracted and MonDictDB shards.** `ocr_extracted_shard_*` is the
 > output of an OCR system, so it can carry that system's recognition errors.
@@ -94,6 +97,21 @@ underlying sources below — every shard traces to one of them.
 > are excluded at import, but the exclusion is a property of the importer rather
 > than of this file. Treat both as lower-confidence than the Wikipedia and news
 > shards if your use is sensitive to transcription accuracy.
+
+> [!WARNING]
+> **`gemini_generated_shard_*` is not human-authored Mon and is not verified.**
+> A "Mon history" dataset produced by Google Gemini from its own knowledge —
+> neither the Mon prose nor the historical claims (dates, kingdoms, place names)
+> have been checked by a fluent reader or against a source. **Exclude this shard
+> for language-model pretraining, and do not cite its history.**
+>
+> What is measured about it, so the label is not the only thing you have to go
+> on. It is **novel text, not recycled**: of 2,050 sentences long enough to
+> deduplicate, exactly **1** matched the rest of the corpus, and that one is the
+> connective `ပ္ဍဲ ခေတ် ပစ္စုပ္ပန်၊`. It is also heavily repetitive at source —
+> **466 distinct sentences** expanded to 2,050 by internal repetition (77.3%),
+> one fragment appearing 178 times. The 962 lines here are what survives
+> deduplication. At 23,142 characters it is **0.05%** of the corpus.
 
 ---
 
