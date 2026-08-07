@@ -207,3 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 AGENTS.md
+
+raw/
+
+.DS_Store
