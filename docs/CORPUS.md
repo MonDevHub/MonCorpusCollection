@@ -17,7 +17,15 @@ The analysis tooling can optionally normalize certain variations:
 
 ## 2. Cleaning Philosophy
 
-New data is added to `shards/` with `scripts/build_shards.py`, which applies minimal cleaning:
+New data is added to `shards/` with `scripts/build_shards.py`, which applies minimal cleaning.
+
+**This section describes the importer, not every shard on disk.** `build_shards.py` dates
+from 2026-07-26; most shards were built before it and did not pass through it. Measured
+2026-08-08, **9,228 URLs remain** in the corpus, concentrated in two shards
+(`wikipedia_shard_003.txt` 5,457 and `monnews_shard_001.txt` 3,715), while
+`wikipedia_shard_001/002/004` instead carry orphan `"` lines where a "Retrieved from"
+prefix was stripped. Treat the rules below as what new data goes through, and check a
+shard before assuming it is clean.
 
 1.  **Unusable-character removal**:
     - Strips Zero-Width Spaces (ZWSP), Zero-Width Joiners (ZWJ), Non-Joiners (ZWNJ), and Byte Order Marks (BOM).
@@ -41,3 +49,41 @@ New data is added to `shards/` with `scripts/build_shards.py`, which applies min
 
 ## 5. Contact & Support
 For issues regarding character normalization or potential data corruption, please open an issue in the main research repository.
+
+
+---
+
+## Frequency analyses
+
+`results/latest/` holds character, bigram and trigram frequencies computed over the
+tracked shards. It is reproducible:
+
+```bash
+python scripts/corpus_counter_normalized.py shards --output-dir results/latest --all-chars
+```
+
+Its `total_raw_text_length` of 52,156,464 matches an independent byte count of the tracked
+shards exactly.
+
+### The removed `--normalize-mon-nga` trees (2026-08-08)
+
+Four other trees used to sit under `results/` — the root CSVs plus `custom/`, `monnews/`,
+`telegram/` and `wikipedia/`. They were removed because they described a different corpus
+and were silently misleading.
+
+They were generated from **8,823 raw scraper files that are not in this repository**, with
+`--normalize-mon-nga` enabled, which rewrote **438,900 instances of `င` (U+1004, Burmese
+NGA) into `ၚ` (U+105A, Mon NGA)**. Nothing in the output recorded that. The consequence:
+
+| file | `င` U+1004 | `ၚ` U+105A |
+| :--- | ---: | ---: |
+| removed `results/character_frequency.csv` | **row absent entirely** | 1,143,707 |
+| current `results/latest/character_frequency.csv` | 579,086 | 900,749 |
+
+A reader of the removed file would conclude that Burmese NGA does not occur in Mon text.
+It does, 579,086 times in the tracked shards.
+
+The underlying question is real and worth revisiting: Burmese NGA appears where Mon NGA is
+expected often enough that a normalization pass found 438,900 candidates. That is a
+linguistic finding about the source material. It is recorded here rather than left in an
+undocumented CSV that states it wrongly. The files remain in git history.

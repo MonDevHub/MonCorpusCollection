@@ -16,8 +16,9 @@ This is a Mon-language text corpus for NLP research, language-model pretraining,
 | **MonDictDB** | 1 | 94,658 | 2,484,241 | 2,357,122 | 127,119 |
 | **Telegram / Facebook** | 2 | 4,479 | 95,098 | 81,479 | 13,619 |
 | **OCR Extracted** | 1 | 733 | 37,624 | 36,824 | 800 |
+| **Handwritten** | 1 | 1,501 | 97,119 | 94,669 | 2,450 |
 | **Machine-generated** | 1 | 962 | 23,142 | 21,567 | 1,575 |
-| **Total** | **14** | **1,251,671** | **47,127,985** | **38,897,232 (82.5%)** | **8,230,753 (17.5%)** |
+| **Total** | **15** | **1,253,172** | **47,225,104** | **38,991,901 (82.6%)** | **8,233,203 (17.4%)** |
 
 Raw file size: ~124 MB (uncompressed UTF-8)
 
@@ -35,7 +36,16 @@ whole.
 
 **Preservation pipeline** — The pipeline preserves all Myanmar script blocks (U+1000–U+109F, Extended-A/B) and intentional spacing essential to Mon script readability. Only non-linguistic noise is stripped (BOM, ZWJ, ZWNJ, control codes).
 
-**Deduplication** — New content is deduplicated against the existing corpus at the sentence level (Mon-script skeleton) before it is added, so re-scraped material is not appended twice. A small number of short segments still recur across shards, so treat shard boundaries as packaging rather than guaranteed dedup splits.
+**Deduplication** — New content is deduplicated against the existing corpus at the sentence level (Mon-script skeleton) before it is added, so re-scraped material is not appended twice. That applies to content added through `scripts/build_shards.py`; it does not retroactively dedupe shards built before it.
+
+Measured 2026-08-08 over the 14 tracked shards, using this repo's own dedup key: of
+368,861 dedup-eligible lines, **94,007 are redundant instances — 25.5%**. The duplicates
+are not short: median 63 characters, longest 2,575. **4,542 distinct skeletons appear in
+more than one shard.**
+
+The practical consequence: **do not split `shards/` into train and eval by file.** Roughly
+4,500 sentence skeletons straddle any such boundary, which silently inflates whatever you
+measure. Deduplicate across the whole corpus first, then split.
 
 ---
 
@@ -86,32 +96,26 @@ underlying sources below — every shard traces to one of them.
 | Mon Wikipedia | `wikipedia_shard_*` | [mnw.wikipedia.org](https://mnw.wikipedia.org), CC BY-SA |
 | Mon News Agency (IMNA) | `monnews_shard_*` | [Independent Mon News Agency](https://monnews.org) |
 | MonDictDB | `mondictdb_shard_*` | [MonDictDB](https://github.com/Barnista/MonDictDB) by [Barnista](https://github.com/Barnista), MIT |
+| Handwritten | `handwritten_shard_*` | Composed directly in Mon by a native writer — not scraped, not transcribed, not generated |
 | Custom Collections | `custom_shard_*` | Specialized and legacy collections |
 | Telegram / Facebook | `telegram_*`, `facebook_shard_*` | Public channel and page posts |
 | OCR Extracted | `ocr_extracted_shard_*` | Text recovered from scanned material |
 | Machine-generated | `gemini_generated_shard_*` | Authored by Google Gemini, not transcribed from any source |
 
+> **On the handwritten shard.** `handwritten_shard_*` is the highest-confidence
+> material here: composed directly in Mon by a native writer, so it carries no
+> scraping artefacts, no recognition errors and no machine-authored text. Measured
+> against the rest of the corpus at import: **97.5% Mon script**, **0.014%
+> malformed tokens** (the corpus bar is 1.0%), zero URLs, and a mean charset
+> survival of 0.9985 with no line below 0.50. If you need a clean evaluation or
+> fine-tuning slice, start here.
+>
 > **On the OCR-extracted and MonDictDB shards.** `ocr_extracted_shard_*` is the
 > output of an OCR system, so it can carry that system's recognition errors.
 > MonDictDB records some definitions produced by machine translation; those rows
 > are excluded at import, but the exclusion is a property of the importer rather
 > than of this file. Treat both as lower-confidence than the Wikipedia and news
 > shards if your use is sensitive to transcription accuracy.
-
-> [!WARNING]
-> **`gemini_generated_shard_*` is not human-authored Mon and is not verified.**
-> A "Mon history" dataset produced by Google Gemini from its own knowledge —
-> neither the Mon prose nor the historical claims (dates, kingdoms, place names)
-> have been checked by a fluent reader or against a source. **Exclude this shard
-> for language-model pretraining, and do not cite its history.**
->
-> What is measured about it, so the label is not the only thing you have to go
-> on. It is **novel text, not recycled**: of 2,050 sentences long enough to
-> deduplicate, exactly **1** matched the rest of the corpus, and that one is the
-> connective `ပ္ဍဲ ခေတ် ပစ္စုပ္ပန်၊`. It is also heavily repetitive at source —
-> **466 distinct sentences** expanded to 2,050 by internal repetition (77.3%),
-> one fragment appearing 178 times. The 962 lines here are what survives
-> deduplication. At 23,142 characters it is **0.05%** of the corpus.
 
 ---
 
