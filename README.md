@@ -24,8 +24,8 @@ Raw file size: ~124 MB (uncompressed UTF-8). Verify a copy with
 `cd shards && shasum -a 256 -c SHA256SUMS`.
 
 **What the Lines column counts.** Every newline, including the blank line that separates
-documents. Measured over the 14 tracked shards on 2026-08-08: of 1,251,685 lines,
-**493,860 are blank — 39.5%**, leaving 757,825 with text on them, of which 53,201 are three
+documents. Measured over the 15 tracked shards on 2026-08-08: of 1,253,172 lines,
+**493,857 are blank — 39.4%**, leaving 759,315 with text on them, of which 53,275 are three
 characters or fewer. Budget for roughly 700K usable text lines rather than 1.25M. The
 character columns are unaffected: they already exclude whitespace.
 
@@ -45,10 +45,14 @@ whole.
 
 **Deduplication** — New content is deduplicated against the existing corpus at the sentence level (Mon-script skeleton) before it is added, so re-scraped material is not appended twice. That applies to content added through `scripts/build_shards.py`; it does not retroactively dedupe shards built before it.
 
-Measured 2026-08-08 over the 14 tracked shards, using this repo's own dedup key: of
-368,861 dedup-eligible lines, **94,007 are redundant instances — 25.5%**. The duplicates
-are not short: median 63 characters, longest 2,575. **4,542 distinct skeletons appear in
-more than one shard.**
+Measured 2026-08-08 over the 15 tracked shards, using this repo's own dedup key: of
+369,913 dedup-eligible lines, **94,007 are redundant instances — 25.4%**. The duplicates
+are not short: median 63 characters across the 35,157 distinct skeletons that repeat,
+longest 2,575. **4,542 distinct skeletons appear in more than one shard.**
+
+`handwritten_shard_001` contributed 1,094 of those eligible lines and **not one
+duplicate** — every redundancy figure above is identical with and without it. It is the
+only shard of which that is true, which is what composed-not-collected buys.
 
 The practical consequence: **do not split `shards/` into train and eval by file.** Roughly
 4,500 sentence skeletons straddle any such boundary, which silently inflates whatever you
