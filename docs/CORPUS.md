@@ -93,3 +93,24 @@ The underlying question is real and worth revisiting: Burmese NGA appears where 
 expected often enough that a normalization pass found 438,900 candidates. That is a
 linguistic finding about the source material. It is recorded here rather than left in an
 undocumented CSV that states it wrongly. The files remain in git history.
+
+
+## Integrity
+
+`shards/SHA256SUMS` carries a SHA-256 for every tracked shard. Verify a copy with the
+standard tool:
+
+```bash
+cd shards && shasum -a 256 -c SHA256SUMS     # or sha256sum -c on Linux
+```
+
+This matters more than it looks. **Ten of the fourteen shards do not end in a newline**, so
+"the file ends mid-token" is the normal state here and cannot be used to spot a truncated
+download. Git's own object hashes protect a clone; they do nothing for a tarball, a partial
+copy, or a shard fetched over a flaky link.
+
+Regenerate after adding a shard:
+
+```bash
+cd shards && shasum -a 256 *.txt > SHA256SUMS
+```

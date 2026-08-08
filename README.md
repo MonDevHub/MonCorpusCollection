@@ -20,7 +20,8 @@ This is a Mon-language text corpus for NLP research, language-model pretraining,
 | **Machine-generated** | 1 | 962 | 23,142 | 21,567 | 1,575 |
 | **Total** | **15** | **1,253,172** | **47,225,104** | **38,991,901 (82.6%)** | **8,233,203 (17.4%)** |
 
-Raw file size: ~124 MB (uncompressed UTF-8)
+Raw file size: ~124 MB (uncompressed UTF-8). Verify a copy with
+`cd shards && shasum -a 256 -c SHA256SUMS`.
 
 **What the Lines column counts.** Every newline, including the blank line that separates
 documents. Measured over the 14 tracked shards on 2026-08-08: of 1,251,685 lines,
