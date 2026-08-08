@@ -22,6 +22,12 @@ This is a Mon-language text corpus for NLP research, language-model pretraining,
 
 Raw file size: ~124 MB (uncompressed UTF-8)
 
+**What the Lines column counts.** Every newline, including the blank line that separates
+documents. Measured over the 14 tracked shards on 2026-08-08: of 1,251,685 lines,
+**493,860 are blank — 39.5%**, leaving 757,825 with text on them, of which 53,201 are three
+characters or fewer. Budget for roughly 700K usable text lines rather than 1.25M. The
+character columns are unaffected: they already exclude whitespace.
+
 The **Other** column is not noise to be filtered out. Mon and Burmese are mixed in
 ordinary written use, and any system reading real pages will meet them together —
 so mixed-script material is kept as it appears rather than separated. The

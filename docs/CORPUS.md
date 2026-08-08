@@ -33,6 +33,12 @@ shard before assuming it is clean.
 2.  **Whitespace collapsing**:
     - Reduces runs of spaces to a single space and trims each line.
     - Documents are stored one sentence per line, separated by a single blank line.
+      **Three shards do not follow this**, measured 2026-08-08: `mondictdb_shard_001`
+      (4 blank lines in 94,659), `gemini_generated_shard_001` (2 in 963) and
+      `custom_shard_001` (599 in 119,740, 0.5%). The rest sit at 31-50%. `mondictdb` is a
+      flat lexical stream rather than prose, so splitting it on blank lines yields one
+      7.5 MB document. Check a shard's blank-line ratio before treating blank lines as a
+      document boundary.
 3.  **Script preservation**:
     - Keeps all Mon, Burmese, and English mixed content. Nothing is dropped for being non-Mon.
 
