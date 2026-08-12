@@ -99,8 +99,15 @@ python scripts/build_shards.py --source monnews --input path/to/monnews --dry-ru
 
 ## Sources and Attribution
 
-MIT. If you use this data, please attribute **Mon Corpus Collection** and the
-underlying sources below — every shard traces to one of them.
+**The corpus is not MIT.** MIT covers `scripts/` and the `Makefile` only — see
+[LICENSE](LICENSE). The text in `shards/` and the tables in `results/` carry the
+terms of whatever they were drawn from, set out per source in
+[LICENSE-CORPUS.md](LICENSE-CORPUS.md).
+
+Mon Wikipedia is CC BY-SA 4.0 and MonDictDB is MIT. Six of the eight sources are
+unresolved, and redistributing those is not covered by anything in this
+repository. Attribute **Mon Corpus Collection** and the underlying source below —
+every shard traces to one of them.
 
 | Source | Shards | Origin |
 | :--- | :--- | :--- |

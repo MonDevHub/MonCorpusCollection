@@ -1,3 +1,22 @@
+SCOPE — READ THIS FIRST
+
+This MIT grant covers the SOFTWARE in this repository only:
+
+    scripts/*.py
+    Makefile
+
+It does NOT cover the corpus text in shards/, nor the frequency tables in
+results/ that are derived from it. That text is not MonDevHub's to license
+under MIT: the largest source is Mon Wikipedia, which is CC BY-SA 4.0 and
+therefore copyleft, and at least one source has no established licence at all.
+An MIT grant over that material would strip a ShareAlike obligation this
+project cannot waive and issue a permission this project does not hold.
+
+For the corpus, see LICENSE-CORPUS.md. It states the terms per source, keyed
+to the shard filename prefix, and names the sources whose terms are unresolved.
+
+-------------------------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2025 MonDevHub
