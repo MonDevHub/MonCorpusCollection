@@ -24,14 +24,14 @@ Examples:
 from __future__ import annotations
 
 import argparse
+import codecs
 import csv
 import json
 import sys
 import unicodedata
 from collections import Counter
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
-
 
 # -----------------------------
 # Unicode filtering
@@ -90,28 +90,66 @@ def apply_mon_normalization(
 # File reading
 # -----------------------------
 
+# Encoding detection is BOM-driven, not trial-and-error.
+#
+# The previous version tried utf-8, utf-8-sig, utf-16, utf-16-le, utf-16-be in order and
+# returned the first that did not raise. That is unsafe, because UTF-16 accepts *any*
+# byte sequence of even length: a Latin-1 or CP1252 file that fails UTF-8 does not fail
+# UTF-16, it decodes into mojibake. Measured:
+#
+#   b'\xe9t\xe9 chaud!'  utf-8 -> UnicodeDecodeError (invalid continuation byte)
+#                        utf-8-sig -> UnicodeDecodeError
+#                        utf-16 -> '瓩⃩档畡Ⅴ'
+#
+# Those five code points were then recorded status=ok and folded into the character,
+# bigram and trigram tables with nothing in the output saying the file was garbage. A
+# poisoned frequency table is worse than a missing file, because it is invisible.
+#
+# A BOM is the only reliable UTF-16 signal in a corpus of scraped text, so we require
+# one. No BOM means the file must be valid UTF-8 or it is refused: the caller records
+# status=read_failed and counts it in files_failed, and we warn on stderr so a silent
+# skip cannot pass for a clean run.
+BOM_ENCODINGS = (
+    # UTF-32 LE first: its BOM (ff fe 00 00) starts with the UTF-16 LE BOM (ff fe).
+    (codecs.BOM_UTF32_LE, "utf-32"),
+    (codecs.BOM_UTF32_BE, "utf-32"),
+    (codecs.BOM_UTF8, "utf-8-sig"),
+    (codecs.BOM_UTF16_LE, "utf-16"),
+    (codecs.BOM_UTF16_BE, "utf-16"),
+)
+
+
 def try_read_text_file(path: Path) -> str | None:
     """
-    Try reading a file using several common encodings.
-    Returns text or None if all attempts fail.
+    Read a file as UTF-8, or as whatever encoding its BOM declares.
+    Returns text, or None if the file cannot be decoded (never a guess).
     """
-    encodings_to_try = [
-        "utf-8",
-        "utf-8-sig",
-        "utf-16",
-        "utf-16-le",
-        "utf-16-be",
-    ]
+    try:
+        raw = path.read_bytes()
+    except OSError:
+        return None
 
-    for encoding in encodings_to_try:
-        try:
-            return path.read_text(encoding=encoding)
-        except UnicodeDecodeError:
-            continue
-        except OSError:
-            return None
+    for bom, encoding in BOM_ENCODINGS:
+        if raw.startswith(bom):
+            try:
+                return raw.decode(encoding)
+            except UnicodeDecodeError as exc:
+                print(
+                    f"warning: {path}: BOM declares {encoding} but the bytes do not "
+                    f"decode as it ({exc.reason}); skipped",
+                    file=sys.stderr,
+                )
+                return None
 
-    return None
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError as exc:
+        print(
+            f"warning: {path}: no BOM and not valid UTF-8 ({exc.reason} at byte "
+            f"{exc.start}); skipped rather than guessed",
+            file=sys.stderr,
+        )
+        return None
 
 
 # -----------------------------

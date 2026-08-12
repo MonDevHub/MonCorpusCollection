@@ -31,14 +31,14 @@ Preset usage:
 from __future__ import annotations
 
 import argparse
+import codecs
 import csv
 import json
 import sys
 import unicodedata
 from collections import Counter
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
-
 
 # ---------------------------------
 # Unicode helpers
@@ -93,24 +93,50 @@ def apply_mon_normalization(
 # File reading
 # ---------------------------------
 
+# Encoding detection is BOM-driven, not trial-and-error. Same fix and same reasoning as
+# corpus_counter_normalized.py: the old ordered list ended in utf-16, which accepts *any*
+# byte sequence of even length, so a non-UTF-8 file decoded into mojibake and was recorded
+# status=ok. Measured: b'\xe9t\xe9 chaud!' fails utf-8 and utf-8-sig, and utf-16 turns it
+# into '瓩⃩档畡Ⅴ' — five garbage clusters entering every cluster/bigram/trigram table with
+# nothing in the output flagging them. A BOM is the only reliable UTF-16 signal here, so we
+# require one; anything else is UTF-8 or refused (status=read_failed plus a stderr warning).
+BOM_ENCODINGS = (
+    # UTF-32 LE first: its BOM (ff fe 00 00) starts with the UTF-16 LE BOM (ff fe).
+    (codecs.BOM_UTF32_LE, "utf-32"),
+    (codecs.BOM_UTF32_BE, "utf-32"),
+    (codecs.BOM_UTF8, "utf-8-sig"),
+    (codecs.BOM_UTF16_LE, "utf-16"),
+    (codecs.BOM_UTF16_BE, "utf-16"),
+)
+
+
 def try_read_text_file(path: Path) -> str | None:
-    encodings_to_try = [
-        "utf-8",
-        "utf-8-sig",
-        "utf-16",
-        "utf-16-le",
-        "utf-16-be",
-    ]
+    try:
+        raw = path.read_bytes()
+    except OSError:
+        return None
 
-    for encoding in encodings_to_try:
-        try:
-            return path.read_text(encoding=encoding)
-        except UnicodeDecodeError:
-            continue
-        except OSError:
-            return None
+    for bom, encoding in BOM_ENCODINGS:
+        if raw.startswith(bom):
+            try:
+                return raw.decode(encoding)
+            except UnicodeDecodeError as exc:
+                print(
+                    f"warning: {path}: BOM declares {encoding} but the bytes do not "
+                    f"decode as it ({exc.reason}); skipped",
+                    file=sys.stderr,
+                )
+                return None
 
-    return None
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError as exc:
+        print(
+            f"warning: {path}: no BOM and not valid UTF-8 ({exc.reason} at byte "
+            f"{exc.start}); skipped rather than guessed",
+            file=sys.stderr,
+        )
+        return None
 
 
 def iter_input_files(root: Path, extensions: set[str], skip_dirs: set[str]) -> Iterable[Path]:
@@ -146,11 +172,7 @@ def is_cluster_base(char: str) -> bool:
         (0xA9E0, 0xA9FF),
     ]
 
-    for start, end in base_ranges:
-        if start <= code <= end:
-            return True
-
-    return False
+    return any(start <= code <= end for start, end in base_ranges)
 
 
 # Characters that usually continue the current cluster.
@@ -162,11 +184,7 @@ def is_cluster_mark(char: str) -> bool:
         (0x105E, 0x1060),  # Mon medials
     ]
 
-    for start, end in mark_ranges:
-        if start <= code <= end:
-            return True
-
-    return False
+    return any(start <= code <= end for start, end in mark_ranges)
 
 
 def extract_myanmar_runs(text: str) -> list[str]:
