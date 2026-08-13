@@ -18,21 +18,37 @@ dependent.
 
 ### 0.1 The licence is defective — C1, open
 
-Re-verified 2026-08-12: `LICENSE` is still a verbatim MIT grant, and there is
-now `LICENSE-CORPUS.md`.
+Re-verified 2026-08-13: `LICENSE:1` reads `SCOPE — READ THIS FIRST` and scopes
+the MIT grant to `scripts/*.py` and the `Makefile`, and `LICENSE-CORPUS.md`
+states the terms per source. `15b8839` did both.
+
+**The sentence that stood here was false, and worth recording as such.** It said
+`LICENSE` was "still a verbatim MIT grant". `15b8839` had already scoped it at
+00:04:06; `8a081fa` wrote the denial 47 seconds later, and `b6f5375` rewrote this
+file that morning without touching the line. A re-verification dated to yesterday
+is not a re-verification.
 
 The corpus redistributes **CC BY-SA Mon Wikipedia at 25,589,404 of 47,221,746
 counted characters (54.2%)** and **12,064,310 characters of Mon News Agency
-archive with no stated licence (25.5%)**. MIT strips ShareAlike and the required
-attribution from the first, and issues a permissive grant this project has no
-authority to issue over the second.
+archive with no stated licence (25.5%)** — both reproduced by `make stats` on
+2026-08-13. MIT no longer reaches either. What it never did was satisfy them.
 
-**Exit criteria.** All three:
+**Exit criteria.** One of three is met:
 
-1. `LICENSE` is CC BY-SA 4.0, or the shards that require it are removed.
-2. `LICENSE-CORPUS.md` states the licence and attribution **per source**, keyed to the
-   shard prefix so a consumer can resolve any line back to its terms.
-3. IMNA permission is obtained in writing, or `monnews_shard_*` is dropped.
+1. **Open.** `LICENSE` is CC BY-SA 4.0, or the shards that require it are removed.
+   Neither: `wikipedia_shard_001`–`005` are all still tracked, and the MIT grant
+   was scoped away from the text rather than replaced over it. `LICENSE-CORPUS.md`
+   does declare CC BY-SA 4.0 for the prefix and lists the changes §3(a)(1)(B)
+   requires — but it also records that per-article attribution is not
+   reconstructable, and §3(a)(1)(A) requires that. Removing the wrong grant is not
+   the same as supplying the right one.
+2. **Met** 2026-08-13, by `15b8839`. `LICENSE-CORPUS.md` states the licence and
+   attribution **per source**, keyed to the shard prefix, so a consumer can
+   resolve any line back to its terms.
+3. **Open.** IMNA permission is obtained in writing, or `monnews_shard_*` is
+   dropped. Neither: `monnews_shard_001`–`003` are tracked, and no permission is
+   recorded anywhere in the tree — `git ls-files` returns no such file, and
+   `LICENSE-CORPUS.md` still carries the row as **Unresolved**.
 
 Item 3 is the one that takes calendar time. Start it first; it can run while the
 rest of this file is worked.
