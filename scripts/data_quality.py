@@ -117,8 +117,9 @@ def measure(shards_dir: Path) -> dict:
     # dedups per sentence when it imports, but the shards on disk are stored one
     # sentence per line, so the line is the unit a consumer actually sees and the unit
     # the README's figures describe. Measuring per sentence instead re-splits lines the
-    # importer already split and reports a different population (653,531 eligible
-    # against 369,913), which is why the granularity is stated rather than implied.
+    # importer already split and reports a different population: 653,512 eligible
+    # against the 369,898 this script prints, which is why the granularity is stated
+    # rather than implied.
     key_counts: Counter[str] = Counter()
     key_shards: dict[str, set[str]] = defaultdict(set)
     key_length: dict[str, int] = {}
