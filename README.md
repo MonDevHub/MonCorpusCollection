@@ -10,16 +10,30 @@ This is a Mon-language text corpus for NLP research, language-model pretraining,
 
 | Source | Shards | Lines | Characters | Mon/Myanmar | Other |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mon Wikipedia** | 5 | 910,080 | 25,590,114 | 21,725,259 | 3,864,855 |
-| **Mon News Agency** | 3 | 121,020 | 12,066,365 | 10,993,107 | 1,073,258 |
-| **Custom Collections** | 1 | 119,739 | 6,831,401 | 3,681,874 | 3,149,527 |
+| **Mon Wikipedia** | 5 | 910,074 | 25,589,404 | 21,724,647 | 3,864,757 |
+| **Mon News Agency** | 3 | 121,008 | 12,064,310 | 10,991,170 | 1,073,140 |
+| **Custom Collections** | 1 | 119,737 | 6,831,335 | 3,681,830 | 3,149,505 |
 | **MonDictDB** | 1 | 94,658 | 2,484,241 | 2,357,122 | 127,119 |
-| **Telegram / Facebook** | 2 | 4,479 | 95,098 | 81,479 | 13,619 |
+| **Telegram** | 1 | 3,151 | 58,025 | 48,941 | 9,084 |
+| **Facebook** | 1 | 1,315 | 36,546 | 32,187 | 4,359 |
 | **OCR Extracted** | 1 | 733 | 37,624 | 36,824 | 800 |
+| **Handwritten** | 1 | 1,501 | 97,119 | 94,669 | 2,450 |
 | **Machine-generated** | 1 | 962 | 23,142 | 21,567 | 1,575 |
-| **Total** | **14** | **1,251,671** | **47,127,985** | **38,897,232 (82.5%)** | **8,230,753 (17.5%)** |
+| **Total** | **15** | **1,253,139** | **47,221,746** | **38,988,957 (82.6%)** | **8,232,789 (17.4%)** |
 
-Raw file size: ~124 MB (uncompressed UTF-8)
+Every cell above is one cell of `python3 scripts/shard_stats.py` output, measured
+2026-08-12. Telegram and Facebook are separate rows because the script reports them
+separately; combining them would make the table something no single command prints.
+
+Raw file size: 130,428,126 bytes, 124 MiB uncompressed UTF-8 (`cat shards/*.txt | wc -c`).
+Verify a copy with `cd shards && shasum -a 256 -c SHA256SUMS`.
+
+**What the Lines column counts.** Every newline, including the blank line that separates
+documents. Measured over the 15 tracked shards on 2026-08-12: of 1,253,139 lines,
+**493,845 are blank — 39.4%**, leaving 759,294 with text on them, of which 53,275 are three
+characters or fewer. Budget for roughly 700K usable text lines rather than 1.25M. The
+character columns are unaffected: they already exclude whitespace.
+Reproduce with `python3 scripts/data_quality.py`.
 
 The **Other** column is not noise to be filtered out. Mon and Burmese are mixed in
 ordinary written use, and any system reading real pages will meet them together —
@@ -35,7 +49,36 @@ whole.
 
 **Preservation pipeline** — The pipeline preserves all Myanmar script blocks (U+1000–U+109F, Extended-A/B) and intentional spacing essential to Mon script readability. Only non-linguistic noise is stripped (BOM, ZWJ, ZWNJ, control codes).
 
-**Deduplication** — New content is deduplicated against the existing corpus at the sentence level (Mon-script skeleton) before it is added, so re-scraped material is not appended twice. A small number of short segments still recur across shards, so treat shard boundaries as packaging rather than guaranteed dedup splits.
+**Personal data** — A redaction pass on 2026-08-12 removed every email address and
+mobile-number-shaped string from the shards, 21 lines in total across six shards. Whole
+lines were removed rather than masked: the material was mostly name-and-number rosters,
+and masking the number leaves the name beside the gap. `scripts/data_quality.py --check`
+now fails if any reappears, and it scans **both** ASCII and Myanmar numerals — three of
+the removed numbers were written in U+1040–U+1049, which no `\d` pattern matches.
+
+This closes the shards on disk. It does not close the git history: the pre-redaction
+contents are still reachable in earlier commits until the rewrite in
+[docs/NEXT_STEPS.md](docs/NEXT_STEPS.md) is run.
+
+**Deduplication** — New content is deduplicated against the existing corpus at the clause level (Mon-script skeleton) before it is added, so re-scraped material is not appended twice. That applies to content added through `scripts/build_shards.py`; it does not retroactively dedupe shards built before it.
+
+Measured 2026-08-12 over the 15 tracked shards, using this repo's own dedup key
+(`build_shards.py` `skeleton_key`, applied per cleaned non-blank line): of 369,898 dedup-eligible
+lines, **94,006 are redundant instances — 25.4%**, accounting for 4,708,496 redundant
+characters. The duplicates are not short: median 63 characters across the 35,156 distinct
+skeletons that repeat, p90 180, longest 2,575. **4,542 distinct skeletons appear in more
+than one shard.** Reproduce with `python3 scripts/data_quality.py`.
+
+`handwritten_shard_001` contributed 1,094 of those eligible lines and **not one
+duplicate** — every redundancy figure above is identical with and without it. Three other
+shards share that property (`gemini_generated_shard_001`, `monnews_shard_003`,
+`wikipedia_shard_005`), but `mondictdb_shard_001` is the striking one: 54,457 eligible
+lines and no repeats at all. The per-shard breakdown is the last table
+`scripts/data_quality.py` prints.
+
+The practical consequence: **do not split `shards/` into train and eval by file.** Roughly
+4,500 sentence skeletons straddle any such boundary, which silently inflates whatever you
+measure. Deduplicate across the whole corpus first, then split.
 
 ---
 
@@ -70,6 +113,10 @@ python scripts/shard_stats.py
 # Character / bigram / trigram frequency over all shards
 python scripts/corpus_counter_normalized.py shards --output-dir results/latest --all-chars
 
+# Every number in the Data Quality section above; --check fails on PII
+python scripts/data_quality.py
+python scripts/data_quality.py --check
+
 # Add newly scraped .txt files as deduplicated shards (dry-run first)
 python scripts/build_shards.py --source monnews --input path/to/monnews --dry-run
 ```
@@ -78,40 +125,41 @@ python scripts/build_shards.py --source monnews --input path/to/monnews --dry-ru
 
 ## Sources and Attribution
 
-MIT. If you use this data, please attribute **Mon Corpus Collection** and the
-underlying sources below — every shard traces to one of them.
+**The corpus is not MIT.** MIT covers `scripts/` and the `Makefile` only — see
+[LICENSE](LICENSE). The text in `shards/` and the tables in `results/` carry the
+terms of whatever they were drawn from, set out per source in
+[LICENSE-CORPUS.md](LICENSE-CORPUS.md).
+
+Mon Wikipedia is CC BY-SA 4.0 and MonDictDB is MIT. Six of the eight sources are
+unresolved, and redistributing those is not covered by anything in this
+repository. Attribute **Mon Corpus Collection** and the underlying source below —
+every shard traces to one of them.
 
 | Source | Shards | Origin |
 | :--- | :--- | :--- |
 | Mon Wikipedia | `wikipedia_shard_*` | [mnw.wikipedia.org](https://mnw.wikipedia.org), CC BY-SA |
 | Mon News Agency (IMNA) | `monnews_shard_*` | [Independent Mon News Agency](https://monnews.org) |
 | MonDictDB | `mondictdb_shard_*` | [MonDictDB](https://github.com/Barnista/MonDictDB) by [Barnista](https://github.com/Barnista), MIT |
+| Handwritten | `handwritten_shard_*` | Composed directly in Mon by a native writer — not scraped, not transcribed, not generated |
 | Custom Collections | `custom_shard_*` | Specialized and legacy collections |
 | Telegram / Facebook | `telegram_*`, `facebook_shard_*` | Public channel and page posts |
 | OCR Extracted | `ocr_extracted_shard_*` | Text recovered from scanned material |
 | Machine-generated | `gemini_generated_shard_*` | Authored by Google Gemini, not transcribed from any source |
 
+> **On the handwritten shard.** `handwritten_shard_*` is the highest-confidence
+> material here: composed directly in Mon by a native writer, so it carries no
+> scraping artefacts, no recognition errors and no machine-authored text. Measured
+> against the rest of the corpus at import: **97.5% Mon script**, **0.014%
+> malformed tokens** (the corpus bar is 1.0%), zero URLs, and a mean charset
+> survival of 0.9985 with no line below 0.50. If you need a clean evaluation or
+> fine-tuning slice, start here.
+>
 > **On the OCR-extracted and MonDictDB shards.** `ocr_extracted_shard_*` is the
 > output of an OCR system, so it can carry that system's recognition errors.
 > MonDictDB records some definitions produced by machine translation; those rows
 > are excluded at import, but the exclusion is a property of the importer rather
 > than of this file. Treat both as lower-confidence than the Wikipedia and news
 > shards if your use is sensitive to transcription accuracy.
-
-> [!WARNING]
-> **`gemini_generated_shard_*` is not human-authored Mon and is not verified.**
-> A "Mon history" dataset produced by Google Gemini from its own knowledge —
-> neither the Mon prose nor the historical claims (dates, kingdoms, place names)
-> have been checked by a fluent reader or against a source. **Exclude this shard
-> for language-model pretraining, and do not cite its history.**
->
-> What is measured about it, so the label is not the only thing you have to go
-> on. It is **novel text, not recycled**: of 2,050 sentences long enough to
-> deduplicate, exactly **1** matched the rest of the corpus, and that one is the
-> connective `ပ္ဍဲ ခေတ် ပစ္စုပ္ပန်၊`. It is also heavily repetitive at source —
-> **466 distinct sentences** expanded to 2,050 by internal repetition (77.3%),
-> one fragment appearing 178 times. The 962 lines here are what survives
-> deduplication. At 23,142 characters it is **0.05%** of the corpus.
 
 ---
 
