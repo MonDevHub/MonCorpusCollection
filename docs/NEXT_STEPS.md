@@ -158,7 +158,9 @@ Also closed 2026-08-12, found while checking the above:
 - `docs/CORPUS.md` claimed `total_raw_text_length` "matches an independent byte
   count exactly". It is a **character** count, and the byte count is 2.49x larger.
 - Three shard-count claims were wrong: "10 of the fourteen shards", "9 of 15
-  shards do not end in a newline" (it is 10), "52 tracked files" (it is 30).
+  shards do not end in a newline" (it is 10), and "52 tracked files". The tracked
+  file count moves with every commit, so it is now cited as the command that
+  produces it, `git ls-files | wc -l`, rather than as a number.
 - `README.md` claimed `handwritten_shard_001` was the only shard contributing no
   duplicates. Four others do, and `mondictdb_shard_001` contributes 54,457
   eligible lines with no repeats at all.
@@ -180,8 +182,8 @@ architecture.
 
 | | Work | Why now |
 |---|---|---|
-| 2.1 | **A `Makefile`** with `stats`, `quality` and `verify` targets, so a change can be checked before it is pushed | Nothing verified a change before `scripts/data_quality.py` existed. Everything else here depends on it |
-| 2.2 | **`ruff` in `pyproject.toml`, then `ruff check --fix`.** Measured 2026-08-09: **9 errors**, 4 auto-fixable | Small enough to close cheaply. Re-measure before acting; the scripts have changed since |
+| 2.1 | ~~**A `Makefile`** with `stats`, `quality` and `verify` targets~~ **done** `b68b794`. `make check` runs all three, and `verify` also asserts the manifest covers every shard, because `shasum -c` exits 0 when it lists fewer files than exist | — |
+| 2.2 | ~~**`ruff`**, then `ruff check --fix`~~ **done** `b68b794`, in `ruff.toml` rather than a `pyproject.toml` this repo does not have. `make lint` is clean. `RUF001-003` are ignored: they read MYANMAR DIGIT ZERO as a typo for Latin `o` | — |
 | 2.3 | **CI** running the `verify` and `quality` targets on push | The PII gate is only a gate if something runs it. Right now it has to be run by hand |
 | 2.4 | **A test for `build_shards.py`'s shard-boundary and dedup behaviour** | It produces the artifact everything downstream trains on. `scripts/data_quality.py` measures the corpus but asserts nothing about the importer |
 | 2.5 | **A stated Python floor.** `shard_stats.py:20` uses PEP 585 generics and `build_shards.py:142` uses `X \| None` | One README line closes it |
@@ -200,6 +202,41 @@ Blocked on section 0. Recorded so the sequence is visible.
 | 3.1 | **Stop shipping 124 MiB of `.txt` through git.** Git has no streaming reader, no column types, and every clone pays the full history | Hugging Face Datasets, or release tarballs with checksums |
 | 3.2 | **Publish as a Hugging Face dataset with a datasheet** — provenance, licence and known limitations per shard | **Gated on 0.1 and the 0.2 history rewrite.** This is the item that makes the corpus citable, and publishing before the licence and the history are resolved multiplies both problems |
 | 3.3 | **A held-out evaluation split, reserved and never trained on** | `handwritten_shard_001.txt` is the highest-confidence Mon here: 1,501 lines, 1,094 dedup-eligible, and not one of them duplicated anywhere in the corpus. MonOCR already trains on 1,055 of its lines, so carving it out later means excluding them there first |
+
+---
+
+## 4. Four commits `make check` cannot answer for
+
+The gates landed before the code they gate was clean, so four commits fail
+`make check` for reasons that have nothing to do with any bug being hunted.
+**History is staying as it is** — the SHAs below are already cited from this file
+and from `AUDIT-2026-08-08.md`, and a rebase to tidy four commits would rewrite
+every one of them. The defect is recorded rather than removed.
+
+| Commit | `make check` | Why |
+|---|---|---|
+| `26680cd` | exits 2 | Predates the `Makefile`. `make: *** No rule to make target 'check'` |
+| `15b8839` | exits 2 | Same |
+| `b68b794` | exits 2 at `lint` | Added `Makefile` and `ruff.toml`, and `ruff.toml` selects `UP`. 8 findings |
+| `28913bb` | exits 2 at `lint` | 2 findings left in `build_shards.py` |
+
+`b68b794` is the one worth spelling out. It introduced the lint gate while
+`scripts/corpus_counter_normalized.py:33` and `scripts/mon_cluster_counter.py:40`
+still read `from typing import Iterable`, which is `UP035`. Both were rewritten in
+the next commit, `28913bb` — but that commit is still red, because `build_shards.py`
+carried `C420` at `:47` and `C408` at `:126` until `6ba4e6e`. `verify` and `quality`
+pass at both; only `lint` fails.
+
+**`6ba4e6e` is the first commit where `make check` exits 0.** Bisecting with
+`make check` as the test marks everything before it bad. Bisect on the specific
+symptom instead, or `git bisect skip` the four.
+
+Measured with ruff 0.16.2, which the `Makefile` fetches through `uvx` and does not
+pin — a later ruff can change the finding counts above, though not which commits
+are red.
+
+The 0.2 history rewrite invalidates every SHA in this section. Re-derive them from
+the rewritten history if it lands.
 
 ---
 
