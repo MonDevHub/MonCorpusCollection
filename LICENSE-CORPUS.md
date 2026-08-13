@@ -49,8 +49,8 @@ this project" is not a licence and the row stays unresolved.
 ## CC BY-SA 4.0 attribution for `wikipedia_shard_*`
 
 CC BY-SA 4.0 requires attribution, a licence link, an indication of changes, and that
-adaptations are shared under the same licence. `wikipedia_shard_*` is Adapted Material —
-the text was cleaned and repacked, see below — so all four apply.
+adaptations are shared under the same licence. `wikipedia_shard_*` is Adapted Material,
+because the text was cleaned and repacked as listed below, so all four apply.
 
 > Text in `wikipedia_shard_*` is derived from [Mon Wikipedia](https://mnw.wikipedia.org),
 > by its contributors, used under
