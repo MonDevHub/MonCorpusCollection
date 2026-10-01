@@ -19,7 +19,7 @@ Safety guarantees:
   The dedup unit is a CLAUSE, not a sentence. SENT_SPLIT_RE breaks on ASCII `. ! ? , ; :`
   as well as the Mon/Burmese endings, and Mon writing uses ASCII punctuation freely, so
   the unit is finer than a sentence: over the shards in this repository it yields about
-  15% more units than Mon-only endings would. A break point between two digits splits a
+  18% more units than Mon-only endings would. A break point between two digits splits a
   date or decimal (`၃၁.၈.၂၀၂၅` becomes three units). The split defines the dedup key, so
   changing it changes every dedup figure in README.md and docs/CORPUS.md. See
   SENT_SPLIT_RE below.

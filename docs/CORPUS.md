@@ -36,7 +36,7 @@ Each source occupies its own files, identified by the shard filename prefix.
 0.1%), `handwritten_shard_001` (1 in 1,501, 0.1%), `custom_shard_001` (599 in 119,737,
 0.5%), `wikipedia_shard_005` (5.3%), `ocr_extracted_shard_001` (7.1%) and
 `monnews_shard_003` (10.1%). The other eight run 32.0–49.8%. Splitting
-`mondictdb_shard_001` on blank lines yields one 7.5 MB document. Check a shard's
+`mondictdb_shard_001` on blank lines yields three documents, the largest about 4.1 MB. Check a shard's
 blank-line share before treating blank lines as document boundaries.
 
 **Most shards do not end in a newline.** Ten of the fifteen stop mid-line; only
@@ -54,7 +54,7 @@ document per file, and for each document:
    `. ! ? , ; :`. Because Mon writing uses ASCII punctuation freely, the unit is a
    clause rather than a sentence, and a date or decimal such as `၃၁.၈.၂၀၂၅` splits into
    three. Over the current shards this rule yields 1,462,490 units, against 1,241,854
-   under Mon-only endings, 15.1% more.
+   under Mon-only endings, 17.8% more.
 3. **Deduplicates** each segment against the existing corpus and the rest of the batch,
    using a Mon-script skeleton (Myanmar-block characters only). A segment is dropped
    only when its skeleton has at least 15 Mon characters and already exists; shorter
@@ -195,7 +195,7 @@ python3 scripts/corpus_counter_normalized.py shards --output-dir results/latest 
 ```
 
 In `summary.json`, `total_raw_text_length` (52,256,919) is a **character** count, `len()`
-over the decoded text, not a byte count. The shards are 130,428,126 bytes, 2.49 times
+over the decoded text, not a byte count. The shards are 130,428,126 bytes, 2.50 times
 larger, because Myanmar-script code points take three bytes each in UTF-8.
 `total_counted_characters` (47,221,746) is the non-whitespace count and equals the
 README's Characters total.

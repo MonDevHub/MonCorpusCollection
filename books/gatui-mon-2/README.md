@@ -1,7 +1,7 @@
 # လိက်ဂတဵုဇၞော်မန် ၂
 
 - **Title as printed:** လိခ်ဂတဵုဇၞော်မဉ် (running header); file title လိက်ဂတဵုဇၞော်မန် ၂. Part 2 of a longer work: the printed page numbers run ၂၂ to ၃၈.
-- **Origin:** redistributed by www.monlibrary.com, whose header and watermark are on every page; PDF metadata author: Minmon007
+- **Origin:** redistributed by www.monlibrary.com, whose header and watermark are on every page
 - **Source PDF SHA-256:** `bd43ad9d19354f46e0dfe8fadaf7641fcd48f13099c950a9061e891a71089fdf`
 - **Pages:** 17
 - **Text:** machine OCR (MonOCR model v3.5, [huggingface.co/janakhpon/monocr](https://huggingface.co/janakhpon/monocr) @ `d3d9d5e`), not proofread. It carries the model's recognition errors.

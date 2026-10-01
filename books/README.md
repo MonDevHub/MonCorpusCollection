@@ -14,7 +14,7 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [journal-of-mon-studies-guideline-2024](journal-of-mon-studies-guideline-2024/) | Journal of Mon Studies editorial guideline, amended 3 Nov 2024 | Mon National College | 4 | 5,956 | 95.7% | 4.95% | 5.56% | 1.022 |
 | [gatui-mon-2](gatui-mon-2/) | လိက်ဂတဵုဇၞော်မန် ၂ | www.monlibrary.com | 17 | 15,034 | 97.8% | 2.55% | 4.91% | 1.015 |
 
-**Characters** excludes whitespace and is counted on the text files. The other measures are
+**Characters** excludes whitespace and the `[page N]` marker lines, and is counted on the text files. The other measures are
 taken on the OCR output before the header, footer, e-mail and watermark lines were removed:
 
 - **Myanmar script** is the share of Myanmar-block characters once URL and running-header
