@@ -4,8 +4,8 @@ A Mon-language text corpus for NLP research, language-model pretraining and OCR
 training data. It is the training data source for
 [MonOCR](https://github.com/MonDevHub/monocr).
 
-**The corpus is not MIT, and six of its eight sources have no established licence.** Read
-[Licence](#licence) before redistributing any shard.
+**The corpus is not MIT, and seven of its nine sources have no established licence.**
+Read [Licence](#licence) before redistributing any shard or book text.
 
 ## Dataset
 
@@ -72,6 +72,13 @@ per-shard breakdown.
 straddle any such boundary and inflate whatever you measure. Deduplicate across
 the whole corpus first, then split.
 
+## Books
+
+[`books/`](books/) holds four Mon documents read by OCR, one folder each, kept as
+readable page-by-page texts rather than shards. They are machine OCR, not proofread, and
+their terms are unresolved. `make stats`, `make quality` and `results/latest/` cover the
+shards only, so none of the figures above include them.
+
 ## Structure
 
 ```text
@@ -86,6 +93,7 @@ MonCorpusCollection/
 │   ├── ocr_extracted_shard_*.txt     # OCR-extracted text
 │   ├── handwritten_shard_*.txt       # Composed directly in Mon by a native writer
 │   └── gemini_generated_shard_*.txt  # LLM-authored, unverified
+├── books/                            # OCR-read Mon documents, one folder each (not shards)
 ├── results/latest/                   # Character/bigram/trigram frequency over the shards
 ├── scripts/                          # stdlib-only Python: stats, quality, import, counters
 └── docs/CORPUS.md                    # Datasheet: sources, build, cleaning, limitations
@@ -114,10 +122,10 @@ python3 scripts/build_shards.py --source monnews --input path/to/monnews --dry-r
 ## Licence
 
 MIT covers `scripts/` and the `Makefile` only; see [LICENSE](LICENSE). The text in
-`shards/` and the tables in `results/` carry the terms of their sources, set out
-per source in [LICENSE-CORPUS.md](LICENSE-CORPUS.md), which governs.
+`shards/` and `books/` and the tables in `results/` carry the terms of their sources,
+set out per source in [LICENSE-CORPUS.md](LICENSE-CORPUS.md), which governs.
 
-| Source | Shards | Origin | Terms |
+| Source | Files | Origin | Terms |
 | :--- | :--- | :--- | :--- |
 | Mon Wikipedia | `wikipedia_shard_*` | [mnw.wikipedia.org](https://mnw.wikipedia.org) | CC BY-SA 4.0 |
 | MonDictDB | `mondictdb_shard_*` | [MonDictDB](https://github.com/Barnista/MonDictDB) by [Barnista](https://github.com/Barnista) | MIT |
@@ -127,12 +135,13 @@ per source in [LICENSE-CORPUS.md](LICENSE-CORPUS.md), which governs.
 | Custom Collections | `custom_shard_*` | Specialized and legacy collections | **Unresolved** |
 | Machine-generated | `gemini_generated_shard_*` | Authored by Google Gemini, not transcribed from any source | **Unresolved** |
 | Handwritten | `handwritten_shard_*` | Composed directly in Mon by a native writer: not scraped, transcribed or generated | **Unresolved** |
+| Books | `books/` | Four Mon documents read by OCR; sources in [books/README.md](books/README.md) | **Unresolved** |
 
 Only the Wikipedia and MonDictDB shards are covered, under CC BY-SA 4.0 and MIT.
-Redistributing any **Unresolved** shard is not covered by anything in this
-repository. Attribute **Mon Corpus Collection** and the underlying source of each
-shard you use; for the Wikipedia shards, use the CC BY-SA 4.0 attribution and list
-of changes in [LICENSE-CORPUS.md](LICENSE-CORPUS.md#cc-by-sa-40-attribution-for-wikipedia_shard_).
+Redistributing any **Unresolved** shard or book text is not covered by anything in
+this repository. Attribute **Mon Corpus Collection** and the underlying source of
+each shard or book you use; for the Wikipedia shards, use the CC BY-SA 4.0
+attribution and list of changes in [LICENSE-CORPUS.md](LICENSE-CORPUS.md#cc-by-sa-40-attribution-for-wikipedia_shard_).
 
 ### Confidence by source
 
@@ -145,14 +154,16 @@ of changes in [LICENSE-CORPUS.md](LICENSE-CORPUS.md#cc-by-sa-40-attribution-for-
   text already includes it, so it is not held out from MonOCR.
 - **OCR Extracted** is the output of an OCR system and can carry its recognition
   errors.
+- **Books** are machine OCR, not proofread; each book's README lists its known
+  recognition errors.
 - **MonDictDB** upstream records some definitions as machine-translated. Those
   rows are excluded at import, but that is a property of the importer, not of the
   shard file.
 - **Machine-generated** text is LLM-authored and unverified, and separable by
   filename.
 
-Treat OCR Extracted and MonDictDB as lower-confidence than the Wikipedia and news
-shards if your use is sensitive to transcription accuracy.
+Treat OCR Extracted, Books and MonDictDB as lower-confidence than the Wikipedia and
+news shards if your use is sensitive to transcription accuracy.
 
 ## Contributing
 

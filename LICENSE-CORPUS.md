@@ -1,13 +1,15 @@
 # Corpus licence and attribution
 
-This file governs the corpus text in `shards/` and the derived tables in `results/`.
+This file governs the corpus text in `shards/`, the book texts in `books/`, and the
+derived tables in `results/`.
 The code is separate: `LICENSE` is an MIT grant scoped to `scripts/` and `Makefile`.
 
 **There is no single licence for this corpus, and this file does not invent one.**
-`shards/` is a *collection*: each source occupies its own files, identified by the
-filename prefix, and each source carries its own terms. Some of those terms are
-established and some are not. The table below is keyed to the prefix so any line in
-any shard resolves to its own terms.
+The corpus is a *collection*: each source occupies its own files, identified by the
+shard filename prefix in `shards/` or by the `books/` folder, and each source carries
+its own terms. Some of those terms are established and some are not. The table below
+is keyed to those files so any line in any shard or book text resolves to its own
+terms.
 
 Run `make stats` for the current per-source mass. Wikipedia is the largest source by
 character count and IMNA the second, which is why the two rows below decide the
@@ -15,7 +17,7 @@ practical answer for most consumers.
 
 ## Terms per source
 
-| Shard prefix | Source | Terms | Status |
+| Files | Source | Terms | Status |
 | :--- | :--- | :--- | :--- |
 | `wikipedia_shard_*` | [Mon Wikipedia](https://mnw.wikipedia.org) | **CC BY-SA 4.0** | Verified 2026-08-12 |
 | `mondictdb_shard_*` | [MonDictDB](https://github.com/Barnista/MonDictDB) by [Barnista](https://github.com/Barnista) | **MIT** | Verified 2026-08-12 |
@@ -25,6 +27,7 @@ practical answer for most consumers.
 | `custom_shard_*` | Specialized and legacy collections | **None established** | **Unresolved** |
 | `gemini_generated_shard_*` | Authored by Google Gemini | **None established** | **Unresolved** |
 | `handwritten_shard_*` | Composed directly in Mon by a native writer | **None recorded** | **Unresolved** |
+| `books/` (folder, not a shard prefix) | Machine OCR of four Mon-language documents, one folder each; sources in [books/README.md](books/README.md) | **None established** | **Unresolved** |
 
 "Verified" means the upstream statement was read at the URL given, on the date given:
 the [Wikimedia Terms of Use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use)
@@ -33,10 +36,11 @@ for Wikipedia, and the repository's own `LICENSE` for MonDictDB.
 ## What "unresolved" means
 
 For every row marked **Unresolved**, no licence has been obtained, and this project has
-no authority to grant one. **Redistribution of those shards is not covered by this file
+no authority to grant one. **Redistribution of those files is not covered by this file
 or by any other file in this repository.** They are present because they were collected
 before the terms were settled; that is a fact about the repository's history, not a
-permission.
+permission. `books/` was added with its terms still unresolved: none of its four source
+documents states a licence.
 
 This is not a formality for `monnews_shard_*` in particular. IMNA is a working news
 agency and those shards are a large fraction of its archive. Treat that row as an open
@@ -76,18 +80,18 @@ this file can do retroactively.
 
 - Using **only** `wikipedia_shard_*` and `mondictdb_shard_*` is covered: comply with
   CC BY-SA 4.0 and MIT respectively.
-- Using any **Unresolved** shard is not covered by this repository. Resolve the terms
-  with the source before redistributing that material.
-- `results/` is computed over all shards and inherits the same split. Whether a
-  character-frequency table is a derivative work of the text it counts is an open
-  question the maintainers have not taken advice on; it is flagged here rather than
-  answered.
+- Using any **Unresolved** shard or book text is not covered by this repository.
+  Resolve the terms with the source before redistributing that material.
+- `results/` is computed over all shards, not over `books/`, and inherits the same
+  split. Whether a character-frequency table is a derivative work of the text it counts
+  is an open question the maintainers have not taken advice on; it is flagged here
+  rather than answered.
 
 If you use this data, attribute **Mon Corpus Collection** *and* the underlying source
-of each shard you used.
+of each shard or book you used.
 
 ## Reporting a problem
 
 If you hold rights in material here and it should not be redistributed, open an issue on
 [MonDevHub/MonCorpusCollection](https://github.com/MonDevHub/MonCorpusCollection) and the
-affected shards will be removed.
+affected files will be removed.

@@ -1,7 +1,8 @@
 # Mon Corpus datasheet
 
 What the shards contain, how they are built and cleaned, and what they still carry
-that a user should know about. Per-source line and character counts are in the
+that a user should know about; section 9 covers the book texts in `books/`.
+Per-source line and character counts are in the
 [README Dataset table](../README.md#dataset) (`make stats`); licence terms are in
 [LICENSE-CORPUS.md](../LICENSE-CORPUS.md), which governs.
 
@@ -185,8 +186,9 @@ cd shards && shasum -a 256 *.txt > SHA256SUMS
 ## 8. Frequency tables
 
 `results/latest/` holds character, bigram and trigram frequencies and per-file counts
-over all shards, with no `--normalize-mon-nga` mapping. Regenerate it with
-`make frequencies`, which runs:
+over all shards, with no `--normalize-mon-nga` mapping. It counts `shards/` only:
+`books/` is not an input, so adding the books left the tables unchanged. Regenerate
+it with `make frequencies`, which runs:
 
 ```bash
 python3 scripts/corpus_counter_normalized.py shards --output-dir results/latest --all-chars
@@ -201,17 +203,42 @@ README's Characters total.
 `results/` is derived from every shard and inherits the per-source terms; see
 [LICENSE-CORPUS.md](../LICENSE-CORPUS.md).
 
-## 9. Known limitations
+## 9. Books
+
+`books/` holds four Mon documents read from their PDF pages by OCR, one folder each:
+the text and a README giving the printed title, author or origin, the source PDF's
+SHA-256, the page count, the OCR model and the known issues.
+[books/README.md](../books/README.md) indexes them.
+
+- **Machine OCR, not proofread.** Every text carries the model's recognition errors;
+  each README lists the ones found.
+- **Layout.** Pages in PDF order, each opened by a `[page N]` line with the PDF page
+  number and separated by one blank line. Each line is one line as the OCR read it:
+  nothing was reflowed, merged, deduplicated or corrected. Unicode NFC.
+- **Not shards.** The books are not clause-split or deduplicated against the corpus,
+  are not in `shards/SHA256SUMS`, and are not counted by `make stats`, `make quality`
+  or `results/latest/`. The personal-data check in section 6 scans `shards/` only.
+- **Quality.** Per-document characters, Myanmar-script share, malformed lines,
+  Mon-specific letter share and OCR yield are in
+  [books/README.md](../books/README.md).
+- **Removed lines.** Only lines that are not book text: page-number footers, running
+  headers and footers, e-mail lines, and the watermark and its misreads. Each README
+  says which, with counts.
+- **Terms.** None established; unresolved. See [LICENSE-CORPUS.md](../LICENSE-CORPUS.md).
+
+## 10. Known limitations
 
 - **Licence.** Only the Wikipedia and MonDictDB shards have established terms; the
-  others are unresolved. See [LICENSE-CORPUS.md](../LICENSE-CORPUS.md).
+  other shards and the book texts are unresolved. See
+  [LICENSE-CORPUS.md](../LICENSE-CORPUS.md).
 - **Attribution.** Wikipedia shards cannot be attributed per article (section 1).
 - **Duplication** across and within shards, about a quarter of eligible lines. Not
   removed from older shards (section 3).
 - **Residue** in shards that predate the importer: URLs, orphan quote lines and
   invisible characters (section 4).
 - **Blank lines** are not a consistent document boundary (section 2).
-- **Lower-confidence sources**: OCR Extracted can carry recognition errors, and the
+- **Lower-confidence sources**: OCR Extracted can carry recognition errors, the book
+  texts are machine OCR that nobody has proofread (section 9), and the
   Machine-generated shard is unverified LLM text.
 - **Personal data** in git history (section 6).
 
