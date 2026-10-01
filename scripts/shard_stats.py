@@ -23,12 +23,10 @@ def main() -> int:
         m = NAME_RE.match(path.name)
         if not m:
             # The glob is looser than NAME_RE, so this is reachable: `foo_shard_1.txt`
-            # and `foo_shard_0001.txt` both glob but neither matches `\d{3}`. The old
-            # code fell back to path.stem, which silently invented a source row named
-            # after the file and put it in the README's Dataset table as if it were a
-            # real source. Refuse instead — this script's output is the table, and a
-            # wrong table is worse than a failed run. build_shards.py always writes
-            # %03d, so hitting this means a file was added by hand.
+            # and `foo_shard_0001.txt` both glob but neither matches `\d{3}`. Falling
+            # back to the file stem would invent a source row in the README's Dataset
+            # table, so the run fails instead. build_shards.py always writes %03d, so
+            # hitting this means a file was added by hand.
             malformed.append(path.name)
             continue
         source = m.group("source")

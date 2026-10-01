@@ -1,13 +1,9 @@
-# Lint config for the corpus scripts.
-#
-# This repo had no gates of any kind before the Makefile, so the rule set is deliberately
-# small and high-signal rather than everything ruff can say. A gate that fires 200 times
-# on day one gets switched off on day two.
+# Lint config for the corpus scripts. The rule set is deliberately small and
+# high-signal rather than everything ruff can say.
 #
 # Not selected, on purpose:
 #   EXE001 — every script carries a shebang and none is chmod +x, because they are all
 #            invoked as `python3 scripts/<name>.py` and documented that way in the README.
-#            Five findings, zero defects.
 #   E501   — the comments in these scripts carry measured figures and source URLs. Hard
 #            wrapping them to a column makes them harder to read, which is the opposite
 #            of why they are there.
@@ -31,8 +27,7 @@ ignore = [
     # RUF001/2/3 flag "ambiguous" Unicode. In a Mon-language corpus repo this rule is
     # backwards: it reports MYANMAR DIGIT ZERO (U+1040) as a suspected typo for Latin
     # "o", and EN DASH in prose as a suspected hyphen. The Myanmar digits in
-    # scripts/data_quality.py are deliberate — phone numbers in this corpus are written
-    # in them, and an ASCII \d scan misses those. A rule that argues with the subject
-    # matter of the repository is noise.
+    # scripts/data_quality.py are deliberate: numbers in this corpus are written in
+    # them, and an ASCII \d scan misses those.
     "RUF001", "RUF002", "RUF003",
 ]

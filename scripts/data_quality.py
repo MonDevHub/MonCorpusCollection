@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""Compute every number the README's Data Quality section and docs/CORPUS.md claim.
+"""Compute the figures in the README's Data quality section and docs/CORPUS.md.
 
-Before this script existed, each of those figures came from throwaway code that was
-never committed, so a doc claim could drift from the data with nothing to catch it.
-Every number printed here is the number that belongs in the docs; nothing in the docs
-should be hand-adjusted afterwards.
+The numbers printed here are the ones the docs state; update the docs from this
+output rather than by hand.
 
     python3 scripts/data_quality.py                 # human-readable report
     python3 scripts/data_quality.py --json          # same numbers, machine-readable
@@ -13,9 +11,9 @@ should be hand-adjusted afterwards.
 Gates (--check):
   - zero email-shaped strings in any shard
   - zero mobile-number-shaped strings in any shard
-Both are the redaction invariant from AUDIT-2026-08-08 C2. They are gates rather than
-observations because the audit found the corpus had no PII policy at all, and a policy
-that is only a paragraph does not survive the next import.
+Both enforce the personal-data policy in docs/CORPUS.md section 6, so material that
+reintroduces an email address or a mobile number fails the check rather than being
+reported and ignored.
 
 Line counting matches scripts/shard_stats.py exactly: a "line" is a newline character,
 so a file that does not end in one has its trailing fragment excluded from the count.
@@ -34,31 +32,26 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-# The dedup key is build_shards.py's, not a reimplementation. A second copy would
-# drift, and then the measured dedup rate would describe a key nothing else uses.
+# The dedup key is imported from build_shards.py so the measured dedup rate describes
+# the same key the importer uses.
 from build_shards import URL_RE, clean_document, skeleton_key
 
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 
 # Mobile-number shapes, not "any long digit run". The corpus is full of ISBNs, DOIs,
 # years and populations; a loose pattern reports hundreds of matches and is therefore
-# useless as a gate. Anchored on the two dialling plans the sources actually use:
-# Myanmar (09..., +959...) and Thailand (0[689]........), since the Facebook and
-# Telegram material is from Mon communities in both countries.
+# useless as a gate. Anchored on the two dialling plans the sources use: Myanmar
+# (09..., +959...) and Thailand (0[689]........), since the Facebook and Telegram
+# material is from Mon communities in both countries.
 PHONE_CANDIDATE_RE = re.compile(r"(?<![\d\w/.])[+]?\d[\d\s.\-()]{6,}\d(?![\d])")
 BIBLIO_RE = re.compile(r"ISBN|ISSN|DOI|OCLC", re.I)
 DECIMAL_RE = re.compile(r"\d\.\d")
 
-# Myanmar numerals must be swept too, and this is the half a `\d` pattern silently
-# misses: U+1040..U+1049 are not \d, so an ASCII-only scan reports a clean corpus while
-# a number written in them sits in it. Three of the 23 phone-shaped strings the
-# redaction removed were written this way, in monnews_shard_001 only.
-#
-# Transliterate, then apply exactly the same shape test as ASCII. Requiring a nearby
-# "phone" label was tried first and is both weaker and noisier: it missed nothing here
-# but matched inside "Hubble Space Telescope", and dropping it costs nothing because
-# is_mobile_shape over the whole corpus yields zero false positives in either numeral
-# system -- Myanmar-numeral years and dates are far too short to reach nine digits.
+# Myanmar numerals are swept too: U+1040..U+1049 are not \d, so an ASCII-only scan
+# misses a number written in them. Transliterate, then apply exactly the same shape
+# test as ASCII. No nearby "phone" label is required; over the current shards
+# is_mobile_shape yields no false positives in either numeral system, because
+# Myanmar-numeral years and dates are far too short to reach nine digits.
 MM_DIGITS = str.maketrans("၀၁၂၃၄၅၆၇၈၉", "0123456789")
 MM_RUN_RE = re.compile(r"(?<![၀-၉])[၀-၉][၀-၉\s.\-()]{6,}[၀-၉](?![၀-၉])")
 
@@ -113,20 +106,17 @@ def measure(shards_dir: Path) -> dict:
 
     # Dedup state, corpus-wide.
     #
-    # Granularity is the cleaned non-blank LINE, not the sentence. build_shards.py
-    # dedups per sentence when it imports, but the shards on disk are stored one
-    # sentence per line, so the line is the unit a consumer actually sees and the unit
-    # the README's figures describe. Measuring per sentence instead re-splits lines the
-    # importer already split and reports a different population: 653,512 eligible
-    # against the 369,898 this script prints, which is why the granularity is stated
-    # rather than implied.
+    # Granularity is the cleaned non-blank LINE, not the segment. build_shards.py
+    # dedups per segment when it imports, but the shards are stored one segment per
+    # line, so the line is the unit a consumer sees and the unit the README's figures
+    # describe. Measuring per segment re-splits those lines and reports a different,
+    # larger population of eligible units.
     key_counts: Counter[str] = Counter()
     key_shards: dict[str, set[str]] = defaultdict(set)
     key_length: dict[str, int] = {}
     redundant_chars = 0
     # Keys per shard, kept so the per-shard "shares a key with something else" column
-    # can be computed once global counts are known. It is what backs the README's claim
-    # that handwritten_shard_001 contributes no duplicates at all.
+    # can be computed once global counts are known.
     shard_keys: dict[str, list[str]] = {}
 
     for path in sorted(shards_dir.glob("*_shard_*.txt")):
@@ -251,8 +241,8 @@ def measure(shards_dir: Path) -> dict:
 def report(m: dict) -> None:
     print(f"shards measured: {m['shards']}\n")
 
-    # ph-A / ph-MM are split because an ASCII-only scan of this corpus reports zero
-    # and looks clean while Myanmar-numeral contacts sit in monnews_shard_001.
+    # ph-A / ph-MM are reported separately so Myanmar-numeral coverage is visible: an
+    # ASCII-only scan would report zero for numbers written in Myanmar digits.
     head = (f"{'shard':40} {'lines':>9} {'blank':>9} {'blank%':>7} {'urls':>6} "
             f"{'email':>6} {'ph-A':>5} {'ph-MM':>6} {'eol':>4}")
     print(head)
@@ -328,7 +318,7 @@ def main() -> int:
             print("\nFAIL", file=sys.stderr)
             for f in failures:
                 print(f"  {f}", file=sys.stderr)
-            print("  See docs/CORPUS.md section 6 for the redaction policy.", file=sys.stderr)
+            print("  See docs/CORPUS.md section 6, Personal data.", file=sys.stderr)
             return 1
         print("\nOK: no email-shaped or mobile-shaped strings in shards/")
     return 0
