@@ -88,10 +88,12 @@ MonCorpusCollection/
 │   └── gemini_generated_shard_*.txt  # LLM-authored, unverified
 ├── results/latest/                   # Character/bigram/trigram frequency over the shards
 ├── scripts/                          # stdlib-only Python: stats, quality, import, counters
-└── docs/CORPUS.md                    # Cleaning and normalization spec
+└── docs/CORPUS.md                    # Datasheet: sources, build, cleaning, limitations
 ```
 
 ## Usage
+
+The scripts use only the Python standard library and need Python 3.10 or newer.
 
 Each shard is UTF-8 text, one segment per line. Blank-line density varies too
 much to treat a blank line as a document boundary everywhere: `mondictdb_shard_001`
@@ -103,9 +105,7 @@ make stats     # per-source table above
 make verify    # shards against shards/SHA256SUMS, including coverage
 make quality   # data-quality figures and the personal-data gate
 make check     # verify + quality + lint
-
-# Character / bigram / trigram frequency over all shards
-python3 scripts/corpus_counter_normalized.py shards --output-dir results/latest --all-chars
+make frequencies   # regenerate results/latest/ (character, bigram, trigram tables)
 
 # Add newly scraped .txt files as deduplicated shards (dry-run first)
 python3 scripts/build_shards.py --source monnews --input path/to/monnews --dry-run
@@ -141,7 +141,8 @@ of changes in [LICENSE-CORPUS.md](LICENSE-CORPUS.md#cc-by-sa-40-attribution-for-
   corpus at import: 97.5% Mon script, 0.014% malformed tokens (the corpus bar is
   1.0%), zero URLs, and a mean charset survival of 0.9985 with no line below 0.50.
   It would be the best start for a clean evaluation or fine-tuning slice once the
-  writer's grant is recorded; until then its terms are unresolved.
+  writer's grant is recorded; until then its terms are unresolved. MonOCR's training
+  text already includes it, so it is not held out from MonOCR.
 - **OCR Extracted** is the output of an OCR system and can carry its recognition
   errors.
 - **MonDictDB** upstream records some definitions as machine-translated. Those
