@@ -51,7 +51,7 @@ DECIMAL_RE = re.compile(r"\d\.\d")
 
 # Myanmar numerals must be swept too, and this is the half a `\d` pattern silently
 # misses: U+1040..U+1049 are not \d, so an ASCII-only scan reports a clean corpus while
-# "ဂၞန်ဖုၚ် (၀၉-၄၉၈ ၂၇၀ ၉၇)" sits in it. Three of the 23 phone-shaped strings the
+# a number written in them sits in it. Three of the 23 phone-shaped strings the
 # redaction removed were written this way, in monnews_shard_001 only.
 #
 # Transliterate, then apply exactly the same shape test as ASCII. Requiring a nearby

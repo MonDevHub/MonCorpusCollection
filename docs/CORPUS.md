@@ -81,8 +81,8 @@ the document separator stayed single.
   the corpus is full of ISBNs, DOIs, years and populations, and a loose pattern reports
   hundreds of matches, which makes it useless as a gate.
 - **Both numeral systems.** Myanmar digits U+1040–U+1049 are not `\d`, so an ASCII-only
-  scan reports a clean corpus while `ဂၞန်ဖုၚ် (၀၉-၄၉၈ ၂၇၀ ၉၇)` sits in it. Three of the
-  removed numbers were written that way. This is the failure mode most likely to recur.
+  scan reports a clean corpus while a number written `၀၉…` in Myanmar digits sits in it.
+  Three of the removed numbers were written that way. This is the failure mode most likely to recur.
 
 **What it does not find.** A name beside a number is the actual finding here, and pattern
 scanning cannot see it — it only sees the number. The check is a floor, not a substitute
