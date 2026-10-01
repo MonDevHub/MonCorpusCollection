@@ -4,7 +4,7 @@ A Mon-language text corpus for NLP research, language-model pretraining and OCR
 training data. It is the training data source for
 [MonOCR](https://github.com/MonDevHub/monocr).
 
-**The corpus is not MIT, and most of it has no established licence.** Read
+**The corpus is not MIT, and six of its eight sources have no established licence.** Read
 [Licence](#licence) before redistributing any shard.
 
 ## Dataset
@@ -23,12 +23,13 @@ training data. It is the training data source for
 | **Total** | **15** | **1,253,139** | **47,221,746** | **38,988,957 (82.6%)** | **8,232,789 (17.4%)** |
 
 Every cell is printed by `make stats` (`scripts/shard_stats.py`). Raw size is
-130,428,126 bytes, 124 MiB of uncompressed UTF-8.
+130,428,126 bytes, 124 MiB of uncompressed UTF-8 (`cat shards/*.txt | wc -c`).
 
 **Lines counts every newline**, including the blank line between documents.
 493,845 of the 1,253,139 lines are blank (39.4%), leaving 759,294 with text, of
 which 53,275 are three characters or fewer. Budget for roughly 700K usable text
-lines, not 1.25M. The character columns already exclude whitespace.
+lines, not 1.25M. The character columns already exclude whitespace. `make quality`
+prints these counts.
 
 **Other is not noise.** Mon and Burmese are mixed in ordinary written use, so
 mixed-script material is kept as it appears. MonDictDB is the clearest case: Mon
@@ -36,8 +37,8 @@ headwords with Burmese definitions, kept whole.
 
 ## Data quality
 
-`make quality` (`scripts/data_quality.py --check`) prints every figure in this
-section and fails if personal data reappears.
+`make quality` (`scripts/data_quality.py --check`) prints the URL and duplication
+figures below and fails if personal data reappears.
 
 - **NFC.** All text is normalized to Unicode NFC.
 - **What is stripped.** BOM, ZWJ, ZWNJ and control codes. All Myanmar script
@@ -46,16 +47,18 @@ section and fails if personal data reappears.
   `wikipedia_shard_003` and `monnews_shard_001`, which predate the importer's URL
   rule.
 - **Personal data.** Every email address and mobile-number-shaped string was
-  removed from the shards: 21 lines across six shards, as whole lines rather than
-  masks, because the material was mostly name-and-number rosters. The check scans both ASCII and Myanmar
+  removed from the shards in one redaction pass: 21 lines across six shards. Whole
+  lines were removed rather than masked, because the material was mostly
+  name-and-number rosters and masking the number leaves the name beside the gap. The check scans both ASCII and Myanmar
   numerals (U+1040–U+1049), which a `\d` pattern misses. Earlier commits in the
   git history still contain the removed lines.
 
 ### Duplication
 
 `scripts/build_shards.py` deduplicates new content against the existing corpus at
-the clause level (a Mon-script skeleton) before adding it. It does not
-retroactively dedupe shards built before it.
+the clause level (a Mon-script skeleton) before adding it, so re-scraped
+material is not appended twice. It does not retroactively dedupe shards built
+before it.
 
 Measured with that same key over each cleaned non-blank line: of 369,898 eligible
 lines, **94,006 are redundant instances (25.4%)**, 4,708,496 characters. The
@@ -119,7 +122,7 @@ per source in [LICENSE-CORPUS.md](LICENSE-CORPUS.md), which governs.
 | Mon Wikipedia | `wikipedia_shard_*` | [mnw.wikipedia.org](https://mnw.wikipedia.org) | CC BY-SA 4.0 |
 | MonDictDB | `mondictdb_shard_*` | [MonDictDB](https://github.com/Barnista/MonDictDB) by [Barnista](https://github.com/Barnista) | MIT |
 | Mon News Agency (IMNA) | `monnews_shard_*` | [Independent Mon News Agency](https://monnews.org) | **Unresolved** |
-| Telegram / Facebook | `telegram_*`, `facebook_shard_*` | Public channel and page posts | **Unresolved** |
+| Telegram / Facebook | `telegram_*_shard_*`, `facebook_shard_*` | Public channel and page posts | **Unresolved** |
 | OCR Extracted | `ocr_extracted_shard_*` | Text recovered from scanned material | **Unresolved** |
 | Custom Collections | `custom_shard_*` | Specialized and legacy collections | **Unresolved** |
 | Machine-generated | `gemini_generated_shard_*` | Authored by Google Gemini, not transcribed from any source | **Unresolved** |
@@ -128,7 +131,8 @@ per source in [LICENSE-CORPUS.md](LICENSE-CORPUS.md), which governs.
 Only the Wikipedia and MonDictDB shards are covered, under CC BY-SA 4.0 and MIT.
 Redistributing any **Unresolved** shard is not covered by anything in this
 repository. Attribute **Mon Corpus Collection** and the underlying source of each
-shard you use.
+shard you use; for the Wikipedia shards, use the CC BY-SA 4.0 attribution and list
+of changes in [LICENSE-CORPUS.md](LICENSE-CORPUS.md#cc-by-sa-40-attribution-for-wikipedia_shard_).
 
 ### Confidence by source
 
@@ -136,13 +140,13 @@ shard you use.
   recognition errors, no machine-authored text. Measured against the rest of the
   corpus at import: 97.5% Mon script, 0.014% malformed tokens (the corpus bar is
   1.0%), zero URLs, and a mean charset survival of 0.9985 with no line below 0.50.
-  It is the best start for a clean evaluation or fine-tuning slice, subject to its
-  unresolved terms.
+  It would be the best start for a clean evaluation or fine-tuning slice once the
+  writer's grant is recorded; until then its terms are unresolved.
 - **OCR Extracted** is the output of an OCR system and can carry its recognition
   errors.
-- **MonDictDB** contains some definitions produced by machine translation. Those
+- **MonDictDB** upstream records some definitions as machine-translated. Those
   rows are excluded at import, but that is a property of the importer, not of the
-  file.
+  shard file.
 - **Machine-generated** text is LLM-authored and unverified, and separable by
   filename.
 
