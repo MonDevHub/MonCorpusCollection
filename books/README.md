@@ -13,6 +13,9 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [mnec-early-childhood-reform-paper-5-2019](mnec-early-childhood-reform-paper-5-2019/) | MNEC vs Mon Early Childhood Education Reform Paper No 5, 2019 | နာဲဗညာဟံသာ | 18 | 35,804 | 98.4% | 3.92% | 7.20% | 1.003 |
 | [journal-of-mon-studies-guideline-2024](journal-of-mon-studies-guideline-2024/) | Journal of Mon Studies editorial guideline, amended 3 Nov 2024 | Mon National College | 4 | 5,956 | 95.7% | 4.95% | 5.56% | 1.022 |
 | [gatui-mon-2](gatui-mon-2/) | လိက်ဂတဵုဇၞော်မန် ၂ | www.monlibrary.com | 17 | 15,034 | 97.8% | 2.55% | 4.91% | 1.015 |
+| [mon-myanmar-dictionary-nai-tun-thein](mon-myanmar-dictionary-nai-tun-thein/) | မွန်-မြန်မာ အဘိဓာန် နှင့် သဒ္ဒါနှိုင်းယှဉ်ချက်, 2nd printing, March 2020 | နိုင်ထွန်းသိန်း, edited by နိုင်ပန်းလှ | 374 of 380 | 306,674 | 88.8% | not measured | 1.32% | not applicable (no text layer) |
+
+The dictionary's Myanmar-script share is lower and its Mon-specific share much lower than the others because it is mostly Burmese definitions with dictionary punctuation, and its malformed-line and yield figures were not computed.
 
 **Characters** excludes whitespace and the `[page N]` marker lines, and is counted on the text files. The other measures are
 taken on the OCR output before the header, footer, e-mail and watermark lines were removed:
