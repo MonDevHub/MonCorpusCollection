@@ -17,6 +17,29 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 
 The dictionary's Myanmar-script share is lower and its Mon-specific share much lower than the others because it is mostly Burmese definitions with dictionary punctuation, and its malformed-line and yield figures were not computed.
 
+## Records
+
+[`records.csv`](records.csv) is the metadata for every book, one row each, in the same order as the table above
+and with more columns. `make books` fails if a folder has no row, a row has no folder, or the page and
+character counts no longer match the text. Add the row in the same commit as the book.
+
+| Column | Meaning |
+| :--- | :--- |
+| `slug`, `title_printed`, `title_english` | Folder name; the title as printed (Mon or Burmese script); an English rendering |
+| `author`, `editor_or_origin`, `year` | As printed or as the PDF states. Blank means not identified, not "none" |
+| `languages` | `mon`, `burmese`, `english`, joined with `+` |
+| `source_file`, `source_sha256`, `source_text_layer` | The PDF it was read from, its checksum, and whether it already held text |
+| `pages_pdf`, `pages_kept` | Pages in the PDF, and pages in the text (blank or unreadable pages are dropped; the README says which) |
+| `characters`, `myanmar_share_pct`, `malformed_lines_pct`, `mon_specific_pct`, `text_layer_yield` | The figures defined below. Blank means not measured |
+| `text_encoding` | The encoding of the text in this repository |
+| `ocr_model`, `ocr_tool`, `extracted_on` | What read it, with which tool, and when |
+| `review`, `error_rate` | How the text was checked, and the error rate if one was measured |
+| `licence`, `notes` | The licence status, and anything else worth knowing |
+
+**There is no per-line confidence.** The OCR model does not report one; what it returns for each line is
+text and position. The honest measure of confidence here is `review`: `not recorded`, `spot-read by a
+non-native reader`, or `spot-read by a Mon reader`, with `error_rate` filled in only when someone measured it.
+
 **Characters** excludes whitespace and the `[page N]` marker lines, and is counted on the text files. The other measures are
 taken on the OCR output before the header, footer, e-mail and watermark lines were removed:
 
