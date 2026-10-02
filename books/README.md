@@ -14,6 +14,10 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [journal-of-mon-studies-guideline-2024](journal-of-mon-studies-guideline-2024/) | Journal of Mon Studies editorial guideline, amended 3 Nov 2024 | Mon National College | 4 / 4 | 5,956 | 95.7% | 4.95% | 5.56% | 1.022 |
 | [gatui-mon-2](gatui-mon-2/) | လိက်ဂတဵုဇၞော်မန် ၂ | www.monlibrary.com | 17 / 17 | 15,034 | 97.8% | 2.55% | 4.91% | 1.015 |
 | [mon-myanmar-dictionary-nai-tun-thein](mon-myanmar-dictionary-nai-tun-thein/) | မွန်-မြန်မာ အဘိဓာန် နှင့် သဒ္ဒါနှိုင်းယှဉ်ချက်, 2nd printing, March 2020 | နိုင်ထွန်းသိန်း, edited by နိုင်ပန်းလှ | 374 / 380 | 306,674 | 88.8% | not measured | 1.32% | not applicable (no text layer) |
+| [gkaum-trah-lyah-abhidhar-kya](gkaum-trah-lyah-abhidhar-kya/) | ဂကောံတြးလျးအဘိဓရ်ကျာ် | not identified | 120 / 136 | 145,553 | 96.4% | not measured | 3.44% | not applicable |
+| [lik-knap-smat-samti-sabhang-ratson](lik-knap-smat-samti-sabhang-ratson/) | လိက်ကၞပ်စၟတ်သမ္တီ သဘင်ရတ်သြန် | not identified | 43 / 65 | 35,336 | 98.4% | not measured | 7.7% | not applicable |
+| [lyah-rat-tmoi-knap-6](lyah-rat-tmoi-knap-6/) | လျးရတ်တၟိကၞပ်(၆) | not identified | 130 / 222 | 163,149 | 98.4% | not measured | 6.97% | not applicable |
+| [anagat-mon-knap-12](anagat-mon-knap-12/) | အနာဂတ်မန်ကၞပ်(၁၂) (Anagat Mon (Mon Future), issue 12) | not identified | 134 / 206 | 169,782 | 57.8% | not measured | 6.68% | not applicable |
 
 The dictionary's Myanmar-script share is lower and its Mon-specific share much lower than the others because it is mostly Burmese definitions with dictionary punctuation, and its malformed-line and yield figures were not computed.
 

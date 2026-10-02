@@ -205,7 +205,7 @@ README's Characters total.
 
 ## 9. Books
 
-`books/` holds five Mon documents read from their PDF pages by OCR, one folder each:
+`books/` holds Mon-language documents read from their PDF pages by OCR, one folder each:
 the text and a README giving the printed title, author or origin, the source PDF's
 SHA-256, the page count, the OCR model and the known issues.
 [books/README.md](../books/README.md) indexes them.

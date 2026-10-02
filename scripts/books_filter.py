@@ -43,6 +43,30 @@ VIRAMA = "\u1039"
 CONSONANTS = {chr(c) for c in range(0x1000, 0x1022)} | {"\u103f", "\u1050", "\u1051"}
 
 
+DIGITS = set("0123456789၀၁၂၃၄၅၆၇၈၉")
+SEPARATORS = set(" -–—:.,")
+STROKES = set("၀၁01")
+
+
+def strip_noise(lines: list[str]) -> tuple[list[str], int]:
+    """Drop lines that are the OCR's reading of a printed rule. Returns (kept lines, number dropped).
+
+    A rule or a page border comes out as a string made mostly of the digits ၁ and ၀: `၁၁၆၁၆၁၁၁၈၀၀၁၀၀၀`.
+    A line is dropped only when it has at least 5 characters, at least 80% of them are digits or
+    separators, and at least half of the digits are ၁ or ၀. Everything else is kept as it is, including a
+    bare page range (`၂၄၉-၂၅၆`) and a phone number with its label (`ဖုန်း ၀၉-၂၅၅၇၄၄၆၁၆`).
+    """
+    kept = []
+    for x in lines:
+        chars = [c for c in x if not c.isspace()]
+        digits = [c for c in chars if c in DIGITS]
+        mostly_digits = len(chars) >= 5 and sum(c in DIGITS or c in SEPARATORS for c in chars) / len(chars) >= 0.8
+        if mostly_digits and digits and sum(c in STROKES for c in digits) / len(digits) >= 0.5:
+            continue
+        kept.append(x)
+    return kept, len(lines) - len(kept)
+
+
 def is_myanmar(c: str) -> bool:
     cp = ord(c)
     return 0x1000 <= cp <= 0x109F or 0xA9E0 <= cp <= 0xA9FF or 0xAA60 <= cp <= 0xAA7F
@@ -120,15 +144,39 @@ def run(manifest: Path, a: argparse.Namespace) -> tuple[str, list[dict]]:
     for raw in manifest.read_text(encoding="utf-8").splitlines():
         row = json.loads(raw)
         rows[row["page"]] = row
+    second = recovered_rows(a.recovered) if a.recovered else {}
     for row in (rows[k] for k in sorted(rows)):
-        lines = page_lines(row, a)
+        lines, private = strip_noise(page_lines(row, a))
         m = measure(lines)
         v = verdict(m, a)
-        report.append({"page": row["page"], "verdict": v, **{k: round(m[k], 4) for k in m}})
+        source = "first read"
+        if v == "english" and a.english_dir and (a.english_dir / f"p{row['page']:04d}.txt").is_file():
+            said, private = strip_noise([x.strip() for x in (a.english_dir / f"p{row['page']:04d}.txt").read_text(encoding="utf-8").splitlines() if x.strip()])
+            m3 = measure(said)
+            if m3["chars"] >= a.min_chars and m3["latin"] >= 0.6:
+                lines, m, v, source = said, m3, "keep", "english read"
+        if v != "keep" and v != "english" and row["page"] in second:
+            # The second read is already cropped to the text block, so no position trimming applies.
+            again, private2 = strip_noise([x["text"].strip() for x in second[row["page"]]["lines"] if x["text"].strip()])
+            m2 = measure(again)
+            if verdict(m2, a) == "keep":
+                lines, m, v, source, private = again, m2, "keep", "recovered", private2
+        report.append({"page": row["page"], "verdict": v, "source": source, "noise_lines": private if v == "keep" else 0, **{k: round(m[k], 4) for k in m}})
         if v == "keep":
             blocks.append(f"[page {row['page']}]\n" + "\n".join(lines))
     text = unicodedata.normalize("NFC", "\n\n".join(blocks) + "\n") if blocks else ""
     return text, report
+
+
+def recovered_rows(manifest: Path) -> dict[int, dict]:
+    """Rows of a second read made by books_recover.py, keyed by the page in the file name pNNNN.png."""
+    out: dict[int, dict] = {}
+    for raw in manifest.read_text(encoding="utf-8").splitlines():
+        row = json.loads(raw)
+        name = Path(row["input"]).stem
+        if name.startswith("p") and name[1:].isdigit():
+            out[int(name[1:])] = row
+    return out
 
 
 def parser() -> argparse.ArgumentParser:
@@ -145,6 +193,8 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--max-digits", type=float, default=0.3)
     p.add_argument("--max-latin", type=float, default=0.5)
     p.add_argument("--max-garble", type=float, default=3.0)
+    p.add_argument("--recovered", type=Path, help="manifest of the second read made by books_recover.py")
+    p.add_argument("--english-dir", type=Path, help="pages re-read with an English OCR by books_english.py")
     p.add_argument("--selftest", action="store_true")
     return p
 
@@ -164,11 +214,13 @@ def main() -> int:
             w.writeheader()
             w.writerows(report)
     kept = sum(r["verdict"] == "keep" for r in report)
+    again = sum(r["source"] == "recovered" for r in report)
+    english = sum(r["source"] == "english read" for r in report)
     reasons: dict[str, int] = {}
     for r in report:
         if r["verdict"] != "keep":
             reasons[r["verdict"]] = reasons.get(r["verdict"], 0) + 1
-    print(f"{kept} of {len(report)} pages kept; dropped: {reasons or 'none'}")
+    print(f"{kept} of {len(report)} pages kept ({again} recovered by a second read, {english} English pages read with Tesseract); dropped: {reasons or 'none'}")
     return 0
 
 

@@ -74,7 +74,7 @@ the whole corpus first, then split.
 
 ## Books
 
-[`books/`](books/) holds five Mon documents read by OCR, one folder each, kept as
+[`books/`](books/) holds Mon-language documents read by OCR, one folder each, kept as
 readable page-by-page texts rather than shards. They are machine OCR, not proofread, and
 their terms are unresolved. `make stats`, `make quality` and `results/latest/` cover the
 shards only, so none of the figures above include them.
@@ -135,7 +135,7 @@ set out per source in [LICENSE-CORPUS.md](LICENSE-CORPUS.md), which governs.
 | Custom Collections | `custom_shard_*` | Specialized and legacy collections | **Unresolved** |
 | Machine-generated | `gemini_generated_shard_*` | Authored by Google Gemini, not transcribed from any source | **Unresolved** |
 | Handwritten | `handwritten_shard_*` | Composed directly in Mon by a native writer: not scraped, transcribed or generated | **Unresolved** |
-| Books | `books/` | Five Mon documents read by OCR; sources in [books/README.md](books/README.md) | **Unresolved** |
+| Books | `books/` | Mon-language documents read by OCR; sources in [books/README.md](books/README.md) | **Unresolved** |
 
 Only the Wikipedia and MonDictDB shards are covered, under CC BY-SA 4.0 and MIT.
 Redistributing any **Unresolved** shard or book text is not covered by anything in
