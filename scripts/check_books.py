@@ -57,10 +57,14 @@ def main() -> int:
         if not row["review"].strip():
             problems.append(f"{slug}: review is empty (write 'not recorded' if unknown)")
         markers, chars = measure(text)
-        if str(markers) != row["pages_kept"]:
-            problems.append(f"{slug}: pages_kept is {row['pages_kept']} but the text has {markers} page markers")
-        if int(row["pages_kept"]) > int(row["pages_pdf"]):
-            problems.append(f"{slug}: pages_kept exceeds pages_pdf")
+        if str(markers) != row["usable_pages"]:
+            problems.append(f"{slug}: usable_pages is {row['usable_pages']} but the text has {markers} page markers")
+        if int(row["usable_pages"]) > int(row["original_pages"]):
+            problems.append(f"{slug}: usable_pages exceeds original_pages")
+        if int(row["original_pages"]) - int(row["usable_pages"]) != int(row["dropped_pages"]):
+            problems.append(f"{slug}: dropped_pages is not original_pages minus usable_pages")
+        if int(row["recovered_pages"]) > int(row["usable_pages"]):
+            problems.append(f"{slug}: recovered_pages exceeds usable_pages")
         if str(chars) != row["characters"]:
             problems.append(f"{slug}: characters is {row['characters']} but the text has {chars}")
     if problems:
