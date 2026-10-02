@@ -92,23 +92,21 @@ def apply_mon_normalization(
 
 # Encoding detection is BOM-driven, not trial-and-error.
 #
-# The previous version tried utf-8, utf-8-sig, utf-16, utf-16-le, utf-16-be in order and
-# returned the first that did not raise. That is unsafe, because UTF-16 accepts *any*
-# byte sequence of even length: a Latin-1 or CP1252 file that fails UTF-8 does not fail
-# UTF-16, it decodes into mojibake. Measured:
+# Trying a list of codecs until one does not raise is unsafe if the list includes UTF-16,
+# because UTF-16 accepts *any* byte sequence of even length: a Latin-1 or CP1252 file
+# that fails UTF-8 decodes as UTF-16 into mojibake. For example:
 #
 #   b'\xe9t\xe9 chaud!'  utf-8 -> UnicodeDecodeError (invalid continuation byte)
 #                        utf-8-sig -> UnicodeDecodeError
 #                        utf-16 -> '瓩⃩档畡Ⅴ'
 #
-# Those five code points were then recorded status=ok and folded into the character,
-# bigram and trigram tables with nothing in the output saying the file was garbage. A
-# poisoned frequency table is worse than a missing file, because it is invisible.
+# Those code points would be counted into the character, bigram and trigram tables with
+# nothing in the output marking the file as garbage.
 #
-# A BOM is the only reliable UTF-16 signal in a corpus of scraped text, so we require
-# one. No BOM means the file must be valid UTF-8 or it is refused: the caller records
-# status=read_failed and counts it in files_failed, and we warn on stderr so a silent
-# skip cannot pass for a clean run.
+# A BOM is the only reliable UTF-16 signal in a corpus of scraped text, so one is
+# required. No BOM means the file must be valid UTF-8 or it is refused: the caller records
+# status=read_failed and counts it in files_failed, and a warning goes to stderr so a
+# skipped file cannot pass for a clean run.
 BOM_ENCODINGS = (
     # UTF-32 LE first: its BOM (ff fe 00 00) starts with the UTF-16 LE BOM (ff fe).
     (codecs.BOM_UTF32_LE, "utf-32"),

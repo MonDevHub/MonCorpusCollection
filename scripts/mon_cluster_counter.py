@@ -93,13 +93,12 @@ def apply_mon_normalization(
 # File reading
 # ---------------------------------
 
-# Encoding detection is BOM-driven, not trial-and-error. Same fix and same reasoning as
-# corpus_counter_normalized.py: the old ordered list ended in utf-16, which accepts *any*
-# byte sequence of even length, so a non-UTF-8 file decoded into mojibake and was recorded
-# status=ok. Measured: b'\xe9t\xe9 chaud!' fails utf-8 and utf-8-sig, and utf-16 turns it
-# into '瓩⃩档畡Ⅴ' — five garbage clusters entering every cluster/bigram/trigram table with
-# nothing in the output flagging them. A BOM is the only reliable UTF-16 signal here, so we
-# require one; anything else is UTF-8 or refused (status=read_failed plus a stderr warning).
+# Encoding detection is BOM-driven, not trial-and-error, for the reason given in
+# corpus_counter_normalized.py: UTF-16 accepts *any* byte sequence of even length, so a
+# codec fallback list ending in utf-16 decodes a non-UTF-8 file into mojibake
+# (b'\xe9t\xe9 chaud!' becomes '瓩⃩档畡Ⅴ') and counts garbage clusters into every table.
+# A BOM is the only reliable UTF-16 signal here, so one is required; anything else is
+# UTF-8 or refused (status=read_failed plus a stderr warning).
 BOM_ENCODINGS = (
     # UTF-32 LE first: its BOM (ff fe 00 00) starts with the UTF-16 LE BOM (ff fe).
     (codecs.BOM_UTF32_LE, "utf-32"),

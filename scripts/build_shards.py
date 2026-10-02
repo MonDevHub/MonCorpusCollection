@@ -18,13 +18,11 @@ Safety guarantees:
 
   The dedup unit is a CLAUSE, not a sentence. SENT_SPLIT_RE breaks on ASCII `. ! ? , ; :`
   as well as the Mon/Burmese endings, and Mon writing uses ASCII punctuation freely, so
-  the unit is finer than a sentence. Measured over the tracked shards on 2026-08-12:
-  1,462,515 units under the current rule vs 1,241,879 under Mon-only endings — 220,636
-  extra fragments, 15.1%. 6,953 of the ASCII break points sit between two digits, i.e.
-  inside a date or decimal (`၃၁.၈.၂၀၂၅` fragments into three units). This is documented
-  rather than fixed: the split defines the dedup key, so narrowing it would silently
-  restate every published dedup number in README.md and docs/CORPUS.md against a key
-  nothing was measured with. See SENT_SPLIT_RE below.
+  the unit is finer than a sentence: over the shards in this repository it yields about
+  18% more units than Mon-only endings would. A break point between two digits splits a
+  date or decimal (`၃၁.၈.၂၀၂၅` becomes three units). The split defines the dedup key, so
+  changing it changes every dedup figure in README.md and docs/CORPUS.md. See
+  SENT_SPLIT_RE below.
 
 Pipeline per document:
   clean (NFC, strip URLs + format chars, fold Unicode spaces, collapse whitespace)
@@ -36,9 +34,9 @@ Pipeline per document:
 
 Examples:
     python3 scripts/build_shards.py --source monnews \\
-        --input ../mon-corpus-scraper/data/monnews --dry-run
+        --input path/to/monnews --dry-run
     python3 scripts/build_shards.py --source wikipedia \\
-        --input ../mon-corpus-scraper/data/wikipedia
+        --input path/to/wikipedia
 """
 
 from __future__ import annotations
@@ -55,13 +53,10 @@ MIN_SKELETON = 15                            # min Mon chars for a sentence to b
 MIN_DOC_MON_CHARS = 20                       # kept docs below this are flagged near-English (not dropped)
 
 # Format characters that carry no glyph. Deleting them loses nothing legible, and leaving
-# them in splits otherwise-identical text into distinct dedup keys.
-#
-# The original set was FEFF/200B/200C/200D. Measured across the tracked shards on
-# 2026-08-12, that set left behind: 94 x U+00AD SOFT HYPHEN and 5 x U+2060 WORD JOINER
-# (both wikipedia_shard_001), 13 x U+200E LEFT-TO-RIGHT MARK (four shards) and 5 x U+2061
-# FUNCTION APPLICATION. All of them are Default_Ignorable_Code_Point, so the fix is to
-# cover that category rather than to keep appending one code point per bug report.
+# them in splits otherwise-identical text into distinct dedup keys. The set covers the
+# Default_Ignorable_Code_Point characters that occur in Mon web text. Shards built
+# before this set existed still contain some of them; docs/CORPUS.md section 4 counts
+# them.
 INVISIBLE = dict.fromkeys((
     0x00AD,                                  # SOFT HYPHEN
     0x200B, 0x200C, 0x200D,                  # ZWSP, ZWNJ, ZWJ
@@ -73,19 +68,17 @@ INVISIBLE = dict.fromkeys((
     0xFEFF,                                  # BOM / ZERO WIDTH NO-BREAK SPACE
 ))
 # Non-ASCII spaces are folded to a plain space, NOT deleted: deleting U+00A0 welds two
-# words into one. 13,800 NO-BREAK SPACE and 6 THIN SPACE survive in the tracked shards.
-# They are whitespace to str.isspace(), so the published character counts (which exclude
-# whitespace) do not move — but they do make identical lines compare unequal.
+# words into one. They are whitespace to str.isspace(), so character counts that exclude
+# whitespace are unaffected, but left in place they make identical lines compare unequal.
 UNICODE_SPACE_RE = re.compile("[\u00a0\u1680\u2000-\u200a\u202f\u205f\u3000]")
 CONTROL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
 # URL matching stops at the first character that cannot appear in a URI (RFC 3986), not at
-# the next whitespace. `http\S+` was wrong for this corpus specifically: Mon does not mark
-# word boundaries with spaces, so `http://x.com၏မန်ဘာသာ` had the trailing Mon clause eaten
-# along with the URL and nothing counted the loss. Parenthesised paths (common in Wikipedia
-# links) are matched as a balanced group so `.../Mon_(Unicode_block)` survives intact while
-# a sentence's own closing bracket does not get swallowed. The trailing lookbehind keeps
-# sentence punctuation out of the match. Verified to still find all 9,228 URLs in the
-# tracked shards, and clean_document() now reports how many it removed.
+# the next whitespace. Mon does not mark word boundaries with spaces, so a whitespace-
+# delimited pattern such as `http\S+` would also remove the Mon clause that follows a URL
+# in `http://x.com၏မန်ဘာသာ`. Parenthesised paths (common in Wikipedia links) are matched
+# as a balanced group so `.../Mon_(Unicode_block)` survives intact while a sentence's own
+# closing bracket is not swallowed. The trailing lookbehind keeps sentence punctuation out
+# of the match. clean_document() reports how many URLs it removed.
 URL_RE = re.compile(
     r"(?:https?://|www\.)"
     r"(?:[A-Za-z0-9\-._~:/?#\[\]@!$&'*+,;=%]|\([^\s()]*\))+"
@@ -95,8 +88,7 @@ MULTISPACE_RE = re.compile(r"[ \t]{2,}")
 # Myanmar-block characters only (matches is_myanmar_related in corpus_counter_normalized.py).
 NON_MON_RE = re.compile(r"[^က-႟ꩠ-ꩿꧠ-꧿]")
 # Segment boundaries: Mon/Burmese endings plus ASCII sentence punctuation. Despite the name
-# this yields clauses, not sentences — see the module docstring for the measured cost
-# (220,636 extra fragments, 15.1%) and for why it is documented instead of narrowed.
+# this yields clauses, not sentences; see the module docstring.
 SENT_SPLIT_RE = re.compile(r"(?<=[။၊၍၎၏ၐၑ\.\!\?\,\;\:])")
 SHARD_NAME_RE = re.compile(r"^(?P<source>.+)_shard_(?P<index>\d{3})\.txt$")
 # A source name becomes both a filename and a glob() pattern, so it is restricted to
@@ -110,10 +102,9 @@ def clean_document(text: str, stats: dict | None = None) -> str:
     non-ASCII spaces to a plain space and collapse runs.
 
     Pass a dict as `stats` to accumulate what was removed. URL removal is the only
-    step that can delete real words, so it is the only one that is counted: before
-    this, a bad URL pattern could eat Mon text with nothing in the output to show it.
-    The parameter is optional so that callers which only want the text — including
-    scripts/data_quality.py, which imports this function — are unaffected.
+    step that can delete real words, so it is the only one that is counted. The
+    parameter is optional for callers that only want the text, such as
+    scripts/data_quality.py.
     """
     text = unicodedata.normalize("NFC", text)
     text = text.translate(INVISIBLE)
@@ -169,7 +160,7 @@ def load_corpus_skeletons(shards_dir: Path) -> set[str]:
 def validate_source(source: str) -> str:
     """Reject a --source value that is not safe as both a filename and a glob pattern.
 
-    The value is interpolated into two places, and each fails differently:
+    The value is interpolated into two places, and each would fail differently:
 
       flush_shard()      -> f"{source}_shard_{index:03d}.txt", then shards_dir / name.
                             `--source ../../x` writes outside shards/ entirely.
@@ -178,12 +169,9 @@ def validate_source(source: str) -> str:
                             the highest existing index silently matches a different set
                             of files — or none. That is the input to the next index, so
                             it can hand flush_shard() an index that is already taken.
-                            The overwrite guard still refuses, but the guard is meant to
-                            be unreachable; reaching it means the numbering was wrong.
+                            The overwrite guard would still refuse.
 
-    Every existing shard prefix (monnews, wikipedia, mondictdb, custom, facebook,
-    ocr_extracted, gemini_generated, handwritten, telegram_mot_tip_ebook) already fits
-    the pattern, so this rejects nothing that is in use.
+    Every existing shard prefix fits the pattern.
     """
     if not SOURCE_RE.match(source):
         raise SystemExit(
@@ -206,11 +194,8 @@ def next_shard_index(shards_dir: Path, source: str) -> int:
 def write_checksums(shards_dir: Path) -> Path:
     """Regenerate shards/SHA256SUMS over every *.txt in shards/.
 
-    Wired into the import because the manual step documented in docs/CORPUS.md is the
-    step nobody remembers, and forgetting it is silent in both directions: the new shard
-    is simply absent from the manifest, and `shasum -c` still exits 0 because it only
-    verifies the files it lists. A manifest that passes while covering fewer files than
-    exist is worse than no manifest.
+    Run as part of every import, because a manifest that omits a shard still passes
+    `shasum -c`, which only verifies the files it lists.
 
     Format matches `cd shards && shasum -a 256 *.txt` byte for byte: lowercase hex, two
     spaces, then the bare filename. The paths are relative, so verification must run from
@@ -241,11 +226,9 @@ def build(source: str, input_dir: Path, shards_dir: Path, shard_bytes: int, dry_
     dup_samples: list[str] = []
     english_samples: list[str] = []
 
-    # rglob, not glob. A non-recursive scan of a nested scrape layout
-    # (input/2026-01/*.txt, input/by-section/*/*.txt) finds zero files and then reports
-    # "Nothing new to add." with exit 0 — the same output as a run where every document
-    # was already in the corpus. Two opposite outcomes, one message. rglob fixes the
-    # common layout; the exit-2 branch below makes the remaining case distinguishable.
+    # rglob, not glob, so nested input layouts (input/2026-01/*.txt,
+    # input/by-section/*/*.txt) are read. Reading nothing at all is an error (exit 2,
+    # below), distinct from reading documents that were all already in the corpus.
     for path in sorted(input_dir.rglob("*.txt")):
         if path.name.startswith("downloaded_"):
             continue
@@ -303,9 +286,8 @@ def build(source: str, input_dir: Path, shards_dir: Path, shard_bytes: int, dry_
             print(f"    - {s[:90]}")
 
     # "Found nothing to read" and "read everything, all of it was already here" are
-    # different outcomes and used to print the same line with the same exit 0. A typo in
-    # --input, or a layout rglob still does not cover, is now an error rather than a
-    # cheerful no-op.
+    # different outcomes: a typo in --input, or a layout rglob does not cover, is an
+    # error rather than a no-op.
     if stats["input_docs"] == 0:
         sys.stdout.flush()   # keep the error after the report it explains
         print(f"Error: no .txt files found under {input_dir} (searched recursively). "
@@ -318,10 +300,8 @@ def build(source: str, input_dir: Path, shards_dir: Path, shard_bytes: int, dry_
         return 0
     if dry_run:
         approx = sum(len((d + '\n\n').encode('utf-8')) for d in kept_docs)
-        # Ceiling, not floor+1: `approx // shard_bytes + 1` reported 2 shards for an
-        # exact 20 MB payload and 3 for an exact 40 MB one, because it added a shard for
-        # a remainder of zero. The real loop flushes at doc boundaries, so this is a
-        # lower bound — a payload can spill into one more shard than the arithmetic says.
+        # Ceiling division. The real loop flushes at doc boundaries, so this is a lower
+        # bound: a payload can spill into one more shard than the arithmetic says.
         print(f"[dry-run] would write >={-(-approx // shard_bytes)} shard(s), "
               f"~{approx} bytes. No files changed.")
         return 0
