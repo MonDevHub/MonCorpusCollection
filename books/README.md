@@ -18,8 +18,32 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [lik-knap-smat-samti-sabhang-ratson](lik-knap-smat-samti-sabhang-ratson/) | လိက်ကၞပ်စၟတ်သမ္တီ သဘင်ရတ်သြန် | not identified | 43 / 65 | 35,336 | 98.4% | not measured | 7.7% | not applicable |
 | [lyah-rat-tmoi-knap-6](lyah-rat-tmoi-knap-6/) | လျးရတ်တၟိကၞပ်(၆) | not identified | 130 / 222 | 163,149 | 98.4% | not measured | 6.97% | not applicable |
 | [anagat-mon-knap-12](anagat-mon-knap-12/) | အနာဂတ်မန်ကၞပ်(၁၂) (Anagat Mon (Mon Future), issue 12) | not identified | 134 / 206 | 169,782 | 57.8% | not measured | 6.68% | not applicable |
+| [kyaik-sei-mon](kyaik-sei-mon/) | Kyaik Sei Mon | not identified | 103 / 112 | 28,836 | 95.0% | not measured | 6.41% | not applicable |
+| [mon-journalism-training-2003](mon-journalism-training-2003/) | MON journalism training 2003 IMNA Office (Mon journalism training, 2003 (IMNA office)) | not identified | 12 / 13 | 18,947 | 93.8% | not measured | 7.61% | not applicable |
+| [mon-education-reform-2014](mon-education-reform-2014/) | Mon Education Reform 2014 BHS to MNEC (Mon Education Reform 2014, BHS to MNEC) | နာဲဗညာဟံသာ | 13 / 14 | 18,288 | 97.3% | not measured | 6.45% | not applicable |
+| [mon-myanmar-dictionary-nai-tun-thein-255pp](mon-myanmar-dictionary-nai-tun-thein-255pp/) | မွန် - မြန်မာ အဘိဓါန် နှင့် သဒ္ဒါနှိုင်းယှဉ်ချက် (Mon-Myanmar Dictionary and Grammar Comparison) | နိုင်ထွန်းသိန်း (Nai Tun Thein) | 181 / 255 | 142,805 | 89.0% | not measured | 2.31% | not applicable |
+| [nmsp-english-news-article](nmsp-english-news-article/) | Union-level Peace-making group and NMSP ink initial peace deal | not identified | 3 / 8 | 4,725 | 0.0% | not measured | 0.0% | not applicable |
+| [omcc-magazine-no-3-2010](omcc-magazine-no-3-2010/) | OMCC Magazine No 3 | not identified | 17 / 18 | 21,877 | 97.5% | not measured | 7.03% | not applicable |
+| [mon-youth-progressive-journal-11](mon-youth-progressive-journal-11/) | Mon Youth Progressive Journal-Volume (11) (Mon Youth Progressive Journal, volume 11) | not identified | 23 / 24 | 37,924 | 96.8% | not measured | 7.74% | not applicable |
 
 The dictionary's Myanmar-script share is lower and its Mon-specific share much lower than the others because it is mostly Burmese definitions with dictionary punctuation, and its malformed-line and yield figures were not computed.
+
+## Reading speed
+
+How long `monocr-cli` 0.2.0 (model v3.5, page mode) took, from the `ms` it records for each page. Time is
+wall-clock on a 10-core Mac, so it depends on how busy the machine was.
+
+| Measured | Pages | Median per page | Mean per page | Lines per page | Per line |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| One extraction alone (10 pages of one book, other load about 4 on 10 cores) | 10 | 6.5 s | 6.6 s | 20.7 | 0.32 s |
+| Three to four extractions at once (load 9 to 13 on 10 cores), 15 books, some only partly read | 699 | 16.5 s | 17.8 s | 23.2 | 0.77 s |
+
+The first row is the speed of one run; the second is what a batch cost when the books shared the CPU, about
+2.5 times slower per page. Per-line time is the page time divided by its lines, so it includes page
+preparation and line finding, not only recognition. Book to book the shared-CPU runs ranged from 0.47 s
+(sparse pages) to 1.2 s per line. The idle row is ten pages of one book, so it shows the order of magnitude,
+not a spread. Regenerate with [`scripts/books_speed.py`](../scripts/books_speed.py) on a run's
+`manifest.jsonl` files.
 
 ## Records
 

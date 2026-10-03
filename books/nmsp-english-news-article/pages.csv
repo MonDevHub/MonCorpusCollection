@@ -1,0 +1,9 @@
+page,verdict,source,noise_lines,chars,symbols,mixed,digits,latin,garble,lines
+1,garbled,first read,0,635,0.0031,0.0,0.011,0.0031,5.2632,13
+2,garbled,first read,0,239,0.0,0.0,0.0,0.0,5.0209,9
+3,garbled,first read,0,598,0.0,0.0,0.0,0.0067,4.7297,13
+4,garbled,first read,0,727,0.0,0.0,0.0124,0.0028,4.4506,16
+5,garbled,first read,0,750,0.0,0.0,0.0013,0.0,5.6075,10
+6,keep,english read,0,2331,0.0,0.0,0.0,0.9601,0.0,42
+7,keep,english read,0,1638,0.0,0.0,0.0,0.9542,0.0,31
+8,keep,english read,0,756,0.0,0.0,0.0,0.9497,0.0,14
