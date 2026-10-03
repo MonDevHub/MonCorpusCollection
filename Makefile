@@ -14,12 +14,12 @@ SHARDS := shards
 # fetches it on demand. Both read ruff.toml, so a local run and a CI run agree.
 RUFF ?= $(shell command -v ruff >/dev/null 2>&1 && echo ruff || echo 'uvx ruff')
 
-.PHONY: all check stats verify quality lint frequencies
+.PHONY: all check stats verify quality lint frequencies books
 
 all: check
 
 ## check: everything that can fail. stats is excluded because it only reports.
-check: verify quality lint
+check: verify quality books lint
 
 ## stats: per-source shards, lines, characters, Mon/Myanmar share.
 stats:
@@ -53,6 +53,10 @@ verify:
 ## quality: the Data Quality figures, and the no-PII gate (--check exits 1 on a violation).
 quality:
 	$(PYTHON) scripts/data_quality.py --check
+
+## books: books/records.csv agrees with the book folders (a row per book, counts match the texts).
+books:
+	$(PYTHON) scripts/check_books.py
 
 ## lint: ruff over the scripts, configured by ruff.toml.
 lint:
