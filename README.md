@@ -4,6 +4,11 @@ A Mon-language text corpus for NLP research, language-model pretraining and OCR
 training data. It is the training data source for
 [MonOCR](https://github.com/MonDevHub/monocr).
 
+Related: the [MonOCR model card](https://huggingface.co/janakhpon/monocr), the
+[Mon tokenizer](https://github.com/Code-Yay-Mal/mon_tokenizer), the
+[Mon language detector](https://github.com/janakhpon/mon-language-detector) and the
+[awesome-mon-nlp](https://github.com/MonDevHub/awesome-mon-nlp) list.
+
 **The corpus is not MIT, and seven of its nine sources have no established licence.**
 Read [Licence](#licence) before redistributing any shard or book text.
 
