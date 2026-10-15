@@ -1,7 +1,8 @@
 # Books
 
-Mon-language documents read from their PDF pages by OCR, kept as readable texts: one
-folder per document, holding the text and a README with its source and known issues.
+Fourteen documents (thirteen in Mon, one in English) read from their PDF pages by OCR,
+kept as readable texts: one folder per document, holding the text and a README with its
+source and known issues.
 These are not shards. They are not deduplicated, clause-split or counted by `make stats`.
 
 **Machine OCR, not proofread.** Every text carries the model's recognition errors.

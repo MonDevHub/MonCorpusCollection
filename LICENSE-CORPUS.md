@@ -27,7 +27,7 @@ practical answer for most consumers.
 | `custom_shard_*` | Specialized and legacy collections | **None established** | **Unresolved** |
 | `gemini_generated_shard_*` | Authored by Google Gemini | **None established** | **Unresolved** |
 | `handwritten_shard_*` | Composed directly in Mon by a native writer | **None recorded** | **Unresolved** |
-| `books/` (folder, not a shard prefix) | Machine OCR of fourteen Mon-language documents, one folder each; sources in [books/README.md](books/README.md) | **None established** | **Unresolved** |
+| `books/` (folder, not a shard prefix) | Machine OCR of fourteen documents (thirteen in Mon, one in English), one folder each; sources in [books/README.md](books/README.md) | **None established** | **Unresolved** |
 
 "Verified" means the upstream statement was read at the URL given, on the date given:
 the [Wikimedia Terms of Use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use)
