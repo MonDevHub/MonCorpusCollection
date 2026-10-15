@@ -24,7 +24,7 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [omcc-magazine-no-3-2010](omcc-magazine-no-3-2010/) | OMCC Magazine No 3 | not identified | 17 / 18 | 21,877 | 97.5% | not measured | 7.03% | not applicable |
 | [mon-youth-progressive-journal-11](mon-youth-progressive-journal-11/) | Mon Youth Progressive Journal-Volume (11) (Mon Youth Progressive Journal, volume 11) | not identified | 23 / 24 | 37,924 | 96.8% | not measured | 7.74% | not applicable |
 
-The OCR of Nai Tun Thein's Mon-Myanmar dictionary, in two printings, was withdrawn on 2026-10-15 pending rights and is not redistributed here.
+The OCR of Nai Tun Thein's Mon-Myanmar dictionary, in two printings, was removed from the current tree on 2026-10-15 pending rights. Earlier commits in the git history still contain it.
 
 ## Reading speed
 

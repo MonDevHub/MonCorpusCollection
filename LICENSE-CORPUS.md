@@ -41,7 +41,8 @@ or by any other file in this repository.** They are present because they were co
 before the terms were settled; that is a fact about the repository's history, not a
 permission. `books/` was added with its terms still unresolved: none of its fourteen
 source documents states a licence. The OCR of Nai Tun Thein's Mon-Myanmar dictionary was
-withdrawn on 2026-10-15 pending rights and is not redistributed.
+removed from the current tree on 2026-10-15 pending rights. Earlier commits in the git
+history still contain it.
 
 This is not a formality for `monnews_shard_*` in particular. IMNA is a working news
 agency and those shards are a large fraction of its archive. Treat that row as an open
