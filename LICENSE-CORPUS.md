@@ -27,7 +27,7 @@ practical answer for most consumers.
 | `custom_shard_*` | Specialized and legacy collections | **None established** | **Unresolved** |
 | `gemini_generated_shard_*` | Authored by Google Gemini | **None established** | **Unresolved** |
 | `handwritten_shard_*` | Composed directly in Mon by a native writer | **None recorded** | **Unresolved** |
-| `books/` (folder, not a shard prefix) | Machine OCR of fourteen documents (thirteen in Mon, one in English), one folder each; sources in [books/README.md](books/README.md) | **None established** | **Unresolved** |
+| `books/` (folder, not a shard prefix) | Machine OCR of sixteen documents (fifteen in Mon, one in English), one folder each; sources in [books/README.md](books/README.md) | **None established** | **Unresolved** |
 
 "Verified" means the upstream statement was read at the URL given, on the date given:
 the [Wikimedia Terms of Use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use)
@@ -39,10 +39,9 @@ For every row marked **Unresolved**, no licence has been obtained, and this proj
 no authority to grant one. **Redistribution of those files is not covered by this file
 or by any other file in this repository.** They are present because they were collected
 before the terms were settled; that is a fact about the repository's history, not a
-permission. `books/` was added with its terms still unresolved: none of its fourteen
-source documents states a licence. The OCR of Nai Tun Thein's Mon-Myanmar dictionary was
-removed from the current tree on 2026-10-15 pending rights. Earlier commits in the git
-history still contain it.
+permission. `books/` was added with its terms still unresolved: none of its sixteen
+source documents states a licence. That includes both printings of Nai Tun Thein's
+Mon-Myanmar dictionary, an in-copyright work kept here for preservation.
 
 This is not a formality for `monnews_shard_*` in particular. IMNA is a working news
 agency and those shards are a large fraction of its archive. Treat that row as an open
