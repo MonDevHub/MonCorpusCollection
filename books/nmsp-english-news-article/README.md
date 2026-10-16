@@ -1,5 +1,7 @@
 # Union-level Peace-making group and NMSP ink initial peace deal
 
+**English-language text, kept for reference.** It holds no Mon or Burmese script; exclude it when you want Mon text only.
+
 - **Title as printed:** Union-level Peace-making group and NMSP ink initial peace deal. Read from the book's own pages by OCR, so it may carry recognition errors; the PDF's file name is `NMSP by BHS 1997  in Mon.pdf`.
 - **Author / origin:** not identified; New Light of Myanmar, 27 February 2012. Year: 2012
 - **Source PDF SHA-256:** `8e11d1b4bf56f075a481a8a76296e8c4a71637d6ac732cee80c55fa5351b805b`

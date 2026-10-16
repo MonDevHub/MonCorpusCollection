@@ -1,7 +1,8 @@
 # Books
 
-Mon-language documents read from their PDF pages by OCR, kept as readable texts: one
-folder per document, holding the text and a README with its source and known issues.
+Fourteen documents (thirteen in Mon, one in English) read from their PDF pages by OCR,
+kept as readable texts: one folder per document, holding the text and a README with its
+source and known issues.
 These are not shards. They are not deduplicated, clause-split or counted by `make stats`.
 
 **Machine OCR, not proofread.** Every text carries the model's recognition errors.
@@ -13,7 +14,6 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [mnec-early-childhood-reform-paper-5-2019](mnec-early-childhood-reform-paper-5-2019/) | MNEC vs Mon Early Childhood Education Reform Paper No 5, 2019 | နာဲဗညာဟံသာ | 18 / 18 | 35,804 | 98.4% | 3.92% | 7.20% | 1.003 |
 | [journal-of-mon-studies-guideline-2024](journal-of-mon-studies-guideline-2024/) | Journal of Mon Studies editorial guideline, amended 3 Nov 2024 | Mon National College | 4 / 4 | 5,956 | 95.7% | 4.95% | 5.56% | 1.022 |
 | [gatui-mon-2](gatui-mon-2/) | လိက်ဂတဵုဇၞော်မန် ၂ | www.monlibrary.com | 17 / 17 | 15,034 | 97.8% | 2.55% | 4.91% | 1.015 |
-| [mon-myanmar-dictionary-nai-tun-thein](mon-myanmar-dictionary-nai-tun-thein/) | မွန်-မြန်မာ အဘိဓာန် နှင့် သဒ္ဒါနှိုင်းယှဉ်ချက်, 2nd printing, March 2020 | နိုင်ထွန်းသိန်း, edited by နိုင်ပန်းလှ | 374 / 380 | 306,674 | 88.8% | not measured | 1.32% | not applicable (no text layer) |
 | [gkaum-trah-lyah-abhidhar-kya](gkaum-trah-lyah-abhidhar-kya/) | ဂကောံတြးလျးအဘိဓရ်ကျာ် | not identified | 120 / 136 | 145,553 | 96.4% | not measured | 3.44% | not applicable |
 | [lik-knap-smat-samti-sabhang-ratson](lik-knap-smat-samti-sabhang-ratson/) | လိက်ကၞပ်စၟတ်သမ္တီ သဘင်ရတ်သြန် | not identified | 43 / 65 | 35,336 | 98.4% | not measured | 7.7% | not applicable |
 | [lyah-rat-tmoi-knap-6](lyah-rat-tmoi-knap-6/) | လျးရတ်တၟိကၞပ်(၆) | not identified | 130 / 222 | 163,149 | 98.4% | not measured | 6.97% | not applicable |
@@ -21,12 +21,13 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [kyaik-sei-mon](kyaik-sei-mon/) | Kyaik Sei Mon | not identified | 103 / 112 | 28,836 | 95.0% | not measured | 6.41% | not applicable |
 | [mon-journalism-training-2003](mon-journalism-training-2003/) | MON journalism training 2003 IMNA Office (Mon journalism training, 2003 (IMNA office)) | not identified | 12 / 13 | 18,947 | 93.8% | not measured | 7.61% | not applicable |
 | [mon-education-reform-2014](mon-education-reform-2014/) | Mon Education Reform 2014 BHS to MNEC (Mon Education Reform 2014, BHS to MNEC) | နာဲဗညာဟံသာ | 13 / 14 | 18,288 | 97.3% | not measured | 6.45% | not applicable |
-| [mon-myanmar-dictionary-nai-tun-thein-255pp](mon-myanmar-dictionary-nai-tun-thein-255pp/) | မွန် - မြန်မာ အဘိဓါန် နှင့် သဒ္ဒါနှိုင်းယှဉ်ချက် (Mon-Myanmar Dictionary and Grammar Comparison) | နိုင်ထွန်းသိန်း (Nai Tun Thein) | 181 / 255 | 142,805 | 89.0% | not measured | 2.31% | not applicable |
 | [nmsp-english-news-article](nmsp-english-news-article/) | Union-level Peace-making group and NMSP ink initial peace deal | not identified | 3 / 8 | 4,725 | 0.0% | not measured | 0.0% | not applicable |
 | [omcc-magazine-no-3-2010](omcc-magazine-no-3-2010/) | OMCC Magazine No 3 | not identified | 17 / 18 | 21,877 | 97.5% | not measured | 7.03% | not applicable |
 | [mon-youth-progressive-journal-11](mon-youth-progressive-journal-11/) | Mon Youth Progressive Journal-Volume (11) (Mon Youth Progressive Journal, volume 11) | not identified | 23 / 24 | 37,924 | 96.8% | not measured | 7.74% | not applicable |
 
-The dictionary's Myanmar-script share is lower and its Mon-specific share much lower than the others because it is mostly Burmese definitions with dictionary punctuation, and its malformed-line and yield figures were not computed.
+`nmsp-english-news-article` is English-language text (0.0% Myanmar script), kept for reference; exclude it when you want Mon text only.
+
+The OCR of Nai Tun Thein's Mon-Myanmar dictionary, in two printings, was removed from the current tree on 2026-10-15 pending rights. Earlier commits in the git history still contain it.
 
 ## Reading speed
 
