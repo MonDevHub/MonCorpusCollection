@@ -1,7 +1,8 @@
 # Corpus licence and attribution
 
 This file governs the corpus text in `shards/`, the book texts in `books/`, and the
-derived tables in `results/`.
+derived tables in `results/`. `provenance/` holds lists of fetched URLs and message
+IDs, not text; see the Wikipedia attribution below.
 The code is separate: `LICENSE` is an MIT grant scoped to `scripts/` and `Makefile`.
 
 **There is no single licence for this corpus, and this file does not invent one.**
@@ -72,9 +73,11 @@ because the text was cleaned and repacked as listed below, so all four apply.
 
 **A known gap in the attribution.** CC BY-SA 4.0 is satisfied by a link to each article
 or a list of authors. Neither is reconstructable from these shards: per-article URLs were
-stripped at import, and only `wikipedia_shard_003` retains a partial set. The attribution
-above therefore credits the project rather than the individual contributors the licence
-names. Recording the source URL per document at import is the fix; it is not something
+stripped at import. A partial set survives in
+[`provenance/wikipedia_urls.txt`](provenance/wikipedia_urls.txt): 5,457 article URLs from
+the scraper's list of fetched pages, sorted, and not mapped to the documents in any
+shard. The attribution above therefore credits the project rather than the individual
+contributors the licence names. Recording the source URL per document at import is the fix; it is not something
 this file can do retroactively.
 
 ## Using this corpus

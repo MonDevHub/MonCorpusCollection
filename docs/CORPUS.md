@@ -12,11 +12,11 @@ Each source occupies its own files, identified by the shard filename prefix.
 
 | Prefix | What it is | Caveats |
 | :--- | :--- | :--- |
-| `wikipedia_shard_*` | Articles from [Mon Wikipedia](https://mnw.wikipedia.org) | Per-article URLs were stripped, so individual articles cannot be traced back; `wikipedia_shard_003` keeps a partial set. Carries orphan `"` lines and URLs, see section 4 |
-| `monnews_shard_*` | Articles from the [Independent Mon News Agency](https://monnews.org) | `monnews_shard_001` carries URLs, see section 4 |
+| `wikipedia_shard_*` | Articles from [Mon Wikipedia](https://mnw.wikipedia.org) | Per-article URLs were stripped, so individual articles cannot be traced back; a partial set of 5,457 is in `provenance/wikipedia_urls.txt`, not mapped to documents. Carries orphan `"` lines, see section 4 |
+| `monnews_shard_*` | Articles from the [Independent Mon News Agency](https://monnews.org) | 3,715 fetched-article URLs are in `provenance/monnews_urls.txt`, not mapped to documents |
 | `custom_shard_*` | Specialized and legacy collections | Mixed Mon and Burmese; 0.5% blank lines, so blank lines are not document boundaries |
 | `mondictdb_shard_*` | Entries and examples from [MonDictDB](https://github.com/Barnista/MonDictDB) | Mon headwords with Burmese definitions. Rows the upstream records as machine-translated were excluded at import. A flat lexical stream, not prose |
-| `telegram_*_shard_*` | Public Telegram channel messages | |
+| `telegram_*_shard_*` | Public Telegram channel messages | 879 fetched message IDs are in `provenance/telegram_mot_tip_ebook_message_ids.txt` |
 | `facebook_shard_*` | Public Facebook page posts | |
 | `ocr_extracted_shard_*` | Text recovered from scanned material by an OCR system | Can carry recognition errors |
 | `handwritten_shard_*` | Composed directly in Mon by a native writer | Not scraped, transcribed or generated. [MonOCR](https://github.com/MonDevHub/monocr)'s training text includes it, so it is not held out from MonOCR |
@@ -35,7 +35,7 @@ Each source occupies its own files, identified by the shard filename prefix.
 `mondictdb_shard_001` (3 in 94,658, 0.0%), `gemini_generated_shard_001` (1 in 962,
 0.1%), `handwritten_shard_001` (1 in 1,501, 0.1%), `custom_shard_001` (599 in 119,737,
 0.5%), `wikipedia_shard_005` (5.3%), `ocr_extracted_shard_001` (7.1%) and
-`monnews_shard_003` (10.1%). The other eight run 32.0–49.8%. Splitting
+`monnews_shard_003` (10.1%). The other eight run 41.4–50.0%. Splitting
 `mondictdb_shard_001` on blank lines yields three documents, the largest about 4.1 MB. Check a shard's
 blank-line share before treating blank lines as document boundaries.
 
@@ -53,7 +53,7 @@ document per file, and for each document:
 2. **Splits** it into segments at Mon/Burmese clause and sentence endings and at ASCII
    `. ! ? , ; :`. Because Mon writing uses ASCII punctuation freely, the unit is a
    clause rather than a sentence, and a date or decimal such as `၃၁.၈.၂၀၂၅` splits into
-   three. Over the current shards this rule yields 1,462,490 units, against 1,241,854
+   three. Over the current shards this rule yields 1,461,610 units, against 1,240,974
    under Mon-only endings, 17.8% more.
 3. **Deduplicates** each segment against the existing corpus and the rest of the batch,
    using a Mon-script skeleton (Myanmar-block characters only). A segment is dropped
@@ -96,7 +96,7 @@ the current shards, they still carry:
 
 | Residue | Count | Where |
 | :--- | ---: | :--- |
-| URLs | 9,228 | `wikipedia_shard_003` 5,457, `monnews_shard_001` 3,715, `telegram_mot_tip_ebook_shard_001` 52, `facebook_shard_001` 4 |
+| URLs | 56 | `telegram_mot_tip_ebook_shard_001` 52, `facebook_shard_001` 4 |
 | Lines that are a lone `"`; in the Wikipedia shards, what is left of a stripped "Retrieved from" prefix | 5,602 | `wikipedia_shard_001` 1,975, `_002` 1,670, `_003` 1,410, `_004` 545; one each in `custom_shard_001` and `telegram_mot_tip_ebook_shard_001` |
 | U+00AD SOFT HYPHEN | 94 | `wikipedia_shard_001` |
 | U+200E LEFT-TO-RIGHT MARK | 13 | `custom_shard_001`, `telegram_mot_tip_ebook_shard_001`, `wikipedia_shard_001`, `_003`, `_005` |
@@ -194,10 +194,10 @@ it with `make frequencies`, which runs:
 python3 scripts/corpus_counter_normalized.py shards --output-dir results/latest --all-chars
 ```
 
-In `summary.json`, `total_raw_text_length` (52,256,919) is a **character** count, `len()`
-over the decoded text, not a byte count. The shards are 130,428,126 bytes, 2.50 times
+In `summary.json`, `total_raw_text_length` (50,239,594) is a **character** count, `len()`
+over the decoded text, not a byte count. The shards are 128,410,801 bytes, 2.56 times
 larger, because Myanmar-script code points take three bytes each in UTF-8.
-`total_counted_characters` (47,221,746) is the non-whitespace count and equals the
+`total_counted_characters` (45,214,475) is the non-whitespace count and equals the
 README's Characters total.
 
 `results/` is derived from every shard and inherits the per-source terms; see
