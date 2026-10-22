@@ -16,24 +16,24 @@ Read [Licence](#licence) before redistributing any shard or book text.
 
 | Source | Shards | Lines | Characters | Mon/Myanmar | Other |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mon Wikipedia** | 5 | 910,074 | 25,589,404 | 21,724,647 | 3,864,757 |
-| **Mon News Agency** | 3 | 121,008 | 12,064,310 | 10,991,170 | 1,073,140 |
+| **Mon Wikipedia** | 5 | 904,616 | 24,420,117 | 21,724,647 | 2,695,470 |
+| **Mon News Agency** | 3 | 117,292 | 11,229,713 | 10,991,170 | 238,543 |
 | **Custom Collections** | 1 | 119,737 | 6,831,335 | 3,681,830 | 3,149,505 |
 | **MonDictDB** | 1 | 94,658 | 2,484,241 | 2,357,122 | 127,119 |
-| **Telegram** | 1 | 3,151 | 58,025 | 48,941 | 9,084 |
+| **Telegram** | 1 | 2,271 | 54,638 | 48,941 | 5,697 |
 | **Facebook** | 1 | 1,315 | 36,546 | 32,187 | 4,359 |
 | **OCR Extracted** | 1 | 733 | 37,624 | 36,824 | 800 |
 | **Handwritten** | 1 | 1,501 | 97,119 | 94,669 | 2,450 |
 | **Machine-generated** | 1 | 962 | 23,142 | 21,567 | 1,575 |
-| **Total** | **15** | **1,253,139** | **47,221,746** | **38,988,957 (82.6%)** | **8,232,789 (17.4%)** |
+| **Total** | **15** | **1,243,085** | **45,214,475** | **38,988,957 (86.2%)** | **6,225,518 (13.8%)** |
 
 Every cell is printed by `make stats` (`scripts/shard_stats.py`). Raw size is
-130,428,126 bytes, 124 MiB of uncompressed UTF-8 (`cat shards/*.txt | wc -c`).
+128,410,801 bytes, 122 MiB of uncompressed UTF-8 (`cat shards/*.txt | wc -c`).
 
 **Lines counts every newline**, including the blank line between documents.
-493,845 of the 1,253,139 lines are blank (39.4%), leaving 759,294 with text, of
-which 53,275 are three characters or fewer. Budget for roughly 700K usable text
-lines, not 1.25M. The character columns already exclude whitespace. `make quality`
+493,842 of the 1,243,085 lines are blank (39.7%), leaving 749,243 with text, of
+which 53,154 are three characters or fewer. Budget for roughly 700K usable text
+lines, not 1.24M. The character columns already exclude whitespace. `make quality`
 prints these counts.
 
 **Other is not noise.** Mon and Burmese are mixed in ordinary written use, so
@@ -48,9 +48,15 @@ figures below and fails if personal data reappears.
 - **NFC.** All text is normalized to Unicode NFC.
 - **What is stripped.** BOM, ZWJ, ZWNJ and control codes. All Myanmar script
   blocks (U+1000–U+109F, Extended-A/B) and intentional spacing are kept.
-- **URLs remain in older shards.** 9,228 of them, almost all in
-  `wikipedia_shard_003` and `monnews_shard_001`, which predate the importer's URL
-  rule.
+- **URLs remain in two older shards.** 56 of them, inline in
+  `telegram_mot_tip_ebook_shard_001` (52) and `facebook_shard_001` (4), which
+  predate the importer's URL rule.
+- **Crawl logs were removed.** The scraper keeps a list of the pages it has fetched
+  as a `.txt` file beside the articles, and its packing step read every `.txt`, so
+  those lists were packed in as if they were text: 3,715 monnews URLs in
+  `monnews_shard_001`, 5,457 Wikipedia URLs in `wikipedia_shard_003` and 879
+  Telegram message IDs in `telegram_mot_tip_ebook_shard_001`. They were removed
+  from the shards and kept, sorted, in [`provenance/`](#structure).
 - **Personal data.** Every email address and mobile-number-shaped string was
   removed from the shards in one redaction pass: 21 lines across six shards. Whole
   lines were removed rather than masked, because the material was mostly
@@ -98,6 +104,10 @@ MonCorpusCollection/
 │   ├── ocr_extracted_shard_*.txt     # OCR-extracted text
 │   ├── handwritten_shard_*.txt       # Composed directly in Mon by a native writer
 │   └── gemini_generated_shard_*.txt  # LLM-authored, unverified
+├── provenance/                       # Fetched-page URL and message-ID lists, not text
+│   ├── wikipedia_urls.txt            # Mon Wikipedia article URLs (CC BY-SA attribution)
+│   ├── monnews_urls.txt              # IMNA article URLs
+│   └── telegram_mot_tip_ebook_message_ids.txt
 ├── books/                            # OCR-read Mon documents, one folder each (not shards)
 ├── results/latest/                   # Character/bigram/trigram frequency over the shards
 ├── scripts/                          # stdlib-only Python: stats, quality, import, counters
@@ -146,7 +156,9 @@ Only the Wikipedia and MonDictDB shards are covered, under CC BY-SA 4.0 and MIT.
 Redistributing any **Unresolved** shard or book text is not covered by anything in
 this repository. Attribute **Mon Corpus Collection** and the underlying source of
 each shard or book you use; for the Wikipedia shards, use the CC BY-SA 4.0
-attribution and list of changes in [LICENSE-CORPUS.md](LICENSE-CORPUS.md#cc-by-sa-40-attribution-for-wikipedia_shard_).
+attribution and list of changes in [LICENSE-CORPUS.md](LICENSE-CORPUS.md#cc-by-sa-40-attribution-for-wikipedia_shard_),
+and [`provenance/wikipedia_urls.txt`](provenance/wikipedia_urls.txt) for the article
+URLs that survive.
 
 ### Confidence by source
 
