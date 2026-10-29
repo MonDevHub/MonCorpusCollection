@@ -28,10 +28,10 @@ and a mean charset survival of 0.9985 with no line below 0.50.
 
 **Crawl logs were packed in as text, and have been taken out.** The scraper keeps a
 list of the pages it has fetched as a `.txt` file beside the articles, and its packing
-step read every `.txt`. That put 3,715 monnews URLs in `monnews_shard_001`, 5,457
-Wikipedia URLs in `wikipedia_shard_003` and 879 Telegram message IDs in
-`telegram_mot_tip_ebook_shard_001`. They were removed from the shards and kept, sorted,
-in `provenance/`.
+step read every `.txt`. That put the lists inside `monnews_shard_001`,
+`wikipedia_shard_003` and `telegram_mot_tip_ebook_shard_001`. They were removed from
+the shards and kept, sorted, in `provenance/`; the table above gives each count and
+file.
 
 ## 2. File format
 

@@ -33,7 +33,7 @@ bytes, 122 MiB of uncompressed UTF-8 (`cat shards/*.txt | wc -c`).
 - **Lines counts every newline,** including the blank line between documents.
   493,842 lines are blank (39.7%), leaving 749,243 with text, of which 53,154 are
   three characters or fewer. Budget for roughly 700K usable lines, not 1.24M. The
-  character columns already exclude whitespace.
+  character columns already exclude whitespace. `make quality` prints these counts.
 - **Other is not noise.** Mon and Burmese are mixed in ordinary written use, so
   mixed-script text is kept as written. MonDictDB is the clearest case: Mon
   headwords with Burmese definitions.
@@ -53,8 +53,9 @@ personal data reappears. [docs/CORPUS.md](docs/CORPUS.md) has the full datasheet
   message IDs. They now sit, sorted, in [`provenance/`](provenance/).
 - **Personal data.** Every line holding an email address or a mobile-number-shaped
   string was removed (21 lines across six shards), whole rather than masked. The
-  check scans ASCII and Myanmar numerals. **Earlier commits still contain the removed lines:**
-  redistribute the current tree, not the history.
+  check scans ASCII and Myanmar numerals. **Earlier commits still contain the
+  removed lines:** if you mirror or redistribute, take the current tree, not the
+  history.
 - **Duplication.** 94,006 of 369,898 eligible lines (25.4%) are redundant, and 4,542
   dedup keys (Mon-script skeletons) appear in more than one shard.
   `scripts/build_shards.py` dedupes new material against the corpus, but not the
@@ -146,8 +147,8 @@ MonDictDB as lower-confidence than the Wikipedia and news shards.
   MonOCR. Import measurements are in [docs/CORPUS.md](docs/CORPUS.md#1-sources).
 - **OCR Extracted** can carry the recognition errors of the OCR system that read it.
 - **Books** are machine OCR, not proofread; each book's README lists its known errors.
-- **MonDictDB** upstream marks some definitions as machine-translated. The importer
-  excludes those rows; the shard file itself does not mark them.
+- **MonDictDB** upstream marks some definitions as machine-translated. Those rows
+  were excluded at import; that is a property of the importer, not of the shard file.
 - **Machine-generated** text is LLM-authored and unverified, and separable by filename.
 
 ## Contributing
