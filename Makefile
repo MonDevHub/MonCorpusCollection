@@ -3,8 +3,9 @@
 #     make stats        per-source table (the README Dataset table)
 #     make verify       checksum manifest: contents AND coverage
 #     make quality      the Data quality numbers, with the personal-data gate
+#     make books        books/records.csv agrees with the book folders
 #     make lint         ruff over the scripts
-#     make check        verify + quality + lint, i.e. everything that can fail
+#     make check        verify + quality + books + lint, i.e. everything that can fail
 #     make frequencies  regenerate results/latest/ from the shards
 
 PYTHON ?= python3
