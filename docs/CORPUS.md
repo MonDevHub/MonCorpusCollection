@@ -22,6 +22,17 @@ Each source occupies its own files, identified by the shard filename prefix.
 | `handwritten_shard_*` | Composed directly in Mon by a native writer | Not scraped, transcribed or generated. [MonOCR](https://github.com/MonDevHub/monocr)'s training text includes it, so it is not held out from MonOCR |
 | `gemini_generated_shard_*` | Authored by Google Gemini | LLM-authored and unverified; not transcribed from any source |
 
+**Handwritten is the cleanest source.** Measured against the rest of the corpus at
+import: 97.5% Mon script, 0.014% malformed tokens (the corpus bar is 1.0%), zero URLs,
+and a mean charset survival of 0.9985 with no line below 0.50.
+
+**Crawl logs were packed in as text, and have been taken out.** The scraper keeps a
+list of the pages it has fetched as a `.txt` file beside the articles, and its packing
+step read every `.txt`. That put the lists inside `monnews_shard_001`,
+`wikipedia_shard_003` and `telegram_mot_tip_ebook_shard_001`. They were removed from
+the shards and kept, sorted, in `provenance/`; the table above gives each count and
+file.
+
 ## 2. File format
 
 - UTF-8, Unicode NFC, no BOM, no CRLF line endings.
@@ -68,9 +79,18 @@ It never modifies or overwrites an existing shard; it refuses if a target file e
 Run it with `--dry-run` first.
 
 **Deduplication is not retroactive.** It applies to new material against what is
-already there; it does not dedupe shards that were built before it. The README's
-[Duplication](../README.md#duplication) section gives the measured redundancy across
-the whole corpus. Deduplicate across all shards before splitting train from eval.
+already there; it does not dedupe shards that were built before it.
+
+**Measured redundancy across the whole corpus**, with the same skeleton key over each
+cleaned non-blank line (`make quality` prints these and the per-shard breakdown): of
+369,898 eligible lines, 94,006 are redundant instances (25.4%), 4,708,496 characters.
+The duplicates are not short: median 63 characters across the 35,156 skeletons that
+repeat, p90 180, longest 2,575. 4,542 skeletons appear in more than one shard. Five
+shards contribute no duplicates at all, `mondictdb_shard_001` (54,457 eligible lines)
+and `handwritten_shard_001` among them.
+
+Deduplicate across all shards before splitting train from eval: split by file, and
+roughly 4,500 skeletons straddle the boundary.
 
 ## 4. Cleaning
 
