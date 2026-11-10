@@ -21,6 +21,10 @@ Every page was read, then kept only if it reads as text: not blank, not a table 
 
 92 of 222: empty: 1-2, 8, 18, 23, 25, 27-28, 35, 37, 43, 49, 51, 53, 57, 63-64, 73, 78, 81, 85, 95, 97, 104-105, 108, 110-111, 119, 125-127, 135, 138, 140, 142-143, 152, 158-159, 164, 166, 169, 172, 175-177, 191, 198, 217, 220, 222; garbled: 7, 9-12, 16, 33, 45-46, 52, 56, 88, 96, 99, 103, 106-107, 109, 112-113, 121-122, 124, 129, 132, 139, 144, 162, 165, 168, 170, 173, 179, 195, 201, 210-212, 221; symbols: 101. Short pages under about 100 characters (a title page, a dedication) are dropped with the blank ones, even when clean.
 
+## What was removed
+
+One line on page 84 giving a contact name and mobile number, found by the personal-data check (`make quality`). Whole lines were removed, not masked, because a masked number leaves the name and address beside it. `pages.csv` still counts these lines: it reports the OCR output before removal. Earlier commits still contain them.
+
 ## Known issues
 
 - Text over photographs or colour gradients often could not be read and is missing; `empty` and `garbled` drops are mostly that.

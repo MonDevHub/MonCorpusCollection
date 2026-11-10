@@ -15,9 +15,9 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [journal-of-mon-studies-guideline-2024](journal-of-mon-studies-guideline-2024/) | Journal of Mon Studies editorial guideline, amended 3 Nov 2024 | Mon National College | 4 / 4 | 5,956 | 95.7% | 4.95% | 5.56% | 1.022 |
 | [gatui-mon-2](gatui-mon-2/) | လိက်ဂတဵုဇၞော်မန် ၂ | www.monlibrary.com | 17 / 17 | 15,034 | 97.8% | 2.55% | 4.91% | 1.015 |
 | [mon-myanmar-dictionary-nai-tun-thein](mon-myanmar-dictionary-nai-tun-thein/) | မွန်-မြန်မာ အဘိဓာန် နှင့် သဒ္ဒါနှိုင်းယှဉ်ချက်, 2nd printing, March 2020 | နိုင်ထွန်းသိန်း, edited by နိုင်ပန်းလှ | 374 / 380 | 306,674 | 88.8% | not measured | 1.32% | not applicable (no text layer) |
-| [gkaum-trah-lyah-abhidhar-kya](gkaum-trah-lyah-abhidhar-kya/) | ဂကောံတြးလျးအဘိဓရ်ကျာ် | not identified | 120 / 136 | 145,553 | 96.4% | not measured | 3.44% | not applicable |
+| [gkaum-trah-lyah-abhidhar-kya](gkaum-trah-lyah-abhidhar-kya/) | ဂကောံတြးလျးအဘိဓရ်ကျာ် | not identified | 120 / 136 | 144,998 | 96.4% | not measured | 3.44% | not applicable |
 | [lik-knap-smat-samti-sabhang-ratson](lik-knap-smat-samti-sabhang-ratson/) | လိက်ကၞပ်စၟတ်သမ္တီ သဘင်ရတ်သြန် | not identified | 43 / 65 | 35,336 | 98.4% | not measured | 7.7% | not applicable |
-| [lyah-rat-tmoi-knap-6](lyah-rat-tmoi-knap-6/) | လျးရတ်တၟိကၞပ်(၆) | not identified | 130 / 222 | 163,149 | 98.4% | not measured | 6.97% | not applicable |
+| [lyah-rat-tmoi-knap-6](lyah-rat-tmoi-knap-6/) | လျးရတ်တၟိကၞပ်(၆) | not identified | 130 / 222 | 163,098 | 98.4% | not measured | 6.97% | not applicable |
 | [anagat-mon-knap-12](anagat-mon-knap-12/) | အနာဂတ်မန်ကၞပ်(၁၂) (Anagat Mon (Mon Future), issue 12) | not identified | 134 / 206 | 169,782 | 57.8% | not measured | 6.68% | not applicable |
 | [kyaik-sei-mon](kyaik-sei-mon/) | Kyaik Sei Mon | not identified | 103 / 112 | 28,836 | 95.0% | not measured | 6.41% | not applicable |
 | [mon-journalism-training-2003](mon-journalism-training-2003/) | MON journalism training 2003 IMNA Office (Mon journalism training, 2003 (IMNA office)) | not identified | 12 / 13 | 18,947 | 93.8% | not measured | 7.61% | not applicable |
@@ -25,7 +25,7 @@ These are not shards. They are not deduplicated, clause-split or counted by `mak
 | [mon-myanmar-dictionary-nai-tun-thein-255pp](mon-myanmar-dictionary-nai-tun-thein-255pp/) | မွန် - မြန်မာ အဘိဓါန် နှင့် သဒ္ဒါနှိုင်းယှဉ်ချက် (Mon-Myanmar Dictionary and Grammar Comparison) | နိုင်ထွန်းသိန်း (Nai Tun Thein) | 181 / 255 | 142,805 | 89.0% | not measured | 2.31% | not applicable |
 | [nmsp-english-news-article](nmsp-english-news-article/) | Union-level Peace-making group and NMSP ink initial peace deal | not identified | 3 / 8 | 4,725 | 0.0% | not measured | 0.0% | not applicable |
 | [omcc-magazine-no-3-2010](omcc-magazine-no-3-2010/) | OMCC Magazine No 3 | not identified | 17 / 18 | 21,877 | 97.5% | not measured | 7.03% | not applicable |
-| [mon-youth-progressive-journal-11](mon-youth-progressive-journal-11/) | Mon Youth Progressive Journal-Volume (11) (Mon Youth Progressive Journal, volume 11) | not identified | 23 / 24 | 37,924 | 96.8% | not measured | 7.74% | not applicable |
+| [mon-youth-progressive-journal-11](mon-youth-progressive-journal-11/) | Mon Youth Progressive Journal-Volume (11) (Mon Youth Progressive Journal, volume 11) | not identified | 23 / 24 | 37,690 | 96.8% | not measured | 7.74% | not applicable |
 
 `nmsp-english-news-article` is English-language text (0.0% Myanmar script), kept for reference; exclude it when you want Mon text only.
 
@@ -73,7 +73,7 @@ text and position. The honest measure of confidence here is `review`: `not recor
 non-native reader`, or `spot-read by a Mon reader`, with `error_rate` filled in only when someone measured it.
 
 **Characters** excludes whitespace and the `[page N]` marker lines, and is counted on the text files. The other measures are
-taken on the OCR output before the header, footer, e-mail and watermark lines were removed:
+taken on the OCR output before the header, footer, e-mail, contact-number and watermark lines were removed:
 
 - **Myanmar script** is the share of Myanmar-block characters once URL and running-header
   lines are excluded.

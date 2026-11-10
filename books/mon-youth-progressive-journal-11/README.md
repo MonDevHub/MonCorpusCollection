@@ -21,6 +21,10 @@ Every page was read, then kept only if it reads as text: not blank, not a table 
 
 1 of 24: garbled: 12. Short pages under about 100 characters (a title page, a dedication) are dropped with the blank ones, even when clean.
 
+## What was removed
+
+Four lines naming contact people with their phone numbers and e-mail addresses: one on page 7 and three on page 9. Three were found by the personal-data check (`make quality`), the fourth, whose e-mail address the OCR misread, by reading the page. Whole lines were removed, not masked, because a masked number leaves the name and address beside it. `pages.csv` still counts these lines: it reports the OCR output before removal. Earlier commits still contain them.
+
 ## Known issues
 
 - Text over photographs or colour gradients often could not be read and is missing; `empty` and `garbled` drops are mostly that.

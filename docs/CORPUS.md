@@ -149,9 +149,10 @@ Run your own cleaning pass if your use is sensitive to any of these;
 
 ## 6. Personal data
 
-The shards carry no email addresses and no mobile-number-shaped strings.
-`scripts/data_quality.py --check` (run by `make quality` and `make check`) exits
-non-zero if either appears.
+The shards and the book texts carry no email addresses and no mobile-number-shaped
+strings. `scripts/data_quality.py --check` (run by `make quality` and `make check`)
+scans `shards/` and every `books/*/*.txt` with the same tests and exits non-zero if
+either appears.
 
 **What was removed.** One redaction pass removed 21 lines across six shards:
 `custom_shard_001`, `facebook_shard_001`, `monnews_shard_001`, `monnews_shard_002`,
@@ -160,6 +161,11 @@ removed, never masked: most of the material paired a personal name with a number
 masking the number leaves the name and the association intact. Where a removed line
 was its own document, one adjacent blank line went with it, 12 in all, so document
 separators stayed single.
+
+A second pass, when the check was extended to the books, removed 13 lines from three
+book texts: 7 that the check found (9 numbers and e-mail addresses) and 6 more found by
+reading the same pages, each pairing a name or an address with a phone number. Each
+book's README lists them under "What was removed".
 
 **Earlier commits still contain the removed lines.** The redaction changed the current
 files, not the repository's git history. If you mirror or redistribute this
@@ -237,13 +243,13 @@ SHA-256, the page count, the OCR model and the known issues.
   nothing was reflowed, merged, deduplicated or corrected. Unicode NFC.
 - **Not shards.** The books are not clause-split or deduplicated against the corpus,
   are not in `shards/SHA256SUMS`, and are not counted by `make stats`, `make quality`
-  or `results/latest/`. The personal-data check in section 6 scans `shards/` only.
+  or `results/latest/`, except that the personal-data check in section 6 scans them too.
 - **Quality.** Per-document characters, Myanmar-script share, malformed lines,
   Mon-specific letter share and OCR yield are in
   [books/README.md](../books/README.md).
-- **Removed lines.** Only lines that are not book text: page-number footers, running
-  headers and footers, e-mail lines, and the watermark and its misreads. Each README
-  says which, with counts.
+- **Removed lines.** Page-number footers, running headers and footers, e-mail lines,
+  the watermark and its misreads, and lines pairing a name or address with a phone
+  number (section 6). Each README says which, with counts.
 - **Terms.** None established; unresolved. See [LICENSE-CORPUS.md](../LICENSE-CORPUS.md).
 
 ## 10. Known limitations

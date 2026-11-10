@@ -52,10 +52,10 @@ personal data reappears. [docs/CORPUS.md](docs/CORPUS.md) has the full datasheet
   packed in as text: 3,715 monnews URLs, 5,457 Wikipedia URLs and 879 Telegram
   message IDs. They now sit, sorted, in [`provenance/`](provenance/).
 - **Personal data.** Every line holding an email address or a mobile-number-shaped
-  string was removed (21 lines across six shards), whole rather than masked. The
-  check scans ASCII and Myanmar numerals. **Earlier commits still contain the
-  removed lines:** if you mirror or redistribute, take the current tree, not the
-  history.
+  string was removed, whole rather than masked: 21 lines across six shards, and 13
+  across three book texts, which includes contact lines the pattern misses. The check scans the shards and the book texts, in ASCII and
+  Myanmar numerals. **Earlier commits still contain the removed lines:** if you mirror
+  or redistribute, take the current tree, not the history.
 - **Duplication.** 94,006 of 369,898 eligible lines (25.4%) are redundant, and 4,542
   dedup keys (Mon-script skeletons) appear in more than one shard.
   `scripts/build_shards.py` dedupes new material against the corpus, but not the
@@ -72,7 +72,8 @@ whole corpus first, then split.
 English; two are printings of one dictionary), one folder each, kept as page-by-page
 texts rather than shards. They are machine OCR, not proofread, and their terms are
 unresolved. `make stats`, `make quality` and `results/latest/` cover the shards only,
-so none of the figures above include them.
+so none of the figures above include them, except the personal-data check, which
+`make quality` also runs over the book texts.
 
 ## Structure
 

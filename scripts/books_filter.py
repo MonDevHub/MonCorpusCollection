@@ -54,7 +54,8 @@ def strip_noise(lines: list[str]) -> tuple[list[str], int]:
     A rule or a page border comes out as a string made mostly of the digits ၁ and ၀: `၁၁၆၁၆၁၁၁၈၀၀၁၀၀၀`.
     A line is dropped only when it has at least 5 characters, at least 80% of them are digits or
     separators, and at least half of the digits are ၁ or ၀. Everything else is kept as it is, including a
-    bare page range (`၂၄၉-၂၅၆`) and a phone number with its label (`ဖုန်း ၀၉-၂၅၅၇၄၄၆၁၆`).
+    bare page range (`၂၄၉-၂၅၆`) and a phone number with its label (`ဖုန်း ၀၉-၁၂၃၄၅၆၇၈၉`, made up).
+    A kept phone number is personal data: `make quality` scans books/ and fails until it is removed.
     """
     kept = []
     for x in lines:

@@ -9,11 +9,12 @@ output rather than by hand.
     python3 scripts/data_quality.py --check         # exit 1 if a gate is violated
 
 Gates (--check):
-  - zero email-shaped strings in any shard
-  - zero mobile-number-shaped strings in any shard
+  - zero email-shaped strings in any shard or book text
+  - zero mobile-number-shaped strings in any shard or book text
 Both enforce the personal-data policy in docs/CORPUS.md section 6, so material that
 reintroduces an email address or a mobile number fails the check rather than being
-reported and ignored.
+reported and ignored. The book texts (books/*/*.txt) are scanned with the same tests:
+they are published in the same repository, so they are held to the same policy.
 
 Line counting matches scripts/shard_stats.py exactly: a "line" is a newline character,
 so a file that does not end in one has its trailing fragment excluded from the count.
@@ -99,6 +100,42 @@ def find_phones(line: str, prev_nonblank: str) -> tuple[list[str], list[str]]:
     return ascii_hits, mm_hits
 
 
+def scan_personal_data(lines: list[str]) -> tuple[int, int, int]:
+    """Count (email-shaped, ASCII-numeral phone, Myanmar-numeral phone) strings in `lines`."""
+    emails = phones_ascii = phones_mm = 0
+    prev_nonblank = ""
+    for ln in lines:
+        emails += len(EMAIL_RE.findall(ln))
+        a, m = find_phones(ln, prev_nonblank)
+        phones_ascii += len(a)
+        phones_mm += len(m)
+        if ln.strip():
+            prev_nonblank = ln
+    return emails, phones_ascii, phones_mm
+
+
+def measure_books(books_dir: Path) -> dict:
+    """Personal-data counts for every book text, with the same tests as the shards."""
+    per_book: list[dict] = []
+    totals = Counter()
+    for path in sorted(books_dir.glob("*/*.txt")):
+        e, a, m = scan_personal_data(path.read_text("utf-8").split("\n"))
+        per_book.append({
+            "book": path.parent.name,
+            "email_matches": e,
+            "phone_matches_ascii_numerals": a,
+            "phone_matches_myanmar_numerals": m,
+        })
+        totals["email_matches"] += e
+        totals["phone_matches"] += a + m
+    return {
+        "books": len(per_book),
+        "per_book": per_book,
+        "email_matches": totals["email_matches"],
+        "phone_matches": totals["phone_matches"],
+    }
+
+
 def measure(shards_dir: Path) -> dict:
     per_shard: list[dict] = []
     totals = Counter()
@@ -133,17 +170,7 @@ def measure(shards_dir: Path) -> dict:
 
         urls = len(URL_RE.findall(text))
 
-        emails = 0
-        phones_ascii = 0
-        phones_mm = 0
-        prev_nonblank = ""
-        for ln in counted:
-            emails += len(EMAIL_RE.findall(ln))
-            a, m = find_phones(ln, prev_nonblank)
-            phones_ascii += len(a)
-            phones_mm += len(m)
-            if ln.strip():
-                prev_nonblank = ln
+        emails, phones_ascii, phones_mm = scan_personal_data(counted)
         phones = phones_ascii + phones_mm
 
         # Lines with text but almost none of it. The README budgets usable lines, and a
@@ -238,6 +265,17 @@ def measure(shards_dir: Path) -> dict:
     }
 
 
+def report_books(b: dict) -> None:
+    print(f"\nbooks scanned for personal data: {b['books']}")
+    print(f"  email-shaped strings   {b['email_matches']}")
+    print(f"  phone-shaped strings   {b['phone_matches']}")
+    for r in b["per_book"]:
+        if r["email_matches"] or r["phone_matches_ascii_numerals"] or r["phone_matches_myanmar_numerals"]:
+            print(f"  {r['book']:48} email {r['email_matches']}, "
+                  f"ph-A {r['phone_matches_ascii_numerals']}, "
+                  f"ph-MM {r['phone_matches_myanmar_numerals']}")
+
+
 def report(m: dict) -> None:
     print(f"shards measured: {m['shards']}\n")
 
@@ -270,6 +308,7 @@ def report(m: dict) -> None:
     print(f"shards not ending in a newline: {m['shards_without_trailing_newline']} "
           f"of {m['shards']}")
 
+
     d = m["dedup"]
     print("\ndedup, using build_shards.py's own skeleton key")
     print(f"  eligible lines       {d['eligible_lines']:,}")
@@ -292,6 +331,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("shards_dir", nargs="?", type=Path,
                         default=Path(__file__).resolve().parent.parent / "shards")
+    parser.add_argument("--books-dir", type=Path,
+                        default=Path(__file__).resolve().parent.parent / "books",
+                        help="Book texts to hold to the same personal-data gate.")
     parser.add_argument("--json", action="store_true", help="Emit JSON instead of a table.")
     parser.add_argument("--check", action="store_true",
                         help="Exit 1 if a PII gate is violated.")
@@ -301,12 +343,18 @@ def main() -> int:
         print(f"Error: shards directory not found: {args.shards_dir}", file=sys.stderr)
         return 1
 
+    if not args.books_dir.is_dir():
+        print(f"Error: books directory not found: {args.books_dir}", file=sys.stderr)
+        return 1
+
     m = measure(args.shards_dir)
+    b = measure_books(args.books_dir)
 
     if args.json:
-        print(json.dumps(m, ensure_ascii=False, indent=2))
+        print(json.dumps({**m, "books": b}, ensure_ascii=False, indent=2))
     else:
         report(m)
+        report_books(b)
 
     if args.check:
         failures = []
@@ -314,13 +362,17 @@ def main() -> int:
             failures.append(f"{m['email_matches']} email-shaped string(s) in shards/")
         if m["phone_matches"]:
             failures.append(f"{m['phone_matches']} mobile-shaped string(s) in shards/")
+        if b["email_matches"]:
+            failures.append(f"{b['email_matches']} email-shaped string(s) in books/")
+        if b["phone_matches"]:
+            failures.append(f"{b['phone_matches']} mobile-shaped string(s) in books/")
         if failures:
             print("\nFAIL", file=sys.stderr)
             for f in failures:
                 print(f"  {f}", file=sys.stderr)
             print("  See docs/CORPUS.md section 6, Personal data.", file=sys.stderr)
             return 1
-        print("\nOK: no email-shaped or mobile-shaped strings in shards/")
+        print("\nOK: no email-shaped or mobile-shaped strings in shards/ or books/")
     return 0
 
 

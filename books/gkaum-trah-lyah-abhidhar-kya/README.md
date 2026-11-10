@@ -21,6 +21,10 @@ Every page was read, then kept only if it reads as text: not blank, not a table 
 
 16 of 136: digits: 57; empty: 1-2, 9-14, 29, 52, 75, 111, 131-132; symbols: 16. Short pages under about 100 characters (a title page, a dedication) are dropped with the blank ones, even when clean.
 
+## What was removed
+
+Eight lines that paired a phone number with an address or a name: address-and-phone lines on pages 15, 30, 53, 65 and 135, which the OCR shows as advertisements, and two lines of a donation notice on page 134 naming monks with their phone numbers. Three were found by the personal-data check (`make quality`), five by reading the same pages. Whole lines were removed, not masked, because a masked number leaves the name and address beside it. `pages.csv` still counts these lines: it reports the OCR output before removal. Earlier commits still contain them.
+
 ## Known issues
 
 - Text over photographs or colour gradients often could not be read and is missing; `empty` and `garbled` drops are mostly that.
