@@ -16,6 +16,10 @@ reintroduces an email address or a mobile number fails the check rather than bei
 reported and ignored. The book texts (books/*/*.txt) are scanned with the same tests:
 they are published in the same repository, so they are held to the same policy.
 
+Reported, not gated: legacy-encoding (Zawgyi) signals and non-canonical mark order in
+the shards (docs/CORPUS.md section 5). Both are measurements of text left as it was
+written; nothing here changes a shard.
+
 Line counting matches scripts/shard_stats.py exactly: a "line" is a newline character,
 so a file that does not end in one has its trailing fragment excluded from the count.
 Both scripts must agree or the README contradicts itself.
@@ -114,6 +118,49 @@ def scan_personal_data(lines: list[str]) -> tuple[int, int, int]:
     return emails, phones_ascii, phones_mm
 
 
+# Legacy-encoding (Zawgyi) signals. Zawgyi stores Myanmar text in visual order and
+# reuses code points, so text typed in it and read as Unicode shows sequences that
+# Unicode spelling never produces. Each signal alone has innocent causes (an OCR slip,
+# a Karen or Shan letter), so a line is counted as Zawgyi-like only when it shows two
+# or more DIFFERENT signals.
+#   e_first       U+1031 (e-vowel) at the start of a word, before its consonant
+#   medial_first  U+103B at the start of a word, before its consonant (Zawgyi's ra)
+#   virama_final  U+1039 before a space, the line end or a final mark: Zawgyi uses it
+#                 as the asat, where Unicode needs a consonant after a virama
+#   extended_cp   any code point in U+1061..U+1097, where Zawgyi puts its stacked and
+#                 variant glyphs. Also real Karen and Shan letters, hence the two-signal rule
+_CONSONANT = "\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E"
+_WORD_START = "(?:^|[\\s\u104A\u104B(\\-\"\u201C])"
+ZAWGYI_SIGNALS = {
+    "e_first": re.compile(_WORD_START + "\u1031[" + _CONSONANT + "]"),
+    "medial_first": re.compile(_WORD_START + "\u1031?\u103B[" + _CONSONANT + "]"),
+    "virama_final": re.compile("\u1039(?:$|[\\s\u1037\u1038\u104A\u104B])"),
+    "extended_cp": re.compile("[\u1061-\u1097]"),
+}
+EXTENDED_RE = ZAWGYI_SIGNALS["extended_cp"]
+
+# Mark order that Unicode spelling (UTN #11) does not use, and doubled marks. Counted,
+# not corrected: correcting OCR and typed text is a separate, reviewed change.
+MARK_ORDER = {
+    # u/uu before i/ii: the upper vowel is stored first
+    "lower_before_upper_vowel": re.compile("[\u102F\u1030][\u102D\u102E]"),
+    # e-vowel before a medial: medials come first
+    "e_vowel_before_medial": re.compile("\u1031[\u103B-\u103E\u105E-\u1060]"),
+    # medials out of the ya, ra, wa, ha order
+    "medial_order": re.compile("\u103C\u103B|\u103D[\u103B\u103C]|\u103E[\u103B-\u103D]"),
+    # anusvara before u/uu: the vowel is stored first
+    "anusvara_before_lower_vowel": re.compile("\u1036[\u102F\u1030]"),
+    # the same mark twice in a row (non-overlapping pairs), asat included
+    "doubled_mark": re.compile("([\u102B-\u103E\u105E-\u1060])\\1"),
+    "doubled_asat": re.compile("\u103A\u103A"),
+}
+
+
+def zawgyi_signals(line: str) -> list[str]:
+    """Names of the Zawgyi signals present in `line`."""
+    return [name for name, rx in ZAWGYI_SIGNALS.items() if rx.search(line)]
+
+
 def measure_books(books_dir: Path) -> dict:
     """Personal-data counts for every book text, with the same tests as the shards."""
     per_book: list[dict] = []
@@ -173,6 +220,16 @@ def measure(shards_dir: Path) -> dict:
         emails, phones_ascii, phones_mm = scan_personal_data(counted)
         phones = phones_ascii + phones_mm
 
+        extended_cps = extended_lines = zawgyi_lines = 0
+        for ln in counted:
+            n = len(EXTENDED_RE.findall(ln))
+            if n:
+                extended_cps += n
+                extended_lines += 1
+            if len(zawgyi_signals(ln)) >= 2:
+                zawgyi_lines += 1
+        mark_order = {name: len(rx.findall(text)) for name, rx in MARK_ORDER.items()}
+
         # Lines with text but almost none of it. The README budgets usable lines, and a
         # 1-3 character line is a fragment rather than a training example.
         short_text = sum(1 for ln in counted if ln.strip() and len(ln.strip()) <= 3)
@@ -212,6 +269,10 @@ def measure(shards_dir: Path) -> dict:
             "phone_matches_myanmar_numerals": phones_mm,
             "dedup_eligible_lines": eligible,
             "ends_with_newline": ends_newline,
+            "u1061_1097_codepoints": extended_cps,
+            "u1061_1097_lines": extended_lines,
+            "zawgyi_signal_lines": zawgyi_lines,
+            "mark_order": mark_order,
         })
         totals["lines"] += lines
         totals["blank_lines"] += blank
@@ -222,6 +283,11 @@ def measure(shards_dir: Path) -> dict:
         totals["phone_matches_ascii_numerals"] += phones_ascii
         totals["phone_matches_myanmar_numerals"] += phones_mm
         totals["dedup_eligible_lines"] += eligible
+        totals["u1061_1097_codepoints"] += extended_cps
+        totals["u1061_1097_lines"] += extended_lines
+        totals["zawgyi_signal_lines"] += zawgyi_lines
+        for name, n in mark_order.items():
+            totals["mark_order:" + name] += n
 
     eligible = totals["dedup_eligible_lines"]
     unique = len(key_counts)
@@ -248,6 +314,10 @@ def measure(shards_dir: Path) -> dict:
         "phone_matches": totals["phone_matches"],
         "phone_matches_ascii_numerals": totals["phone_matches_ascii_numerals"],
         "phone_matches_myanmar_numerals": totals["phone_matches_myanmar_numerals"],
+        "u1061_1097_codepoints": totals["u1061_1097_codepoints"],
+        "u1061_1097_lines": totals["u1061_1097_lines"],
+        "zawgyi_signal_lines": totals["zawgyi_signal_lines"],
+        "mark_order": {name: totals["mark_order:" + name] for name in MARK_ORDER},
         "shards_without_trailing_newline": len(no_trailing_newline),
         "shards_without_trailing_newline_names": no_trailing_newline,
         "dedup": {
@@ -308,6 +378,19 @@ def report(m: dict) -> None:
     print(f"shards not ending in a newline: {m['shards_without_trailing_newline']} "
           f"of {m['shards']}")
 
+    print("\nlegacy encoding (Zawgyi), reported, not gated")
+    print(f"  U+1061..U+1097 code points  {m['u1061_1097_codepoints']:,} "
+          f"on {m['u1061_1097_lines']:,} lines")
+    print(f"  lines with >=2 Zawgyi signals  {m['zawgyi_signal_lines']:,}")
+    print(f"  {'shard':40} {'U+1061..97':>10} {'on lines':>9} {'zawgyi':>7}")
+    for s in m["per_shard"]:
+        if s["u1061_1097_codepoints"] or s["zawgyi_signal_lines"]:
+            print(f"  {s['shard']:40} {s['u1061_1097_codepoints']:>10,} "
+                  f"{s['u1061_1097_lines']:>9,} {s['zawgyi_signal_lines']:>7,}")
+
+    print("\nnon-canonical mark order, reported, not gated")
+    for name, n in m["mark_order"].items():
+        print(f"  {name:28} {n:>7,}")
 
     d = m["dedup"]
     print("\ndedup, using build_shards.py's own skeleton key")

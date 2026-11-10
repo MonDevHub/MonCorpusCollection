@@ -56,6 +56,11 @@ personal data reappears. [docs/CORPUS.md](docs/CORPUS.md) has the full datasheet
   across three book texts, which includes contact lines the pattern misses. The check scans the shards and the book texts, in ASCII and
   Myanmar numerals. **Earlier commits still contain the removed lines:** if you mirror
   or redistribute, take the current tree, not the history.
+- **Legacy encoding (Zawgyi) is not converted.** 37 lines, 30 of them in monnews, show
+  two or more Zawgyi signals, and 1,132 code points of the Zawgyi-shared range
+  U+1061–U+1097 sit on 617 monnews lines. 2,588 mark sequences are out of canonical
+  order or doubled. Definitions in
+  [docs/CORPUS.md](docs/CORPUS.md#5-normalization-and-script).
 - **Duplication.** 94,006 of 369,898 eligible lines (25.4%) are redundant, and 4,542
   dedup keys (Mon-script skeletons) appear in more than one shard.
   `scripts/build_shards.py` dedupes new material against the corpus, but not the

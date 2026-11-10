@@ -146,6 +146,40 @@ Run your own cleaning pass if your use is sensitive to any of these;
   902,634 times (`results/latest/character_frequency.csv`). `scripts/corpus_counter_normalized.py --normalize-mon-nga` maps
   U+1004 to U+105A for analysis only; it never changes a shard, and it is off for the
   tables in `results/latest/`.
+- **Legacy-encoded (Zawgyi) text is present and was not converted.** Some source text
+  was typed in Zawgyi, the legacy font encoding that reuses Myanmar code points in
+  visual order. Stored as Unicode it is still valid NFC, so it passes normalization, but
+  it does not spell the words it shows and segments into wrong syllables. `make quality`
+  measures it:
+  - **1,324 code points in U+1061–U+1097 on 751 lines**, 1,132 of them on 617 lines of
+    the monnews shards (`_001` 568, `_002` 522, `_003` 42). Zawgyi puts its stacked and
+    variant glyphs in this range, but it also holds real Karen and Shan letters, which
+    some Wikipedia and custom lines use, so this count is an upper bound on Zawgyi, not
+    a count of it.
+  - **37 lines carry two or more different Zawgyi signals**: 30 in monnews (`_001` 16,
+    `_002` 14), 4 in `facebook_shard_001`, 2 in `wikipedia_shard_001` and 1 in
+    `telegram_mot_tip_ebook_shard_001`. The signals are an e-vowel (U+1031) or U+103B
+    at the start of a word, before its consonant; a virama (U+1039) before a space, a
+    final mark or the line end, where Zawgyi uses it as the asat; and any code point in
+    U+1061–U+1097. One signal alone has innocent causes, so one is not counted. Treat
+    these lines as Zawgyi read as Unicode.
+
+  Filter or convert these lines yourself if your use is sensitive to them. Converting
+  them in the shards is a separate, reviewed change, not part of the import.
+- **Non-canonical mark order is rare and left as written.** Unicode Myanmar spelling
+  (UTN #11) stores marks in a fixed order. Over all shards, `make quality` counts:
+
+  | Pattern | Count |
+  | :--- | ---: |
+  | Lower vowel (U+102F/U+1030) before upper vowel (U+102D/U+102E) | 141 |
+  | E-vowel (U+1031) before a medial (U+103B–U+103E, U+105E–U+1060) | 107 |
+  | Medials out of the ya, ra, wa, ha order | 29 |
+  | Anusvara (U+1036) before a lower vowel | 307 |
+  | The same mark twice in a row (U+102B–U+103E, U+105E–U+1060), as pairs | 2,004 |
+  | of which asat (U+103A) twice | 1,084 |
+
+  NFC does not reorder these marks, so two spellings of one word survive as different
+  strings. Nothing was corrected.
 
 ## 6. Personal data
 
@@ -266,6 +300,9 @@ SHA-256, the page count, the OCR model and the known issues.
 - **Lower-confidence sources**: OCR Extracted can carry recognition errors, the book
   texts are machine OCR that nobody has proofread (section 9), and the
   Machine-generated shard is unverified LLM text.
+- **Legacy encoding and mark order.** 37 lines, 30 of them monnews, read as Zawgyi
+  text stored as Unicode, and 2,588 mark sequences are out of canonical order or
+  doubled. Measured, not converted (section 5).
 - **Personal data** in git history (section 6).
 
 To report a normalization problem, data corruption or material that should not be
